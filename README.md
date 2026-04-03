@@ -14,18 +14,16 @@
 - Use `pip install -r requirements.txt`
 
 ### Manual
-- Install Algokit
-`pip install algokit`
-- Install Algokit Client Generator
-`pip install algokit-client-generator`
+- Install Algokit: `pip install algokit`
+- Install Algokit Client Generator: `pip install algokit-client-generator`
 
 ## 3. Environment Setup
 - Install and **Start** [Docker Desktop](https://docs.docker.com/engine/install/)
-- Start Localnet Instance
-`algokit localnet start`
-- Show Localnet Accounts
-`algokit goal account list`
-- Export any of the displayed accounts with large algo balance
+- Start Localnet Instance: `algokit localnet start`
+- Show Localnet Accounts: `algokit goal account list`
+- Export any of the displayed accounts with large algo balance:
+
 `algokit goal account export -a <some address from previous list>`
+
 - Create a `.env` file, set secrets to `ADDRESS` and `MNEMONIC` in this file to the address and mnemonic provided from previous command
 
