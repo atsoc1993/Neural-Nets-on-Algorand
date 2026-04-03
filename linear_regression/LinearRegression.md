@@ -5,4 +5,4 @@ _Note: Until a fix is in place for downstream dependency, use `-O 0` flag & para
 `algokit compile py linear_regression_contract.py --out-dir contract_files --output-arc56 -O 0`
 
 ### Generate Client
-`'contract_files/LinearRegressionModel.arc56.json' -o 'LinearRegressionClient.py'`
+`algokitgen-py -a 'contract_files/LinearRegressionModel.arc56.json' -o 'LinearRegressionClient.py'`
