@@ -1,0 +1,1 @@
+#TODO Convert Linear Regression Model to Contract State, then create training files and test contract predictions
