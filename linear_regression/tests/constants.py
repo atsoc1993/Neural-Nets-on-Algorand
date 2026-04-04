@@ -24,10 +24,10 @@ LINEAR_REGRESSION_FACTORY = LinearRegressionModelFactory(
     default_signer=SIGNER,
 )
 
-LINEAR_REGRESSION_APP_ID = os.getenv('LINEAR_REGRESSION_APP_ID', '')
-if LINEAR_REGRESSION_APP_ID != '':
+LINEAR_REGRESSION_APP_ID = int(os.getenv('LINEAR_REGRESSION_APP_ID', 0))
+if LINEAR_REGRESSION_APP_ID != 0:
     LINEAR_REGRESSION_MODEL_CLIENT = ALGORAND.client.get_typed_app_client_by_id(
-        app_id=int(LINEAR_REGRESSION_APP_ID),
+        app_id=LINEAR_REGRESSION_APP_ID,
         default_sender=PK,
         default_signer=SIGNER,
         approval_source_map=Program(program=APP_SPEC.source.get_decoded_approval(), client=ALGORAND.client.algod).source_map,
@@ -35,3 +35,5 @@ if LINEAR_REGRESSION_APP_ID != '':
     )
 else:
     logging.info("Warning: Linear Regression APP ID does not exist yet and client cannot be created, please run 1_deploy_contract.py if you are not doing so now")
+
+SCALE_FACTOR = 10_000
