@@ -16,29 +16,6 @@ class LinearRegressionModel(ARC4Contract):
         self.length_data = UInt64(0)
         self.ready_for_training = False
         
-
-    @abimethod
-    def prime_training(
-        self,
-        learning_rate: UInt64,
-        epochs: UInt64
-    ) -> None:
-        '''Reset Weight & Bias and set the intended epochs and learning rate for new training phase'''
-
-        # By Default the x inputs box and y targets box are the same length
-        # Any check to the x inputs box reflects the status of the y targets box
-        assert self.x_inputs_box.value.length != 0, "Inputs & Targets Data has not been set — call 'add_inputs_and_targets' method first to set training data"
-        self.weight = UInt64(0)
-        self.bias = UInt64(0)
-        self.learning_rate = learning_rate
-        self.epochs = epochs
-
-        # Training Loop iteration method will fail if this method is not called first
-        self.training_complete = False
-
-        # Do not allow predictions until training is complete
-        self.ready_for_training = True
-
     @abimethod
     def add_inputs_and_targets(
         self, 
@@ -48,6 +25,7 @@ class LinearRegressionModel(ARC4Contract):
     ) -> None:
         ''' Add Inputs & Targets to Box Storage, Take in an MBR Payment and Refund Excess if there is any'''
         
+        assert self.ready_for_training == False
         # Get the current box content with inputs & targets
         current_x_inputs = self.x_inputs_box.get(default=Data()).copy()
         current_y_targets = self.y_targets_box.get(default=Data()).copy()
@@ -112,6 +90,29 @@ class LinearRegressionModel(ARC4Contract):
         ).submit()
 
     @abimethod
+    def prime_training(
+        self,
+        learning_rate: UInt64,
+        epochs: UInt64
+    ) -> None:
+        '''Reset Weight & Bias and set the intended epochs and learning rate for new training phase'''
+
+        # By Default the x inputs box and y targets box are the same length
+        # Any check to the x inputs box reflects the status of the y targets box
+        assert self.x_inputs_box.value.length != 0, "Inputs & Targets Data has not been set — call 'add_inputs_and_targets' method first to set training data"
+        self.weight = UInt64(0)
+        self.bias = UInt64(0)
+        self.learning_rate = learning_rate
+        self.epochs = epochs
+
+        # Training Loop iteration method will fail if this method is not called first
+        self.training_complete = False
+
+        # Do not allow predictions until training is complete
+        self.ready_for_training = True
+
+
+    @abimethod
     def run_a_training_loop(self) -> None:
         '''Run a singular training loop with our saved data set and update our global weight and bias'''
         # Dev must call prepare data within contract boxes first via 'add_inputs_and_targets_method' 
@@ -166,7 +167,12 @@ class LinearRegressionModel(ARC4Contract):
         # We can now call the predict method
         self.epochs_completed += 1
         if self.epochs_completed == self.epochs:
+
+            # Indicate training was complete
             self.training_complete = True
+            
+            # Set ready for training to false
+            self.ready_for_training = False
 
     @abimethod
     def predict(self, x: UInt64) -> UInt64:
@@ -176,4 +182,10 @@ class LinearRegressionModel(ARC4Contract):
 
         # y = mx + b
         return self.weight * x + self.bias
+    
+    @abimethod
+    def clear_data(self) -> None:
+        self.x_inputs_box.value = Data()
+        self.y_targets_box.value = Data()
+        self.length_data = UInt64(0)
         
