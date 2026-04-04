@@ -3,12 +3,18 @@ from dotenv import set_key
 from constants import ALGORAND, PK, SIGNER, LINEAR_REGRESSION_FACTORY
 
 print(f'Deploying Linear Regression Model App . . .')
+
+# Deploy an instance of the app on localnet
 linear_regression_client, txn_result = LINEAR_REGRESSION_FACTORY.send.create.bare()
 print(f'Deployed Linear Regression Model App, App ID: {linear_regression_client.app_id}')
+
+# Write app ID to .env
 set_key('.env', 'LINEAR_REGRESSION_APP_ID', str(linear_regression_client.app_id))
 print(f'Saved App ID to .env under key: LINEAR_REGRESSION_APP_ID')
 
 print(f'Funding Account MBR to Linear Regression Model App . . .')
+
+# Fund 0.1 Algo Account minimum balance requirement to app
 fund_linear_regression_app_tx = ALGORAND.send.payment(
     params=PaymentParams(
         sender=PK,
