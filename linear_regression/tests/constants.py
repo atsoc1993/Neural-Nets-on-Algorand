@@ -1,5 +1,5 @@
 from LinearRegressionClient import LinearRegressionModelFactory, LinearRegressionModelClient, APP_SPEC
-from algokit_utils import AlgorandClient, SigningAccount 
+from algokit_utils import AlgorandClient, SigningAccount, Program
 from dotenv import load_dotenv
 from algosdk.mnemonic import to_private_key
 from algosdk.account import address_from_private_key
@@ -26,11 +26,12 @@ LINEAR_REGRESSION_FACTORY = LinearRegressionModelFactory(
 
 LINEAR_REGRESSION_APP_ID = os.getenv('LINEAR_REGRESSION_APP_ID', '')
 if LINEAR_REGRESSION_APP_ID != '':
-    LINEAR_REGRESSION_MODEL_CLIENT = ALGORAND.client.get_app_client_by_id(
-        app_spec=APP_SPEC,
+    LINEAR_REGRESSION_MODEL_CLIENT = ALGORAND.client.get_typed_app_client_by_id(
         app_id=int(LINEAR_REGRESSION_APP_ID),
         default_sender=PK,
-        default_signer=SIGNER
+        default_signer=SIGNER,
+        approval_source_map=Program(program=APP_SPEC.source.get_decoded_approval(), client=ALGORAND.client.algod).source_map,
+        typed_client=LinearRegressionModelClient
     )
 else:
     logging.info("Warning: Linear Regression APP ID does not exist yet and client cannot be created, please run 1_deploy_contract.py if you are not doing so now")
