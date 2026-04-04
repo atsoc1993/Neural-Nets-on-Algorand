@@ -4,17 +4,17 @@
 // algopy.arc4.ARC4Contract.approval_program() -> uint64:
 main:
     intcblock 0 1 8 2
-    bytecblock "inputs" "targets" "weight" "bias" "length_data" "ready_for_training" "epochs" "epochs_completed" "learning_rate" 0x0000 "training_complete"
+    bytecblock "inputs" "length_data" "targets" "weight" "bias" "ready_for_training" "epochs" "epochs_completed" "learning_rate" 0x0000 "training_complete" 0x068101
     txn ApplicationID
     bnz main_after_if_else@2
     // linear_regression_contract.py:9
     // self.weight = UInt64(0)
-    bytec_2 // "weight"
+    bytec_3 // "weight"
     intc_0 // 0
     app_global_put
     // linear_regression_contract.py:10
     // self.bias = UInt64(0)
-    bytec_3 // "bias"
+    bytec 4 // "bias"
     intc_0 // 0
     app_global_put
     // linear_regression_contract.py:11
@@ -34,7 +34,7 @@ main:
     app_global_put
     // linear_regression_contract.py:16
     // self.length_data = UInt64(0)
-    bytec 4 // "length_data"
+    bytec_1 // "length_data"
     intc_0 // 0
     app_global_put
     // linear_regression_contract.py:17
@@ -161,7 +161,7 @@ add_inputs_and_targets:
     pop
     // linear_regression_contract.py:51
     // x_2 = self.y_targets_box.create(size=size_to_add_to_box)
-    bytec_1 // "targets"
+    bytec_2 // "targets"
     swap
     box_create
     pop
@@ -202,10 +202,10 @@ add_inputs_and_targets_after_if_else@4:
     box_put
     // linear_regression_contract.py:76
     // self.y_targets_box.value = current_x_inputs.copy()
-    bytec_1 // "targets"
+    bytec_2 // "targets"
     box_del
     pop
-    bytec_1 // "targets"
+    bytec_2 // "targets"
     swap
     box_put
     // linear_regression_contract.py:78-81
@@ -214,12 +214,12 @@ add_inputs_and_targets_after_if_else@4:
     // # This number is needed to average deltas in each training loop
     // self.length_data += parts_length
     intc_0 // 0
-    bytec 4 // "length_data"
+    bytec_1 // "length_data"
     app_global_get_ex
     assert // check self.length_data exists
     dig 5
     +
-    bytec 4 // "length_data"
+    bytec_1 // "length_data"
     swap
     app_global_put
     // linear_regression_contract.py:83-86
@@ -283,7 +283,7 @@ add_inputs_and_targets_else_body@3:
     box_resize
     // linear_regression_contract.py:63
     // self.y_targets_box.resize(new_size=new_size)
-    bytec_1 // "targets"
+    bytec_2 // "targets"
     swap
     box_resize
     b add_inputs_and_targets_after_if_else@4
@@ -319,12 +319,12 @@ prime_training:
     assert // Inputs & Targets Data has not been set — call 'add_inputs_and_targets' method first to set training data
     // linear_regression_contract.py:103
     // self.weight = UInt64(0)
-    bytec_2 // "weight"
+    bytec_3 // "weight"
     intc_0 // 0
     app_global_put
     // linear_regression_contract.py:104
     // self.bias = UInt64(0)
-    bytec_3 // "bias"
+    bytec 4 // "bias"
     intc_0 // 0
     app_global_put
     // linear_regression_contract.py:105
@@ -387,126 +387,95 @@ run_a_training_loop:
     assert // check self.epochs exists
     <
     assert // All epochs for training have already been completed, no more training loops needed
-    // linear_regression_contract.py:133-135
-    // # Initialize our deltas for weight and bias for this training loop
-    // # These keep track of error sums to apply to our global weight and bias
-    // delta_weight = UInt64(0)
+    // linear_regression_contract.py:134-135
+    // # Get the budget cost before an iteration
+    // pre_budget_remaining = Global.opcode_budget()
+    global OpcodeBudget
+    // linear_regression_contract.py:137-138
+    // # Run one iteration of a training loop, be resourceful and sum these deltas with full training loop deltas later
+    // _delta_weight, _delta_bias = self.run_training_loop_by_start_and_end_index(UInt64(0), UInt64(1))
     intc_0 // 0
-    // linear_regression_contract.py:136
-    // delta_bias = UInt64(0)
-    dup
-    // linear_regression_contract.py:128-129
-    // # Get all data for x_inputs and y_targets
-    // x_inputs = self.x_inputs_box.value.copy()
-    bytec_0 // "inputs"
-    // linear_regression_contract.py:142
-    // for i in urange(x_inputs.length):
-    intc_0 // 0
-    intc_3 // 2
-    box_extract
-    btoi
-    intc_0 // 0
-
-run_a_training_loop_for_header@2:
-    // linear_regression_contract.py:142
-    // for i in urange(x_inputs.length):
-    dup
-    dig 2
-    <
-    bz run_a_training_loop_after_for@5
+    intc_1 // 1
+    callsub run_training_loop_by_start_and_end_index
+    cover 2
+    swap
+    // linear_regression_contract.py:140-141
+    // # Get the budget cost after an iteration
+    // post_budget_remaining = Global.opcode_budget()
+    global OpcodeBudget
     // linear_regression_contract.py:143-144
-    // # Get each x, y pair in our training data for this epoch
-    // x = x_inputs[i]
-    dupn 2
-    intc_2 // 8
-    *
-    intc_3 // 2
-    +
-    // linear_regression_contract.py:128-129
-    // # Get all data for x_inputs and y_targets
-    // x_inputs = self.x_inputs_box.value.copy()
-    bytec_0 // "inputs"
-    // linear_regression_contract.py:143-144
-    // # Get each x, y pair in our training data for this epoch
-    // x = x_inputs[i]
-    dig 1
-    intc_2 // 8
-    box_extract
-    // linear_regression_contract.py:130
-    // y_targets = self.y_targets_box.value.copy()
-    bytec_1 // "targets"
-    // linear_regression_contract.py:145
-    // y = y_targets[i]
-    uncover 2
-    intc_2 // 8
-    box_extract
-    // linear_regression_contract.py:147-148
-    // # Guess the value of Y using equation of a line with our weight and bias; y = mx + b, where m = weight and b = bias
-    // m = self.weight
-    intc_0 // 0
-    bytec_2 // "weight"
-    app_global_get_ex
-    assert // check self.weight exists
-    // linear_regression_contract.py:149
-    // b = self.bias
-    intc_0 // 0
-    bytec_3 // "bias"
-    app_global_get_ex
-    assert // check self.bias exists
-    // linear_regression_contract.py:150
-    // guessed_y = m * x.as_uint64() + b
-    uncover 3
-    btoi
-    dig 2
-    *
-    +
-    // linear_regression_contract.py:152-153
-    // # Check how wrong we were and get the difference of the guessed y target and the actual y target
-    // y_error = guessed_y - y.as_uint64()
-    uncover 2
-    btoi
+    // # Calculate difference in budget
+    // budget_cost_per_iteration = pre_budget_remaining - post_budget_remaining
     -
-    // linear_regression_contract.py:155
-    // delta_weight += y_error * m
-    dup
-    uncover 2
+    // linear_regression_contract.py:146-147
+    // # Calculate extra budget needed
+    // extra_budget_needed = self.length_data * budget_cost_per_iteration
+    intc_0 // 0
+    bytec_1 // "length_data"
+    app_global_get_ex
+    assert // check self.length_data exists
     *
-    dig 6
+    pushint 10
     +
-    bury 6
-    // linear_regression_contract.py:156
-    // delta_bias += y_error
+
+run_a_training_loop_while_top@5:
+    dup
+    global OpcodeBudget
+    >
+    bz run_a_training_loop_after_while@10
+    itxn_begin
+    pushint 6 // appl
+    itxn_field TypeEnum
+    pushint 5 // DeleteApplication
+    itxn_field OnCompletion
+    bytec 11 // 0x068101
+    itxn_field ApprovalProgram
+    bytec 11 // 0x068101
+    itxn_field ClearStateProgram
+    intc_0 // 0
+    itxn_field Fee
+    itxn_submit
+    b run_a_training_loop_while_top@5
+
+run_a_training_loop_after_while@10:
+    // linear_regression_contract.py:152
+    // delta_weight, delta_bias = self.run_training_loop_by_start_and_end_index(UInt64(1), self.length_data)
+    intc_0 // 0
+    bytec_1 // "length_data"
+    app_global_get_ex
+    assert // check self.length_data exists
+    intc_1 // 1
+    swap
+    callsub run_training_loop_by_start_and_end_index
+    // linear_regression_contract.py:154
+    // delta_weight += _delta_weight
+    swap
+    dig 3
+    +
+    // linear_regression_contract.py:155
+    // delta_bias += _delta_bias
+    swap
     dig 4
     +
-    bury 4
-    // linear_regression_contract.py:142
-    // for i in urange(x_inputs.length):
-    intc_1 // 1
-    +
-    bury 1
-    b run_a_training_loop_for_header@2
-
-run_a_training_loop_after_for@5:
-    // linear_regression_contract.py:158-159
+    // linear_regression_contract.py:157-158
     // # Average our delta weight and delta bias by the length of data
     // delta_weight //= self.length_data
     intc_0 // 0
-    bytec 4 // "length_data"
+    bytec_1 // "length_data"
     app_global_get_ex
     assert // check self.length_data exists
-    dig 4
+    uncover 2
     dig 1
     /
-    // linear_regression_contract.py:160
+    // linear_regression_contract.py:159
     // delta_bias //= self.length_data
-    dig 4
-    uncover 2
+    cover 2
     /
-    // linear_regression_contract.py:162-163
+    // linear_regression_contract.py:161-162
     // # Update our global weight and bias by deducting the difference of the product of learning rate and respective delta
     // self.weight *= self.learning_rate * delta_weight
     intc_0 // 0
-    bytec_2 // "weight"
+    bytec_3 // "weight"
     app_global_get_ex
     assert // check self.weight exists
     intc_0 // 0
@@ -516,13 +485,13 @@ run_a_training_loop_after_for@5:
     uncover 3
     *
     *
-    bytec_2 // "weight"
+    bytec_3 // "weight"
     swap
     app_global_put
-    // linear_regression_contract.py:164
+    // linear_regression_contract.py:163
     // self.bias *= self.learning_rate * delta_bias
     intc_0 // 0
-    bytec_3 // "bias"
+    bytec 4 // "bias"
     app_global_get_ex
     assert // check self.bias exists
     intc_0 // 0
@@ -532,10 +501,10 @@ run_a_training_loop_after_for@5:
     uncover 2
     *
     *
-    bytec_3 // "bias"
+    bytec 4 // "bias"
     swap
     app_global_put
-    // linear_regression_contract.py:166-168
+    // linear_regression_contract.py:165-167
     // # Increment epoch by 1, if we have completed all epochs set training to complete
     // # We can now call the predict method
     // self.epochs_completed += 1
@@ -548,28 +517,28 @@ run_a_training_loop_after_for@5:
     bytec 7 // "epochs_completed"
     dig 1
     app_global_put
-    // linear_regression_contract.py:169
+    // linear_regression_contract.py:168
     // if self.epochs_completed == self.epochs:
     intc_0 // 0
     bytec 6 // "epochs"
     app_global_get_ex
     assert // check self.epochs exists
     ==
-    bz run_a_training_loop_after_if_else@7
-    // linear_regression_contract.py:171-172
+    bz run_a_training_loop_after_if_else@3
+    // linear_regression_contract.py:170-171
     // # Indicate training was complete
     // self.training_complete = True
     bytec 10 // "training_complete"
     intc_1 // 1
     app_global_put
-    // linear_regression_contract.py:174-175
+    // linear_regression_contract.py:173-174
     // # Set ready for training to false
     // self.ready_for_training = False
     bytec 5 // "ready_for_training"
     intc_0 // 0
     app_global_put
 
-run_a_training_loop_after_if_else@7:
+run_a_training_loop_after_if_else@3:
     // linear_regression_contract.py:115
     // @abimethod
     intc_1 // 1
@@ -578,7 +547,7 @@ run_a_training_loop_after_if_else@7:
 
 // linear_regression_contract.LinearRegressionModel.predict[routing]() -> void:
 predict:
-    // linear_regression_contract.py:177
+    // linear_regression_contract.py:211
     // @abimethod
     txna ApplicationArgs 1
     dup
@@ -587,7 +556,7 @@ predict:
     ==
     assert // invalid number of bytes for arc4.uint64
     btoi
-    // linear_regression_contract.py:180-181
+    // linear_regression_contract.py:214-215
     // # Optional: Check if we have completed training the model
     // assert self.training_complete == True, "Model has not been fully trained"
     intc_0 // 0
@@ -597,20 +566,20 @@ predict:
     intc_1 // 1
     ==
     assert // Model has not been fully trained
-    // linear_regression_contract.py:183-184
+    // linear_regression_contract.py:217-218
     // # y = mx + b
     // return self.weight * x + self.bias
     intc_0 // 0
-    bytec_2 // "weight"
+    bytec_3 // "weight"
     app_global_get_ex
     assert // check self.weight exists
     *
     intc_0 // 0
-    bytec_3 // "bias"
+    bytec 4 // "bias"
     app_global_get_ex
     assert // check self.bias exists
     +
-    // linear_regression_contract.py:177
+    // linear_regression_contract.py:211
     // @abimethod
     itob
     pushbytes 0x151f7c75
@@ -623,7 +592,7 @@ predict:
 
 // linear_regression_contract.LinearRegressionModel.clear_data[routing]() -> void:
 clear_data:
-    // linear_regression_contract.py:188
+    // linear_regression_contract.py:222
     // self.x_inputs_box.value = Data()
     bytec_0 // "inputs"
     box_del
@@ -631,24 +600,155 @@ clear_data:
     bytec_0 // "inputs"
     bytec 9 // 0x0000
     box_put
-    // linear_regression_contract.py:189
+    // linear_regression_contract.py:223
     // self.y_targets_box.value = Data()
-    bytec_1 // "targets"
+    bytec_2 // "targets"
     box_del
     pop
-    bytec_1 // "targets"
-    // linear_regression_contract.py:188
+    bytec_2 // "targets"
+    // linear_regression_contract.py:222
     // self.x_inputs_box.value = Data()
     bytec 9 // 0x0000
-    // linear_regression_contract.py:189
+    // linear_regression_contract.py:223
     // self.y_targets_box.value = Data()
     box_put
-    // linear_regression_contract.py:190
+    // linear_regression_contract.py:224
     // self.length_data = UInt64(0)
-    bytec 4 // "length_data"
+    bytec_1 // "length_data"
     intc_0 // 0
     app_global_put
-    // linear_regression_contract.py:186
+    // linear_regression_contract.py:220
     // @abimethod
     intc_1 // 1
     return
+
+
+// linear_regression_contract.LinearRegressionModel.run_training_loop_by_start_and_end_index(start: uint64, end: uint64) -> uint64, uint64:
+run_training_loop_by_start_and_end_index:
+    // linear_regression_contract.py:176-177
+    // @subroutine
+    // def run_training_loop_by_start_and_end_index(self, start: UInt64, end: UInt64) -> tuple[UInt64, UInt64]:
+    proto 2 2
+    pushbytes ""
+    dup
+    // linear_regression_contract.py:179-181
+    // # Initialize our deltas for weight and bias for this training loop
+    // # These keep track of error sums to apply to our global weight and bias
+    // delta_weight = UInt64(0)
+    intc_0 // 0
+    // linear_regression_contract.py:182
+    // delta_bias = UInt64(0)
+    dup
+    frame_dig -2
+
+run_training_loop_by_start_and_end_index_for_header@1:
+    // linear_regression_contract.py:188
+    // for i in urange(start, end):
+    frame_dig 4
+    frame_dig -1
+    <
+    bz run_training_loop_by_start_and_end_index_after_for@7
+    // linear_regression_contract.py:189-190
+    // # Get each x, y pair in our training data for this epoch
+    // x = x_inputs[i]
+    frame_dig 4
+    intc_2 // 8
+    *
+    intc_3 // 2
+    +
+    // linear_regression_contract.py:184-185
+    // # Get all data for x_inputs and y_targets
+    // x_inputs = self.x_inputs_box.value.copy()
+    bytec_0 // "inputs"
+    // linear_regression_contract.py:189-190
+    // # Get each x, y pair in our training data for this epoch
+    // x = x_inputs[i]
+    dig 1
+    intc_2 // 8
+    box_extract
+    // linear_regression_contract.py:186
+    // y_targets = self.y_targets_box.value.copy()
+    bytec_2 // "targets"
+    // linear_regression_contract.py:191
+    // y = y_targets[i]
+    uncover 2
+    intc_2 // 8
+    box_extract
+    dup
+    uncover 2
+    // linear_regression_contract.py:193-194
+    // # Guess the value of Y using equation of a line with our weight and bias; y = mx + b, where m = weight and b = bias
+    // m = self.weight
+    intc_0 // 0
+    bytec_3 // "weight"
+    app_global_get_ex
+    swap
+    dup
+    cover 2
+    frame_bury 1
+    assert // check self.weight exists
+    // linear_regression_contract.py:195
+    // b = self.bias
+    intc_0 // 0
+    bytec 4 // "bias"
+    app_global_get_ex
+    assert // check self.bias exists
+    // linear_regression_contract.py:196
+    // guessed_y = m * x.as_uint64() + b
+    uncover 2
+    btoi
+    uncover 2
+    *
+    +
+    dup
+    frame_bury 0
+    // linear_regression_contract.py:200
+    // if guessed_y >= y:
+    itob
+    b<=
+    bz run_training_loop_by_start_and_end_index_else_body@4
+    // linear_regression_contract.py:201
+    // y_error = guessed_y - y.as_uint64()
+    btoi
+    frame_dig 0
+    swap
+    -
+
+run_training_loop_by_start_and_end_index_after_if_else@5:
+    // linear_regression_contract.py:206
+    // delta_weight += y_error * m
+    dup
+    frame_dig 1
+    *
+    frame_dig 2
+    +
+    frame_bury 2
+    // linear_regression_contract.py:207
+    // delta_bias += y_error
+    frame_dig 3
+    +
+    frame_bury 3
+    // linear_regression_contract.py:188
+    // for i in urange(start, end):
+    frame_dig 4
+    intc_1 // 1
+    +
+    frame_bury 4
+    b run_training_loop_by_start_and_end_index_for_header@1
+
+run_training_loop_by_start_and_end_index_else_body@4:
+    // linear_regression_contract.py:203
+    // y_error = y.as_uint64() - guessed_y
+    btoi
+    frame_dig 0
+    -
+    b run_training_loop_by_start_and_end_index_after_if_else@5
+
+run_training_loop_by_start_and_end_index_after_for@7:
+    // linear_regression_contract.py:209
+    // return delta_weight, delta_bias
+    frame_dig 2
+    frame_dig 3
+    frame_bury 1
+    frame_bury 0
+    retsub

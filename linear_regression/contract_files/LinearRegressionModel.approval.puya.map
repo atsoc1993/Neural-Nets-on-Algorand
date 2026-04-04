@@ -3,7 +3,7 @@
   "sources": [
     "../linear_regression_contract.py"
   ],
-  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAQQ;AAAc;AAAd;AACA;AAAY;AAAZ;AACA;;AAAc;AAAd;AACA;;AAAwB;AAAxB;AACA;;AAAqB;AAArB;AAGA;;AAAmB;AAAnB;AACA;;AAA0B;AAA1B;AAVR;;AAAA;;;AAAA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;;AAAA;;;;;;;;;;;;AAAA;;;;;;;;;AAYK;;;AAAA;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;AAAA;;AAAA;AAAA;AAAA;AASU;AAAA;;AAAA;AAAA;AAAA;AAAP;AAEmB;AAAA;AAA8B;;AAA9B;;AAAA;AAAA;AAAA;;AAKZ;;AAAA;AAAP;AASU;;AAAA;;AAAA;AAAA;;AAAA;AAIP;AAAA;AAAX;;;AAEkB;AAAA;;AAAA;AAAA;AACA;AAAA;AAAA;AAAA;AAgBC;;AAAA;;AAAA;AAGX;;AAAA;;;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;;;AAAA;;AAKA;AAAA;;AAAA;AAAA;;AAAA;AACA;AAAA;;AAAA;AAAA;AAAA;AAKA;AAAA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;AAKa;;AAAA;AACb;AACa;;AACF;;AAAA;;AAAA;;AAAA;;;;;AAFX;;;AAAA;;;AAAA;AApEH;AAAA;AAuCwC;;AAAA;AACtB;AAGX;AAAA;;AAAA;AACA;AAAA;AAAA;;;;AA6BP;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAUU;AAAA;AAAA;AAAA;AAAA;AAAP;AACA;AAAc;AAAd;AACA;AAAY;AAAZ;AACA;;AAAA;;AAAA;AACA;;AAAA;AAAA;AAGA;;AAAyB;AAAzB;AAGA;;AAA0B;AAA1B;AApBH;AAAA;AA4BU;AAAA;;AAAA;AAAA;AAAP;AAKgB;AAAA;;AAAA;AAAA;AACO;AAAA;;AAAA;AAAA;AAAhB;AAAP;AASe;AACF;AAPF;AAaK;AAAA;AAAA;AAAA;AAAP;AAAjB;AAAA;;AAAA;AAAA;;;AAEgB;;AAAA;AAAA;AAAA;AAAA;AAfG;AAeH;;AAAA;AAAA;AAdI;AAeJ;;AAAA;AAAA;AAGA;AAAA;AAAA;AAAA;AACA;AAAA;AAAA;AAAA;AACY;;AAAA;AAAJ;;AAAA;AAAA;AAGU;;AAAA;AAAZ;AAEM;AAAA;;AAAA;AAAhB;;AAAA;AAAA;;AACA;;AAAA;AAAA;;AAdK;AAAA;;;;;;AAiBQ;AAAA;;AAAA;AAAA;AAAjB;;AAAA;;AAAA;AACA;;AAAA;;AAAA;AAGA;AAAA;AAAA;AAAA;AAAe;AAAA;;AAAA;AAAA;AAAA;;AAAA;AAAf;AAAA;AAAA;AAAA;AACA;AAAA;AAAA;AAAA;AAAa;AAAA;;AAAA;AAAA;AAAA;;AAAA;AAAb;AAAA;AAAA;AAAA;AAIA;AAAA;;AAAA;AAAA;AAAyB;AAAzB;AAAA;;AAAA;;AAAA;AAC4B;AAAA;;AAAA;AAAA;AAAzB;AAAX;;;AAGY;;AAAyB;AAAzB;AAGA;;AAA0B;AAA1B;AA5DP;AAAA;AA8DA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAIU;AAAA;;AAAA;AAAA;AAA0B;AAA1B;AAAP;AAGO;AAAA;AAAA;AAAA;AAAA;AAAkB;AAAA;AAAA;AAAA;AAAlB;AAPV;AAAA;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAWG;AAAA;;AAAA;AAA0B;;AAA1B;AACA;AAAA;;AAAA;AAD0B;;AAC1B;AACA;;AAAmB;AAAnB;AAJH;AAAA",
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAQQ;AAAc;AAAd;AACA;;AAAY;AAAZ;AACA;;AAAc;AAAd;AACA;;AAAwB;AAAxB;AACA;;AAAqB;AAArB;AAGA;AAAmB;AAAnB;AACA;;AAA0B;AAA1B;AAVR;;AAAA;;;AAAA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;;AAAA;;;;;;;;;;;;AAAA;;;;;;;;;AAYK;;;AAAA;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;AAAA;;AAAA;AAAA;AAAA;AASU;AAAA;;AAAA;AAAA;AAAA;AAAP;AAEmB;AAAA;AAA8B;;AAA9B;;AAAA;AAAA;AAAA;;AAKZ;;AAAA;AAAP;AASU;;AAAA;;AAAA;AAAA;;AAAA;AAIP;AAAA;AAAX;;;AAEkB;AAAA;;AAAA;AAAA;AACA;AAAA;AAAA;AAAA;AAgBC;;AAAA;;AAAA;AAGX;;AAAA;;;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;;;AAAA;;AAKA;AAAA;;AAAA;AAAA;;AAAA;AACA;AAAA;;AAAA;AAAA;AAAA;AAKA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;AAKa;;AAAA;AACb;AACa;;AACF;;AAAA;;AAAA;;AAAA;;;;;AAFX;;;AAAA;;;AAAA;AApEH;AAAA;AAuCwC;;AAAA;AACtB;AAGX;AAAA;;AAAA;AACA;AAAA;AAAA;;;;AA6BP;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAUU;AAAA;AAAA;AAAA;AAAA;AAAP;AACA;AAAc;AAAd;AACA;;AAAY;AAAZ;AACA;;AAAA;;AAAA;AACA;;AAAA;AAAA;AAGA;;AAAyB;AAAzB;AAGA;;AAA0B;AAA1B;AApBH;AAAA;AA4BU;AAAA;;AAAA;AAAA;AAAP;AAKgB;AAAA;;AAAA;AAAA;AACO;AAAA;;AAAA;AAAA;AAAhB;AAAP;AASuB;;AAGoD;AAAW;AAAzD;;;AAAA;;AAAA;AAGL;;AAGI;AAGN;AAAA;AAAA;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAK8D;AAAA;AAAA;AAAA;AAAX;AAA9C;AAAA;;;AAE3B;AAAA;;AAAA;AACA;AAAA;;AAAA;AAGiB;AAAA;AAAA;AAAA;AAAjB;;AAAA;;AAAA;AACA;;AAAA;AAGA;AAAA;AAAA;AAAA;AAAe;AAAA;;AAAA;AAAA;AAAA;;AAAA;AAAf;AAAA;AAAA;AAAA;AACA;AAAA;;AAAA;AAAA;AAAa;AAAA;;AAAA;AAAA;AAAA;;AAAA;AAAb;AAAA;;AAAA;AAAA;AAIA;AAAA;;AAAA;AAAA;AAAyB;AAAzB;AAAA;;AAAA;;AAAA;AAC4B;AAAA;;AAAA;AAAA;AAAzB;AAAX;;;AAGY;;AAAyB;AAAzB;AAGA;;AAA0B;AAA1B;AA3DP;AAAA;AAgGA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAIU;AAAA;;AAAA;AAAA;AAA0B;AAA1B;AAAP;AAGO;AAAA;AAAA;AAAA;AAAA;AAAkB;AAAA;;AAAA;AAAA;AAAlB;AAPV;AAAA;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAWG;AAAA;;AAAA;AAA0B;;AAA1B;AACA;AAAA;;AAAA;AAD0B;;AAC1B;AACA;AAAmB;AAAnB;AAJH;AAAA;AA5CA;;;;;;AAKkB;AACF;;;AAMrB;;AAAA;;AAAA;AAAA;;;AAEgB;;AAAA;AAAA;AAAA;AAAA;AALG;AAKH;;AAAA;AAAA;AAJI;AAKJ;;AAAA;AAAA;AAAA;AAAA;;AAGA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;;AAAA;AACA;AAAA;;AAAA;AAAA;AACY;;AAAA;AAAJ;;AAAA;AAAA;AAAA;AAAA;;AAIT;AAAA;AAAf;;;AACsC;AAAZ;;AAAA;AAAA;AAKE;AAAA;;AAAA;AAAhB;;AAAA;AAAA;;AACA;;AAAA;AAAA;;AAnBK;;AAAA;AAAA;;;;;;AAeS;AAAA;;AAAA;;;;AAMlB;;AAAA;;AAAA;;AAAA;;AAAA",
   "op_pc_offset": 0,
   "pc_events": {
     "1": {
@@ -14,9 +14,9 @@
       "op": "intcblock 0 1 8 2"
     },
     "7": {
-      "op": "bytecblock \"inputs\" \"targets\" \"weight\" \"bias\" \"length_data\" \"ready_for_training\" \"epochs\" \"epochs_completed\" \"learning_rate\" 0x0000 \"training_complete\""
+      "op": "bytecblock \"inputs\" \"length_data\" \"targets\" \"weight\" \"bias\" \"ready_for_training\" \"epochs\" \"epochs_completed\" \"learning_rate\" 0x0000 \"training_complete\" 0x068101"
     },
-    "126": {
+    "130": {
       "op": "txn ApplicationID",
       "defined_out": [
         "tmp%0#0"
@@ -25,12 +25,12 @@
         "tmp%0#0"
       ]
     },
-    "128": {
+    "132": {
       "op": "bnz main_after_if_else@2",
       "stack_out": []
     },
-    "131": {
-      "op": "bytec_2 // \"weight\"",
+    "135": {
+      "op": "bytec_3 // \"weight\"",
       "defined_out": [
         "\"weight\""
       ],
@@ -38,7 +38,7 @@
         "\"weight\""
       ]
     },
-    "132": {
+    "136": {
       "op": "intc_0 // 0",
       "defined_out": [
         "\"weight\"",
@@ -49,12 +49,12 @@
         "0"
       ]
     },
-    "133": {
+    "137": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "134": {
-      "op": "bytec_3 // \"bias\"",
+    "138": {
+      "op": "bytec 4 // \"bias\"",
       "defined_out": [
         "\"bias\""
       ],
@@ -62,18 +62,18 @@
         "\"bias\""
       ]
     },
-    "135": {
+    "140": {
       "op": "intc_0 // 0",
       "stack_out": [
         "\"bias\"",
         "0"
       ]
     },
-    "136": {
+    "141": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "137": {
+    "142": {
       "op": "bytec 6 // \"epochs\"",
       "defined_out": [
         "\"epochs\""
@@ -82,18 +82,18 @@
         "\"epochs\""
       ]
     },
-    "139": {
+    "144": {
       "op": "intc_0 // 0",
       "stack_out": [
         "\"epochs\"",
         "0"
       ]
     },
-    "140": {
+    "145": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "141": {
+    "146": {
       "op": "bytec 7 // \"epochs_completed\"",
       "defined_out": [
         "\"epochs_completed\""
@@ -102,18 +102,18 @@
         "\"epochs_completed\""
       ]
     },
-    "143": {
+    "148": {
       "op": "intc_0 // 0",
       "stack_out": [
         "\"epochs_completed\"",
         "0"
       ]
     },
-    "144": {
+    "149": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "145": {
+    "150": {
       "op": "bytec 8 // \"learning_rate\"",
       "defined_out": [
         "\"learning_rate\""
@@ -122,50 +122,30 @@
         "\"learning_rate\""
       ]
     },
-    "147": {
+    "152": {
       "op": "intc_0 // 0",
       "stack_out": [
         "\"learning_rate\"",
         "0"
       ]
     },
-    "148": {
-      "op": "app_global_put",
-      "stack_out": []
-    },
-    "149": {
-      "op": "bytec 4 // \"length_data\"",
-      "defined_out": [
-        "\"length_data\""
-      ],
-      "stack_out": [
-        "\"length_data\""
-      ]
-    },
-    "151": {
-      "op": "intc_0 // 0",
-      "stack_out": [
-        "\"length_data\"",
-        "0"
-      ]
-    },
-    "152": {
-      "op": "app_global_put",
-      "stack_out": []
-    },
     "153": {
-      "op": "bytec 5 // \"ready_for_training\"",
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "154": {
+      "op": "bytec_1 // \"length_data\"",
       "defined_out": [
-        "\"ready_for_training\""
+        "\"length_data\""
       ],
       "stack_out": [
-        "\"ready_for_training\""
+        "\"length_data\""
       ]
     },
     "155": {
       "op": "intc_0 // 0",
       "stack_out": [
-        "\"ready_for_training\"",
+        "\"length_data\"",
         "0"
       ]
     },
@@ -174,6 +154,26 @@
       "stack_out": []
     },
     "157": {
+      "op": "bytec 5 // \"ready_for_training\"",
+      "defined_out": [
+        "\"ready_for_training\""
+      ],
+      "stack_out": [
+        "\"ready_for_training\""
+      ]
+    },
+    "159": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"ready_for_training\"",
+        "0"
+      ]
+    },
+    "160": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "161": {
       "block": "main_after_if_else@2",
       "stack_in": [],
       "op": "txn NumAppArgs",
@@ -184,11 +184,11 @@
         "tmp%0#1"
       ]
     },
-    "159": {
+    "163": {
       "op": "bz main___algopy_default_create@14",
       "stack_out": []
     },
-    "162": {
+    "166": {
       "op": "txn OnCompletion",
       "defined_out": [
         "tmp%2#0"
@@ -197,7 +197,7 @@
         "tmp%2#0"
       ]
     },
-    "164": {
+    "168": {
       "op": "!",
       "defined_out": [
         "tmp%3#0"
@@ -206,11 +206,11 @@
         "tmp%3#0"
       ]
     },
-    "165": {
+    "169": {
       "op": "assert",
       "stack_out": []
     },
-    "166": {
+    "170": {
       "op": "txn ApplicationID",
       "defined_out": [
         "tmp%4#0"
@@ -219,11 +219,11 @@
         "tmp%4#0"
       ]
     },
-    "168": {
+    "172": {
       "op": "assert",
       "stack_out": []
     },
-    "169": {
+    "173": {
       "op": "pushbytess 0x7316aaf2 0x7c856b38 0xf74fce96 0x7c6280d5 0x201a9123 // method \"add_inputs_and_targets(uint64[],uint64[],pay)void\", method \"prime_training(uint64,uint64)void\", method \"run_a_training_loop()void\", method \"predict(uint64)uint64\", method \"clear_data()void\"",
       "defined_out": [
         "Method(add_inputs_and_targets(uint64[],uint64[],pay)void)",
@@ -240,7 +240,7 @@
         "Method(clear_data()void)"
       ]
     },
-    "196": {
+    "200": {
       "op": "txna ApplicationArgs 0",
       "defined_out": [
         "Method(add_inputs_and_targets(uint64[],uint64[],pay)void)",
@@ -259,14 +259,14 @@
         "tmp%6#0"
       ]
     },
-    "199": {
+    "203": {
       "op": "match add_inputs_and_targets prime_training run_a_training_loop predict clear_data",
       "stack_out": []
     },
-    "211": {
+    "215": {
       "op": "err"
     },
-    "212": {
+    "216": {
       "block": "main___algopy_default_create@14",
       "stack_in": [],
       "op": "txn OnCompletion",
@@ -277,7 +277,7 @@
         "tmp%7#0"
       ]
     },
-    "214": {
+    "218": {
       "op": "!",
       "defined_out": [
         "tmp%8#0"
@@ -286,7 +286,7 @@
         "tmp%8#0"
       ]
     },
-    "215": {
+    "219": {
       "op": "txn ApplicationID",
       "defined_out": [
         "tmp%8#0",
@@ -297,7 +297,7 @@
         "tmp%9#0"
       ]
     },
-    "217": {
+    "221": {
       "op": "!",
       "defined_out": [
         "tmp%10#0",
@@ -308,7 +308,7 @@
         "tmp%10#0"
       ]
     },
-    "218": {
+    "222": {
       "op": "&&",
       "defined_out": [
         "tmp%11#0"
@@ -317,19 +317,19 @@
         "tmp%11#0"
       ]
     },
-    "219": {
+    "223": {
       "op": "return",
       "defined_out": [],
       "stack_out": []
     },
-    "220": {
+    "224": {
       "subroutine": "linear_regression_contract.LinearRegressionModel.add_inputs_and_targets[routing]",
       "params": {},
       "block": "add_inputs_and_targets",
       "stack_in": [],
       "op": "txna ApplicationArgs 1"
     },
-    "223": {
+    "227": {
       "op": "dupn 2",
       "defined_out": [
         "parts_x_inputs#0",
@@ -341,7 +341,7 @@
         "parts_x_inputs#0 (copy)"
       ]
     },
-    "225": {
+    "229": {
       "op": "intc_0 // 0",
       "stack_out": [
         "parts_x_inputs#0",
@@ -350,7 +350,7 @@
         "0"
       ]
     },
-    "226": {
+    "230": {
       "error": "invalid array length header",
       "op": "extract_uint16 // on error: invalid array length header",
       "defined_out": [
@@ -363,7 +363,7 @@
         "parts_length#0"
       ]
     },
-    "227": {
+    "231": {
       "op": "dup",
       "stack_out": [
         "parts_x_inputs#0",
@@ -372,7 +372,7 @@
         "parts_length#0"
       ]
     },
-    "228": {
+    "232": {
       "op": "cover 2",
       "defined_out": [
         "parts_length#0",
@@ -385,7 +385,7 @@
         "parts_length#0"
       ]
     },
-    "230": {
+    "234": {
       "op": "dup",
       "defined_out": [
         "parts_length#0",
@@ -400,7 +400,7 @@
         "parts_length#0 (copy)"
       ]
     },
-    "231": {
+    "235": {
       "op": "intc_2 // 8",
       "defined_out": [
         "8",
@@ -417,7 +417,7 @@
         "8"
       ]
     },
-    "232": {
+    "236": {
       "op": "*",
       "defined_out": [
         "mul%0#0",
@@ -432,7 +432,7 @@
         "mul%0#0"
       ]
     },
-    "233": {
+    "237": {
       "op": "intc_3 // 2",
       "defined_out": [
         "2",
@@ -449,7 +449,7 @@
         "2"
       ]
     },
-    "234": {
+    "238": {
       "op": "+",
       "defined_out": [
         "add%0#0",
@@ -464,7 +464,7 @@
         "add%0#0"
       ]
     },
-    "235": {
+    "239": {
       "op": "uncover 2",
       "stack_out": [
         "parts_x_inputs#0",
@@ -474,7 +474,7 @@
         "parts_x_inputs#0"
       ]
     },
-    "237": {
+    "241": {
       "op": "len",
       "defined_out": [
         "add%0#0",
@@ -490,7 +490,7 @@
         "size_to_add_to_box#0"
       ]
     },
-    "238": {
+    "242": {
       "op": "dup",
       "stack_out": [
         "parts_x_inputs#0",
@@ -501,7 +501,7 @@
         "size_to_add_to_box#0"
       ]
     },
-    "239": {
+    "243": {
       "op": "cover 3",
       "defined_out": [
         "add%0#0",
@@ -518,7 +518,7 @@
         "size_to_add_to_box#0"
       ]
     },
-    "241": {
+    "245": {
       "op": "==",
       "defined_out": [
         "eq%0#0",
@@ -534,7 +534,7 @@
         "eq%0#0"
       ]
     },
-    "242": {
+    "246": {
       "error": "invalid number of bytes for arc4.dynamic_array<arc4.uint64>",
       "op": "assert // invalid number of bytes for arc4.dynamic_array<arc4.uint64>",
       "stack_out": [
@@ -544,7 +544,7 @@
         "parts_length#0"
       ]
     },
-    "243": {
+    "247": {
       "op": "txna ApplicationArgs 2",
       "defined_out": [
         "parts_length#0",
@@ -560,7 +560,7 @@
         "parts_y_targets#0"
       ]
     },
-    "246": {
+    "250": {
       "op": "dup",
       "defined_out": [
         "parts_length#0",
@@ -578,7 +578,7 @@
         "parts_y_targets#0 (copy)"
       ]
     },
-    "247": {
+    "251": {
       "op": "intc_0 // 0",
       "stack_out": [
         "parts_x_inputs#0",
@@ -590,7 +590,7 @@
         "0"
       ]
     },
-    "248": {
+    "252": {
       "error": "invalid array length header",
       "op": "extract_uint16 // on error: invalid array length header",
       "defined_out": [
@@ -609,7 +609,7 @@
         "aggregate%array_length%1#0"
       ]
     },
-    "249": {
+    "253": {
       "op": "dup",
       "defined_out": [
         "aggregate%array_length%1#0",
@@ -629,7 +629,7 @@
         "aggregate%array_length%1#0 (copy)"
       ]
     },
-    "250": {
+    "254": {
       "op": "intc_2 // 8",
       "stack_out": [
         "parts_x_inputs#0",
@@ -642,7 +642,7 @@
         "8"
       ]
     },
-    "251": {
+    "255": {
       "op": "*",
       "defined_out": [
         "aggregate%array_length%1#0",
@@ -662,7 +662,7 @@
         "mul%1#0"
       ]
     },
-    "252": {
+    "256": {
       "op": "intc_3 // 2",
       "stack_out": [
         "parts_x_inputs#0",
@@ -675,7 +675,7 @@
         "2"
       ]
     },
-    "253": {
+    "257": {
       "op": "+",
       "defined_out": [
         "add%1#0",
@@ -695,7 +695,7 @@
         "add%1#0"
       ]
     },
-    "254": {
+    "258": {
       "op": "uncover 2",
       "stack_out": [
         "parts_x_inputs#0",
@@ -707,7 +707,7 @@
         "parts_y_targets#0"
       ]
     },
-    "256": {
+    "260": {
       "op": "len",
       "defined_out": [
         "add%1#0",
@@ -727,7 +727,7 @@
         "len%1#0"
       ]
     },
-    "257": {
+    "261": {
       "op": "==",
       "defined_out": [
         "aggregate%array_length%1#0",
@@ -745,7 +745,7 @@
         "eq%1#0"
       ]
     },
-    "258": {
+    "262": {
       "error": "invalid number of bytes for arc4.dynamic_array<arc4.uint64>",
       "op": "assert // invalid number of bytes for arc4.dynamic_array<arc4.uint64>",
       "stack_out": [
@@ -756,7 +756,7 @@
         "aggregate%array_length%1#0"
       ]
     },
-    "259": {
+    "263": {
       "op": "txn GroupIndex",
       "defined_out": [
         "aggregate%array_length%1#0",
@@ -774,7 +774,7 @@
         "tmp%2#0"
       ]
     },
-    "261": {
+    "265": {
       "op": "intc_1 // 1",
       "defined_out": [
         "1",
@@ -794,7 +794,7 @@
         "1"
       ]
     },
-    "262": {
+    "266": {
       "op": "-",
       "defined_out": [
         "aggregate%array_length%1#0",
@@ -812,7 +812,7 @@
         "mbr_payment#0"
       ]
     },
-    "263": {
+    "267": {
       "op": "dup",
       "stack_out": [
         "parts_x_inputs#0",
@@ -824,7 +824,7 @@
         "mbr_payment#0"
       ]
     },
-    "264": {
+    "268": {
       "op": "cover 4",
       "defined_out": [
         "aggregate%array_length%1#0",
@@ -843,7 +843,7 @@
         "mbr_payment#0"
       ]
     },
-    "266": {
+    "270": {
       "op": "gtxns TypeEnum",
       "defined_out": [
         "aggregate%array_length%1#0",
@@ -863,7 +863,7 @@
         "gtxn_type%0#0"
       ]
     },
-    "268": {
+    "272": {
       "op": "intc_1 // pay",
       "defined_out": [
         "aggregate%array_length%1#0",
@@ -885,7 +885,7 @@
         "pay"
       ]
     },
-    "269": {
+    "273": {
       "op": "==",
       "defined_out": [
         "aggregate%array_length%1#0",
@@ -905,7 +905,7 @@
         "gtxn_type_matches%0#0"
       ]
     },
-    "270": {
+    "274": {
       "error": "transaction type is pay",
       "op": "assert // transaction type is pay",
       "stack_out": [
@@ -917,7 +917,7 @@
         "aggregate%array_length%1#0"
       ]
     },
-    "271": {
+    "275": {
       "op": "intc_0 // 0",
       "stack_out": [
         "parts_x_inputs#0",
@@ -929,7 +929,7 @@
         "0"
       ]
     },
-    "272": {
+    "276": {
       "op": "bytec 5 // \"ready_for_training\"",
       "defined_out": [
         "\"ready_for_training\"",
@@ -951,7 +951,7 @@
         "\"ready_for_training\""
       ]
     },
-    "274": {
+    "278": {
       "op": "app_global_get_ex",
       "defined_out": [
         "aggregate%array_length%1#0",
@@ -973,7 +973,7 @@
         "maybe_exists%0#0"
       ]
     },
-    "275": {
+    "279": {
       "error": "check self.ready_for_training exists",
       "op": "assert // check self.ready_for_training exists",
       "stack_out": [
@@ -986,7 +986,7 @@
         "maybe_value%0#0"
       ]
     },
-    "276": {
+    "280": {
       "op": "!",
       "defined_out": [
         "aggregate%array_length%1#0",
@@ -1006,7 +1006,7 @@
         "tmp%0#1"
       ]
     },
-    "277": {
+    "281": {
       "op": "assert",
       "stack_out": [
         "parts_x_inputs#0",
@@ -1017,7 +1017,7 @@
         "aggregate%array_length%1#0"
       ]
     },
-    "278": {
+    "282": {
       "op": "bytec_0 // \"inputs\"",
       "defined_out": [
         "\"inputs\"",
@@ -1037,7 +1037,7 @@
         "\"inputs\""
       ]
     },
-    "279": {
+    "283": {
       "op": "box_get",
       "defined_out": [
         "aggregate%array_length%1#0",
@@ -1059,7 +1059,7 @@
         "maybe_exists%1#0"
       ]
     },
-    "280": {
+    "284": {
       "op": "bytec 9 // 0x0000",
       "defined_out": [
         "0x0000",
@@ -1083,7 +1083,7 @@
         "0x0000"
       ]
     },
-    "282": {
+    "286": {
       "op": "cover 2",
       "stack_out": [
         "parts_x_inputs#0",
@@ -1097,7 +1097,7 @@
         "maybe_exists%1#0"
       ]
     },
-    "284": {
+    "288": {
       "op": "select",
       "defined_out": [
         "aggregate%array_length%1#0",
@@ -1117,7 +1117,7 @@
         "current_x_inputs#0"
       ]
     },
-    "285": {
+    "289": {
       "op": "dup",
       "stack_out": [
         "parts_x_inputs#0",
@@ -1130,7 +1130,7 @@
         "current_x_inputs#0"
       ]
     },
-    "286": {
+    "290": {
       "op": "cover 4",
       "defined_out": [
         "aggregate%array_length%1#0",
@@ -1151,7 +1151,7 @@
         "current_x_inputs#0"
       ]
     },
-    "288": {
+    "292": {
       "op": "cover 2",
       "stack_out": [
         "parts_x_inputs#0",
@@ -1164,7 +1164,7 @@
         "aggregate%array_length%1#0"
       ]
     },
-    "290": {
+    "294": {
       "op": "==",
       "defined_out": [
         "current_x_inputs#0",
@@ -1184,7 +1184,7 @@
         "tmp%3#0"
       ]
     },
-    "291": {
+    "295": {
       "op": "assert",
       "stack_out": [
         "parts_x_inputs#0",
@@ -1195,7 +1195,7 @@
         "current_x_inputs#0"
       ]
     },
-    "292": {
+    "296": {
       "op": "global CurrentApplicationAddress",
       "defined_out": [
         "current_x_inputs#0",
@@ -1215,7 +1215,7 @@
         "tmp%6#0"
       ]
     },
-    "294": {
+    "298": {
       "op": "acct_params_get AcctMinBalance",
       "defined_out": [
         "check%0#0",
@@ -1237,7 +1237,7 @@
         "check%0#0"
       ]
     },
-    "296": {
+    "300": {
       "op": "swap",
       "stack_out": [
         "parts_x_inputs#0",
@@ -1250,7 +1250,7 @@
         "pre_mbr#0"
       ]
     },
-    "297": {
+    "301": {
       "op": "cover 3",
       "stack_out": [
         "parts_x_inputs#0",
@@ -1263,7 +1263,7 @@
         "check%0#0"
       ]
     },
-    "299": {
+    "303": {
       "error": "account funded",
       "op": "assert // account funded",
       "stack_out": [
@@ -1276,7 +1276,7 @@
         "current_x_inputs#0"
       ]
     },
-    "300": {
+    "304": {
       "op": "intc_0 // 0",
       "stack_out": [
         "parts_x_inputs#0",
@@ -1289,7 +1289,7 @@
         "0"
       ]
     },
-    "301": {
+    "305": {
       "error": "invalid array length header",
       "op": "extract_uint16 // on error: invalid array length header",
       "defined_out": [
@@ -1311,7 +1311,7 @@
         "aggregate%array_length%5#0"
       ]
     },
-    "302": {
+    "306": {
       "op": "bnz add_inputs_and_targets_else_body@3",
       "stack_out": [
         "parts_x_inputs#0",
@@ -1322,7 +1322,7 @@
         "size_to_add_to_box#0"
       ]
     },
-    "305": {
+    "309": {
       "op": "bytec_0 // \"inputs\"",
       "stack_out": [
         "parts_x_inputs#0",
@@ -1334,7 +1334,7 @@
         "\"inputs\""
       ]
     },
-    "306": {
+    "310": {
       "op": "dig 1",
       "defined_out": [
         "\"inputs\"",
@@ -1357,7 +1357,7 @@
         "size_to_add_to_box#0 (copy)"
       ]
     },
-    "308": {
+    "312": {
       "op": "box_create",
       "defined_out": [
         "current_x_inputs#0",
@@ -1378,7 +1378,7 @@
         "x_1#0"
       ]
     },
-    "309": {
+    "313": {
       "op": "pop",
       "stack_out": [
         "parts_x_inputs#0",
@@ -1389,8 +1389,8 @@
         "size_to_add_to_box#0"
       ]
     },
-    "310": {
-      "op": "bytec_1 // \"targets\"",
+    "314": {
+      "op": "bytec_2 // \"targets\"",
       "defined_out": [
         "\"targets\"",
         "current_x_inputs#0",
@@ -1410,7 +1410,7 @@
         "\"targets\""
       ]
     },
-    "311": {
+    "315": {
       "op": "swap",
       "stack_out": [
         "parts_x_inputs#0",
@@ -1422,7 +1422,7 @@
         "size_to_add_to_box#0"
       ]
     },
-    "312": {
+    "316": {
       "op": "box_create",
       "defined_out": [
         "current_x_inputs#0",
@@ -1441,7 +1441,7 @@
         "x_2#0"
       ]
     },
-    "313": {
+    "317": {
       "op": "pop",
       "stack_out": [
         "parts_x_inputs#0",
@@ -1451,7 +1451,7 @@
         "pre_mbr#0"
       ]
     },
-    "314": {
+    "318": {
       "block": "add_inputs_and_targets_after_if_else@4",
       "stack_in": [
         "parts_x_inputs#0",
@@ -1473,7 +1473,7 @@
         "tmp%13#0"
       ]
     },
-    "316": {
+    "320": {
       "op": "acct_params_get AcctMinBalance",
       "defined_out": [
         "check%1#0",
@@ -1489,7 +1489,7 @@
         "check%1#0"
       ]
     },
-    "318": {
+    "322": {
       "error": "account funded",
       "op": "assert // account funded",
       "stack_out": [
@@ -1501,7 +1501,7 @@
         "post_mbr#0"
       ]
     },
-    "319": {
+    "323": {
       "op": "dig 5",
       "defined_out": [
         "parts_x_inputs#0",
@@ -1517,7 +1517,7 @@
         "parts_x_inputs#0"
       ]
     },
-    "321": {
+    "325": {
       "op": "extract 2 0",
       "defined_out": [
         "extract_to_end%0#0",
@@ -1534,7 +1534,7 @@
         "extract_to_end%0#0"
       ]
     },
-    "324": {
+    "328": {
       "op": "dig 3",
       "defined_out": [
         "current_x_inputs#0",
@@ -1553,7 +1553,7 @@
         "current_x_inputs#0"
       ]
     },
-    "326": {
+    "330": {
       "op": "swap",
       "stack_out": [
         "parts_x_inputs#0",
@@ -1566,7 +1566,7 @@
         "extract_to_end%0#0"
       ]
     },
-    "327": {
+    "331": {
       "error": "max array length exceeded",
       "op": "concat // on error: max array length exceeded",
       "defined_out": [
@@ -1585,7 +1585,7 @@
         "concat%0#0"
       ]
     },
-    "328": {
+    "332": {
       "op": "dup",
       "defined_out": [
         "concat%0#0",
@@ -1605,7 +1605,7 @@
         "concat%0#0 (copy)"
       ]
     },
-    "329": {
+    "333": {
       "op": "extract 2 0",
       "defined_out": [
         "concat%0#0",
@@ -1625,7 +1625,7 @@
         "extract_to_end%1#0"
       ]
     },
-    "332": {
+    "336": {
       "op": "len",
       "defined_out": [
         "concat%0#0",
@@ -1645,7 +1645,7 @@
         "len%0#1"
       ]
     },
-    "333": {
+    "337": {
       "op": "intc_2 // 8",
       "defined_out": [
         "8",
@@ -1667,7 +1667,7 @@
         "8"
       ]
     },
-    "334": {
+    "338": {
       "op": "/",
       "defined_out": [
         "concat%0#0",
@@ -1687,7 +1687,7 @@
         "div_floor%0#0"
       ]
     },
-    "335": {
+    "339": {
       "op": "itob",
       "defined_out": [
         "as_bytes%0#0",
@@ -1707,7 +1707,7 @@
         "as_bytes%0#0"
       ]
     },
-    "336": {
+    "340": {
       "op": "extract 6 2",
       "defined_out": [
         "as_u16_bytes%0#0",
@@ -1727,7 +1727,7 @@
         "as_u16_bytes%0#0"
       ]
     },
-    "339": {
+    "343": {
       "op": "replace2 0",
       "stack_out": [
         "parts_x_inputs#0",
@@ -1739,7 +1739,7 @@
         "current_x_inputs#0"
       ]
     },
-    "341": {
+    "345": {
       "op": "bytec_0 // \"inputs\"",
       "defined_out": [
         "\"inputs\"",
@@ -1758,7 +1758,7 @@
         "\"inputs\""
       ]
     },
-    "342": {
+    "346": {
       "op": "box_del",
       "defined_out": [
         "current_x_inputs#0",
@@ -1777,7 +1777,7 @@
         "{box_del}"
       ]
     },
-    "343": {
+    "347": {
       "op": "pop",
       "stack_out": [
         "parts_x_inputs#0",
@@ -1789,7 +1789,7 @@
         "current_x_inputs#0"
       ]
     },
-    "344": {
+    "348": {
       "op": "bytec_0 // \"inputs\"",
       "stack_out": [
         "parts_x_inputs#0",
@@ -1802,7 +1802,7 @@
         "\"inputs\""
       ]
     },
-    "345": {
+    "349": {
       "op": "dig 1",
       "defined_out": [
         "\"inputs\"",
@@ -1823,7 +1823,7 @@
         "current_x_inputs#0 (copy)"
       ]
     },
-    "347": {
+    "351": {
       "op": "box_put",
       "stack_out": [
         "parts_x_inputs#0",
@@ -1835,8 +1835,8 @@
         "current_x_inputs#0"
       ]
     },
-    "348": {
-      "op": "bytec_1 // \"targets\"",
+    "352": {
+      "op": "bytec_2 // \"targets\"",
       "defined_out": [
         "\"targets\"",
         "current_x_inputs#0",
@@ -1854,7 +1854,7 @@
         "\"targets\""
       ]
     },
-    "349": {
+    "353": {
       "op": "box_del",
       "stack_out": [
         "parts_x_inputs#0",
@@ -1867,7 +1867,7 @@
         "{box_del}"
       ]
     },
-    "350": {
+    "354": {
       "op": "pop",
       "stack_out": [
         "parts_x_inputs#0",
@@ -1879,8 +1879,8 @@
         "current_x_inputs#0"
       ]
     },
-    "351": {
-      "op": "bytec_1 // \"targets\"",
+    "355": {
+      "op": "bytec_2 // \"targets\"",
       "stack_out": [
         "parts_x_inputs#0",
         "parts_length#0",
@@ -1892,7 +1892,7 @@
         "\"targets\""
       ]
     },
-    "352": {
+    "356": {
       "op": "swap",
       "stack_out": [
         "parts_x_inputs#0",
@@ -1905,7 +1905,7 @@
         "current_x_inputs#0"
       ]
     },
-    "353": {
+    "357": {
       "op": "box_put",
       "stack_out": [
         "parts_x_inputs#0",
@@ -1916,7 +1916,7 @@
         "post_mbr#0"
       ]
     },
-    "354": {
+    "358": {
       "op": "intc_0 // 0",
       "defined_out": [
         "0",
@@ -1934,8 +1934,8 @@
         "0"
       ]
     },
-    "355": {
-      "op": "bytec 4 // \"length_data\"",
+    "359": {
+      "op": "bytec_1 // \"length_data\"",
       "defined_out": [
         "\"length_data\"",
         "0",
@@ -1954,7 +1954,7 @@
         "\"length_data\""
       ]
     },
-    "357": {
+    "360": {
       "op": "app_global_get_ex",
       "defined_out": [
         "current_x_inputs#0",
@@ -1974,7 +1974,7 @@
         "maybe_exists%3#0"
       ]
     },
-    "358": {
+    "361": {
       "error": "check self.length_data exists",
       "op": "assert // check self.length_data exists",
       "stack_out": [
@@ -1987,7 +1987,7 @@
         "maybe_value%3#0"
       ]
     },
-    "359": {
+    "362": {
       "op": "dig 5",
       "defined_out": [
         "current_x_inputs#0",
@@ -2007,7 +2007,7 @@
         "parts_length#0"
       ]
     },
-    "361": {
+    "364": {
       "op": "+",
       "defined_out": [
         "current_x_inputs#0",
@@ -2026,8 +2026,8 @@
         "tmp%14#0"
       ]
     },
-    "362": {
-      "op": "bytec 4 // \"length_data\"",
+    "365": {
+      "op": "bytec_1 // \"length_data\"",
       "stack_out": [
         "parts_x_inputs#0",
         "parts_length#0",
@@ -2039,7 +2039,7 @@
         "\"length_data\""
       ]
     },
-    "364": {
+    "366": {
       "op": "swap",
       "stack_out": [
         "parts_x_inputs#0",
@@ -2052,7 +2052,7 @@
         "tmp%14#0"
       ]
     },
-    "365": {
+    "367": {
       "op": "app_global_put",
       "stack_out": [
         "parts_x_inputs#0",
@@ -2063,7 +2063,7 @@
         "post_mbr#0"
       ]
     },
-    "366": {
+    "368": {
       "op": "dig 1",
       "defined_out": [
         "current_x_inputs#0",
@@ -2082,7 +2082,7 @@
         "pre_mbr#0"
       ]
     },
-    "368": {
+    "370": {
       "op": "-",
       "defined_out": [
         "current_x_inputs#0",
@@ -2100,10 +2100,10 @@
         "mbr_needed#0"
       ]
     },
-    "369": {
+    "371": {
       "op": "itxn_begin"
     },
-    "370": {
+    "372": {
       "op": "txn Sender",
       "defined_out": [
         "current_x_inputs#0",
@@ -2123,7 +2123,7 @@
         "inner_txn_params%0%%param_Receiver_idx_0#0"
       ]
     },
-    "372": {
+    "374": {
       "op": "dig 4",
       "defined_out": [
         "current_x_inputs#0",
@@ -2145,7 +2145,7 @@
         "mbr_payment#0"
       ]
     },
-    "374": {
+    "376": {
       "op": "gtxns Amount",
       "defined_out": [
         "current_x_inputs#0",
@@ -2168,7 +2168,7 @@
         "tmp%16#0"
       ]
     },
-    "376": {
+    "378": {
       "op": "uncover 2",
       "stack_out": [
         "parts_x_inputs#0",
@@ -2181,7 +2181,7 @@
         "mbr_needed#0"
       ]
     },
-    "378": {
+    "380": {
       "op": "-",
       "defined_out": [
         "current_x_inputs#0",
@@ -2202,7 +2202,7 @@
         "inner_txn_params%0%%param_Amount_idx_0#0"
       ]
     },
-    "379": {
+    "381": {
       "op": "itxn_field Amount",
       "stack_out": [
         "parts_x_inputs#0",
@@ -2213,7 +2213,7 @@
         "inner_txn_params%0%%param_Receiver_idx_0#0"
       ]
     },
-    "381": {
+    "383": {
       "op": "itxn_field Receiver",
       "stack_out": [
         "parts_x_inputs#0",
@@ -2223,7 +2223,7 @@
         "pre_mbr#0"
       ]
     },
-    "383": {
+    "385": {
       "op": "intc_1 // pay",
       "defined_out": [
         "current_x_inputs#0",
@@ -2242,7 +2242,7 @@
         "pay"
       ]
     },
-    "384": {
+    "386": {
       "op": "itxn_field TypeEnum",
       "stack_out": [
         "parts_x_inputs#0",
@@ -2252,7 +2252,7 @@
         "pre_mbr#0"
       ]
     },
-    "386": {
+    "388": {
       "op": "intc_0 // 0",
       "stack_out": [
         "parts_x_inputs#0",
@@ -2263,7 +2263,7 @@
         "0"
       ]
     },
-    "387": {
+    "389": {
       "op": "itxn_field Fee",
       "stack_out": [
         "parts_x_inputs#0",
@@ -2273,10 +2273,10 @@
         "pre_mbr#0"
       ]
     },
-    "389": {
+    "391": {
       "op": "itxn_submit"
     },
-    "390": {
+    "392": {
       "op": "intc_1 // 1",
       "defined_out": [
         "1",
@@ -2295,7 +2295,7 @@
         "1"
       ]
     },
-    "391": {
+    "393": {
       "op": "return",
       "stack_out": [
         "parts_x_inputs#0",
@@ -2305,7 +2305,7 @@
         "pre_mbr#0"
       ]
     },
-    "392": {
+    "394": {
       "block": "add_inputs_and_targets_else_body@3",
       "stack_in": [
         "parts_x_inputs#0",
@@ -2329,7 +2329,7 @@
         "current_x_inputs#0"
       ]
     },
-    "394": {
+    "396": {
       "op": "len",
       "defined_out": [
         "current_byte_size_of_box_bytes#0",
@@ -2346,7 +2346,7 @@
         "current_byte_size_of_box_bytes#0"
       ]
     },
-    "395": {
+    "397": {
       "op": "+",
       "defined_out": [
         "current_x_inputs#0",
@@ -2361,7 +2361,7 @@
         "new_size#0"
       ]
     },
-    "396": {
+    "398": {
       "op": "bytec_0 // \"inputs\"",
       "defined_out": [
         "\"inputs\"",
@@ -2378,7 +2378,7 @@
         "\"inputs\""
       ]
     },
-    "397": {
+    "399": {
       "op": "dig 1",
       "defined_out": [
         "\"inputs\"",
@@ -2397,7 +2397,7 @@
         "new_size#0 (copy)"
       ]
     },
-    "399": {
+    "401": {
       "op": "box_resize",
       "stack_out": [
         "parts_x_inputs#0",
@@ -2408,8 +2408,8 @@
         "new_size#0"
       ]
     },
-    "400": {
-      "op": "bytec_1 // \"targets\"",
+    "402": {
+      "op": "bytec_2 // \"targets\"",
       "defined_out": [
         "\"targets\"",
         "current_x_inputs#0",
@@ -2425,7 +2425,7 @@
         "\"targets\""
       ]
     },
-    "401": {
+    "403": {
       "op": "swap",
       "stack_out": [
         "parts_x_inputs#0",
@@ -2437,7 +2437,7 @@
         "new_size#0"
       ]
     },
-    "402": {
+    "404": {
       "op": "box_resize",
       "stack_out": [
         "parts_x_inputs#0",
@@ -2447,10 +2447,10 @@
         "pre_mbr#0"
       ]
     },
-    "403": {
+    "405": {
       "op": "b add_inputs_and_targets_after_if_else@4"
     },
-    "406": {
+    "408": {
       "subroutine": "linear_regression_contract.LinearRegressionModel.prime_training[routing]",
       "params": {},
       "block": "prime_training",
@@ -2463,7 +2463,7 @@
         "tmp%0#0"
       ]
     },
-    "409": {
+    "411": {
       "op": "dup",
       "defined_out": [
         "tmp%0#0",
@@ -2474,7 +2474,7 @@
         "tmp%0#0 (copy)"
       ]
     },
-    "410": {
+    "412": {
       "op": "len",
       "defined_out": [
         "len%0#0",
@@ -2485,7 +2485,7 @@
         "len%0#0"
       ]
     },
-    "411": {
+    "413": {
       "op": "intc_2 // 8",
       "defined_out": [
         "8",
@@ -2498,7 +2498,7 @@
         "8"
       ]
     },
-    "412": {
+    "414": {
       "op": "==",
       "defined_out": [
         "eq%0#0",
@@ -2509,14 +2509,14 @@
         "eq%0#0"
       ]
     },
-    "413": {
+    "415": {
       "error": "invalid number of bytes for arc4.uint64",
       "op": "assert // invalid number of bytes for arc4.uint64",
       "stack_out": [
         "tmp%0#0"
       ]
     },
-    "414": {
+    "416": {
       "op": "btoi",
       "defined_out": [
         "learning_rate#0"
@@ -2525,7 +2525,7 @@
         "learning_rate#0"
       ]
     },
-    "415": {
+    "417": {
       "op": "txna ApplicationArgs 2",
       "defined_out": [
         "learning_rate#0",
@@ -2536,7 +2536,7 @@
         "tmp%2#0"
       ]
     },
-    "418": {
+    "420": {
       "op": "dup",
       "defined_out": [
         "learning_rate#0",
@@ -2549,7 +2549,7 @@
         "tmp%2#0 (copy)"
       ]
     },
-    "419": {
+    "421": {
       "op": "len",
       "defined_out": [
         "learning_rate#0",
@@ -2562,7 +2562,7 @@
         "len%1#0"
       ]
     },
-    "420": {
+    "422": {
       "op": "intc_2 // 8",
       "stack_out": [
         "learning_rate#0",
@@ -2571,7 +2571,7 @@
         "8"
       ]
     },
-    "421": {
+    "423": {
       "op": "==",
       "defined_out": [
         "eq%1#0",
@@ -2584,7 +2584,7 @@
         "eq%1#0"
       ]
     },
-    "422": {
+    "424": {
       "error": "invalid number of bytes for arc4.uint64",
       "op": "assert // invalid number of bytes for arc4.uint64",
       "stack_out": [
@@ -2592,7 +2592,7 @@
         "tmp%2#0"
       ]
     },
-    "423": {
+    "425": {
       "op": "btoi",
       "defined_out": [
         "epochs#0",
@@ -2603,7 +2603,7 @@
         "epochs#0"
       ]
     },
-    "424": {
+    "426": {
       "op": "bytec_0 // \"inputs\"",
       "defined_out": [
         "\"inputs\"",
@@ -2616,7 +2616,7 @@
         "\"inputs\""
       ]
     },
-    "425": {
+    "427": {
       "op": "intc_0 // 0",
       "defined_out": [
         "\"inputs\"",
@@ -2631,7 +2631,7 @@
         "0"
       ]
     },
-    "426": {
+    "428": {
       "op": "intc_3 // 2",
       "defined_out": [
         "\"inputs\"",
@@ -2648,7 +2648,7 @@
         "2"
       ]
     },
-    "427": {
+    "429": {
       "op": "box_extract",
       "defined_out": [
         "box%box_extract%0#0",
@@ -2661,7 +2661,7 @@
         "box%box_extract%0#0"
       ]
     },
-    "428": {
+    "430": {
       "op": "btoi",
       "defined_out": [
         "box%array_length%0#0",
@@ -2674,7 +2674,7 @@
         "box%array_length%0#0"
       ]
     },
-    "429": {
+    "431": {
       "error": "Inputs & Targets Data has not been set \u2014 call 'add_inputs_and_targets' method first to set training data",
       "op": "assert // Inputs & Targets Data has not been set \u2014 call 'add_inputs_and_targets' method first to set training data",
       "stack_out": [
@@ -2682,8 +2682,8 @@
         "epochs#0"
       ]
     },
-    "430": {
-      "op": "bytec_2 // \"weight\"",
+    "432": {
+      "op": "bytec_3 // \"weight\"",
       "defined_out": [
         "\"weight\"",
         "epochs#0",
@@ -2695,7 +2695,7 @@
         "\"weight\""
       ]
     },
-    "431": {
+    "433": {
       "op": "intc_0 // 0",
       "stack_out": [
         "learning_rate#0",
@@ -2704,15 +2704,15 @@
         "0"
       ]
     },
-    "432": {
+    "434": {
       "op": "app_global_put",
       "stack_out": [
         "learning_rate#0",
         "epochs#0"
       ]
     },
-    "433": {
-      "op": "bytec_3 // \"bias\"",
+    "435": {
+      "op": "bytec 4 // \"bias\"",
       "defined_out": [
         "\"bias\"",
         "epochs#0",
@@ -2724,7 +2724,7 @@
         "\"bias\""
       ]
     },
-    "434": {
+    "437": {
       "op": "intc_0 // 0",
       "stack_out": [
         "learning_rate#0",
@@ -2733,14 +2733,14 @@
         "0"
       ]
     },
-    "435": {
+    "438": {
       "op": "app_global_put",
       "stack_out": [
         "learning_rate#0",
         "epochs#0"
       ]
     },
-    "436": {
+    "439": {
       "op": "bytec 8 // \"learning_rate\"",
       "defined_out": [
         "\"learning_rate\"",
@@ -2753,7 +2753,7 @@
         "\"learning_rate\""
       ]
     },
-    "438": {
+    "441": {
       "op": "uncover 2",
       "stack_out": [
         "epochs#0",
@@ -2761,13 +2761,13 @@
         "learning_rate#0"
       ]
     },
-    "440": {
+    "443": {
       "op": "app_global_put",
       "stack_out": [
         "epochs#0"
       ]
     },
-    "441": {
+    "444": {
       "op": "bytec 6 // \"epochs\"",
       "defined_out": [
         "\"epochs\"",
@@ -2778,18 +2778,18 @@
         "\"epochs\""
       ]
     },
-    "443": {
+    "446": {
       "op": "swap",
       "stack_out": [
         "\"epochs\"",
         "epochs#0"
       ]
     },
-    "444": {
+    "447": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "445": {
+    "448": {
       "op": "bytec 10 // \"training_complete\"",
       "defined_out": [
         "\"training_complete\""
@@ -2798,18 +2798,18 @@
         "\"training_complete\""
       ]
     },
-    "447": {
+    "450": {
       "op": "intc_0 // 0",
       "stack_out": [
         "\"training_complete\"",
         "0"
       ]
     },
-    "448": {
+    "451": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "449": {
+    "452": {
       "op": "bytec 5 // \"ready_for_training\"",
       "defined_out": [
         "\"ready_for_training\""
@@ -2818,7 +2818,7 @@
         "\"ready_for_training\""
       ]
     },
-    "451": {
+    "454": {
       "op": "intc_1 // 1",
       "defined_out": [
         "\"ready_for_training\"",
@@ -2829,21 +2829,21 @@
         "1"
       ]
     },
-    "452": {
+    "455": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "453": {
+    "456": {
       "op": "intc_1 // 1",
       "stack_out": [
         "1"
       ]
     },
-    "454": {
+    "457": {
       "op": "return",
       "stack_out": []
     },
-    "455": {
+    "458": {
       "subroutine": "linear_regression_contract.LinearRegressionModel.run_a_training_loop[routing]",
       "params": {},
       "block": "run_a_training_loop",
@@ -2856,7 +2856,7 @@
         "0"
       ]
     },
-    "456": {
+    "459": {
       "op": "bytec 5 // \"ready_for_training\"",
       "defined_out": [
         "\"ready_for_training\"",
@@ -2867,7 +2867,7 @@
         "\"ready_for_training\""
       ]
     },
-    "458": {
+    "461": {
       "op": "app_global_get_ex",
       "defined_out": [
         "maybe_exists%0#0",
@@ -2878,25 +2878,25 @@
         "maybe_exists%0#0"
       ]
     },
-    "459": {
+    "462": {
       "error": "check self.ready_for_training exists",
       "op": "assert // check self.ready_for_training exists",
       "stack_out": [
         "maybe_value%0#0"
       ]
     },
-    "460": {
+    "463": {
       "error": "If you have already added your inputs & targets via 'add_inputs_and_targets_method' you must first call 'set_ready_for_training' method before calling this 'run_a_training_loop' method",
       "op": "assert // If you have already added your inputs & targets via 'add_inputs_and_targets_method' you must first call 'set_ready_for_training' method before calling this 'run_a_training_loop' method",
       "stack_out": []
     },
-    "461": {
+    "464": {
       "op": "intc_0 // 0",
       "stack_out": [
         "0"
       ]
     },
-    "462": {
+    "465": {
       "op": "bytec 7 // \"epochs_completed\"",
       "defined_out": [
         "\"epochs_completed\"",
@@ -2907,7 +2907,7 @@
         "\"epochs_completed\""
       ]
     },
-    "464": {
+    "467": {
       "op": "app_global_get_ex",
       "defined_out": [
         "current_epoch#0",
@@ -2918,21 +2918,21 @@
         "maybe_exists%1#0"
       ]
     },
-    "465": {
+    "468": {
       "error": "check self.epochs_completed exists",
       "op": "assert // check self.epochs_completed exists",
       "stack_out": [
         "current_epoch#0"
       ]
     },
-    "466": {
+    "469": {
       "op": "intc_0 // 0",
       "stack_out": [
         "current_epoch#0",
         "0"
       ]
     },
-    "467": {
+    "470": {
       "op": "bytec 6 // \"epochs\"",
       "defined_out": [
         "\"epochs\"",
@@ -2945,7 +2945,7 @@
         "\"epochs\""
       ]
     },
-    "469": {
+    "472": {
       "op": "app_global_get_ex",
       "defined_out": [
         "current_epoch#0",
@@ -2958,7 +2958,7 @@
         "maybe_exists%2#0"
       ]
     },
-    "470": {
+    "473": {
       "error": "check self.epochs exists",
       "op": "assert // check self.epochs exists",
       "stack_out": [
@@ -2966,7 +2966,7 @@
         "maybe_value%2#0"
       ]
     },
-    "471": {
+    "474": {
       "op": "<",
       "defined_out": [
         "tmp%0#0"
@@ -2975,884 +2975,543 @@
         "tmp%0#0"
       ]
     },
-    "472": {
+    "475": {
       "error": "All epochs for training have already been completed, no more training loops needed",
       "op": "assert // All epochs for training have already been completed, no more training loops needed",
       "stack_out": []
     },
-    "473": {
-      "op": "intc_0 // 0"
-    },
-    "474": {
-      "op": "dup"
-    },
-    "475": {
-      "op": "bytec_0 // \"inputs\""
-    },
     "476": {
-      "op": "intc_0 // 0"
-    },
-    "477": {
-      "op": "intc_3 // 2",
+      "op": "global OpcodeBudget",
       "defined_out": [
-        "\"inputs\"",
-        "0",
-        "2",
-        "delta_bias#0",
-        "delta_weight#0"
+        "pre_budget_remaining#0"
       ],
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "\"inputs\"",
-        "0",
-        "2"
+        "pre_budget_remaining#0"
       ]
     },
     "478": {
-      "op": "box_extract",
-      "defined_out": [
-        "box%box_extract%0#0",
-        "delta_bias#0",
-        "delta_weight#0"
-      ],
+      "op": "intc_0 // 0",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%box_extract%0#0"
+        "pre_budget_remaining#0",
+        "0"
       ]
     },
     "479": {
-      "op": "btoi",
-      "defined_out": [
-        "box%array_length%0#0",
-        "delta_bias#0",
-        "delta_weight#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0"
-      ]
-    },
-    "480": {
-      "op": "intc_0 // 0",
-      "defined_out": [
-        "box%array_length%0#0",
-        "delta_bias#0",
-        "delta_weight#0",
-        "i#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0"
-      ]
-    },
-    "481": {
-      "block": "run_a_training_loop_for_header@2",
-      "stack_in": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0"
-      ],
-      "op": "dup",
-      "defined_out": [
-        "i#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0"
-      ]
-    },
-    "482": {
-      "op": "dig 2",
-      "defined_out": [
-        "box%array_length%0#0",
-        "i#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "box%array_length%0#0"
-      ]
-    },
-    "484": {
-      "op": "<",
-      "defined_out": [
-        "box%array_length%0#0",
-        "continue_looping%0#0",
-        "i#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "continue_looping%0#0"
-      ]
-    },
-    "485": {
-      "op": "bz run_a_training_loop_after_for@5",
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0"
-      ]
-    },
-    "488": {
-      "op": "dupn 2",
-      "defined_out": [
-        "box%array_length%0#0",
-        "i#0",
-        "i#0 (copy)"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "i#0 (copy)"
-      ]
-    },
-    "490": {
-      "op": "intc_2 // 8",
-      "defined_out": [
-        "8",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0 (copy)"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "i#0 (copy)",
-        "8"
-      ]
-    },
-    "491": {
-      "op": "*",
-      "defined_out": [
-        "box%array_length%0#0",
-        "box%element_offset%0#0",
-        "i#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "box%element_offset%0#0"
-      ]
-    },
-    "492": {
-      "op": "intc_3 // 2",
-      "defined_out": [
-        "2",
-        "box%array_length%0#0",
-        "box%element_offset%0#0",
-        "i#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "box%element_offset%0#0",
-        "2"
-      ]
-    },
-    "493": {
-      "op": "+",
-      "defined_out": [
-        "box%array_length%0#0",
-        "box%offset%0#0",
-        "i#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "box%offset%0#0"
-      ]
-    },
-    "494": {
-      "op": "bytec_0 // \"inputs\"",
-      "defined_out": [
-        "\"inputs\"",
-        "box%array_length%0#0",
-        "box%offset%0#0",
-        "i#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "box%offset%0#0",
-        "\"inputs\""
-      ]
-    },
-    "495": {
-      "op": "dig 1",
-      "defined_out": [
-        "\"inputs\"",
-        "box%array_length%0#0",
-        "box%offset%0#0",
-        "box%offset%0#0 (copy)",
-        "i#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "box%offset%0#0",
-        "\"inputs\"",
-        "box%offset%0#0 (copy)"
-      ]
-    },
-    "497": {
-      "op": "intc_2 // 8",
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "box%offset%0#0",
-        "\"inputs\"",
-        "box%offset%0#0 (copy)",
-        "8"
-      ]
-    },
-    "498": {
-      "op": "box_extract",
-      "defined_out": [
-        "box%array_length%0#0",
-        "box%offset%0#0",
-        "i#0",
-        "x#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "box%offset%0#0",
-        "x#0"
-      ]
-    },
-    "499": {
-      "op": "bytec_1 // \"targets\"",
-      "defined_out": [
-        "\"targets\"",
-        "box%array_length%0#0",
-        "box%offset%0#0",
-        "i#0",
-        "x#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "box%offset%0#0",
-        "x#0",
-        "\"targets\""
-      ]
-    },
-    "500": {
-      "op": "uncover 2",
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "x#0",
-        "\"targets\"",
-        "box%offset%0#0"
-      ]
-    },
-    "502": {
-      "op": "intc_2 // 8",
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "x#0",
-        "\"targets\"",
-        "box%offset%0#0",
-        "8"
-      ]
-    },
-    "503": {
-      "op": "box_extract",
-      "defined_out": [
-        "box%array_length%0#0",
-        "i#0",
-        "x#0",
-        "y#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "x#0",
-        "y#0"
-      ]
-    },
-    "504": {
-      "op": "intc_0 // 0",
-      "defined_out": [
-        "0",
-        "box%array_length%0#0",
-        "i#0",
-        "x#0",
-        "y#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "x#0",
-        "y#0",
-        "0"
-      ]
-    },
-    "505": {
-      "op": "bytec_2 // \"weight\"",
-      "defined_out": [
-        "\"weight\"",
-        "0",
-        "box%array_length%0#0",
-        "i#0",
-        "x#0",
-        "y#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "x#0",
-        "y#0",
-        "0",
-        "\"weight\""
-      ]
-    },
-    "506": {
-      "op": "app_global_get_ex",
-      "defined_out": [
-        "box%array_length%0#0",
-        "i#0",
-        "m#0",
-        "maybe_exists%3#0",
-        "x#0",
-        "y#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "x#0",
-        "y#0",
-        "m#0",
-        "maybe_exists%3#0"
-      ]
-    },
-    "507": {
-      "error": "check self.weight exists",
-      "op": "assert // check self.weight exists",
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "x#0",
-        "y#0",
-        "m#0"
-      ]
-    },
-    "508": {
-      "op": "intc_0 // 0",
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "x#0",
-        "y#0",
-        "m#0",
-        "0"
-      ]
-    },
-    "509": {
-      "op": "bytec_3 // \"bias\"",
-      "defined_out": [
-        "\"bias\"",
-        "0",
-        "box%array_length%0#0",
-        "i#0",
-        "m#0",
-        "x#0",
-        "y#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "x#0",
-        "y#0",
-        "m#0",
-        "0",
-        "\"bias\""
-      ]
-    },
-    "510": {
-      "op": "app_global_get_ex",
-      "defined_out": [
-        "b#0",
-        "box%array_length%0#0",
-        "i#0",
-        "m#0",
-        "maybe_exists%4#0",
-        "x#0",
-        "y#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "x#0",
-        "y#0",
-        "m#0",
-        "b#0",
-        "maybe_exists%4#0"
-      ]
-    },
-    "511": {
-      "error": "check self.bias exists",
-      "op": "assert // check self.bias exists",
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "x#0",
-        "y#0",
-        "m#0",
-        "b#0"
-      ]
-    },
-    "512": {
-      "op": "uncover 3",
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "y#0",
-        "m#0",
-        "b#0",
-        "x#0"
-      ]
-    },
-    "514": {
-      "op": "btoi",
-      "defined_out": [
-        "b#0",
-        "box%array_length%0#0",
-        "i#0",
-        "m#0",
-        "tmp%2#0",
-        "y#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "y#0",
-        "m#0",
-        "b#0",
-        "tmp%2#0"
-      ]
-    },
-    "515": {
-      "op": "dig 2",
-      "defined_out": [
-        "b#0",
-        "box%array_length%0#0",
-        "i#0",
-        "m#0",
-        "m#0 (copy)",
-        "tmp%2#0",
-        "y#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "y#0",
-        "m#0",
-        "b#0",
-        "tmp%2#0",
-        "m#0 (copy)"
-      ]
-    },
-    "517": {
-      "op": "*",
-      "defined_out": [
-        "b#0",
-        "box%array_length%0#0",
-        "i#0",
-        "m#0",
-        "tmp%3#0",
-        "y#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "y#0",
-        "m#0",
-        "b#0",
-        "tmp%3#0"
-      ]
-    },
-    "518": {
-      "op": "+",
-      "defined_out": [
-        "box%array_length%0#0",
-        "guessed_y#0",
-        "i#0",
-        "m#0",
-        "y#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "y#0",
-        "m#0",
-        "guessed_y#0"
-      ]
-    },
-    "519": {
-      "op": "uncover 2",
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "m#0",
-        "guessed_y#0",
-        "y#0"
-      ]
-    },
-    "521": {
-      "op": "btoi",
-      "defined_out": [
-        "box%array_length%0#0",
-        "guessed_y#0",
-        "i#0",
-        "m#0",
-        "tmp%5#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "m#0",
-        "guessed_y#0",
-        "tmp%5#0"
-      ]
-    },
-    "522": {
-      "op": "-",
-      "defined_out": [
-        "box%array_length%0#0",
-        "i#0",
-        "m#0",
-        "y_error#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "m#0",
-        "y_error#0"
-      ]
-    },
-    "523": {
-      "op": "dup",
-      "defined_out": [
-        "box%array_length%0#0",
-        "i#0",
-        "m#0",
-        "y_error#0",
-        "y_error#0 (copy)"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "m#0",
-        "y_error#0",
-        "y_error#0 (copy)"
-      ]
-    },
-    "524": {
-      "op": "uncover 2",
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "y_error#0",
-        "y_error#0 (copy)",
-        "m#0"
-      ]
-    },
-    "526": {
-      "op": "*",
-      "defined_out": [
-        "box%array_length%0#0",
-        "i#0",
-        "tmp%7#0",
-        "y_error#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "y_error#0",
-        "tmp%7#0"
-      ]
-    },
-    "527": {
-      "op": "dig 6",
-      "defined_out": [
-        "box%array_length%0#0",
-        "delta_weight#0",
-        "i#0",
-        "tmp%7#0",
-        "y_error#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "y_error#0",
-        "tmp%7#0",
-        "delta_weight#0"
-      ]
-    },
-    "529": {
-      "op": "+",
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "y_error#0",
-        "delta_weight#0"
-      ]
-    },
-    "530": {
-      "op": "bury 6",
-      "defined_out": [
-        "box%array_length%0#0",
-        "delta_weight#0",
-        "i#0",
-        "y_error#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "y_error#0"
-      ]
-    },
-    "532": {
-      "op": "dig 4",
-      "defined_out": [
-        "box%array_length%0#0",
-        "delta_bias#0",
-        "delta_weight#0",
-        "i#0",
-        "y_error#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "y_error#0",
-        "delta_bias#0"
-      ]
-    },
-    "534": {
-      "op": "+",
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
-        "delta_bias#0"
-      ]
-    },
-    "535": {
-      "op": "bury 4",
-      "defined_out": [
-        "box%array_length%0#0",
-        "delta_bias#0",
-        "delta_weight#0",
-        "i#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0"
-      ]
-    },
-    "537": {
       "op": "intc_1 // 1",
       "defined_out": [
+        "0",
         "1",
-        "box%array_length%0#0",
-        "delta_bias#0",
-        "delta_weight#0",
-        "i#0"
+        "pre_budget_remaining#0"
       ],
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0",
+        "pre_budget_remaining#0",
+        "0",
         "1"
       ]
     },
-    "538": {
+    "480": {
+      "callsub": "linear_regression_contract.LinearRegressionModel.run_training_loop_by_start_and_end_index",
+      "op": "callsub run_training_loop_by_start_and_end_index",
+      "defined_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "pre_budget_remaining#0"
+      ],
+      "stack_out": [
+        "pre_budget_remaining#0",
+        "_delta_weight#0",
+        "_delta_bias#0"
+      ]
+    },
+    "483": {
+      "op": "cover 2",
+      "defined_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "pre_budget_remaining#0"
+      ],
+      "stack_out": [
+        "_delta_bias#0",
+        "pre_budget_remaining#0",
+        "_delta_weight#0"
+      ]
+    },
+    "485": {
+      "op": "swap",
+      "defined_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "pre_budget_remaining#0"
+      ],
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "pre_budget_remaining#0"
+      ]
+    },
+    "486": {
+      "op": "global OpcodeBudget",
+      "defined_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "post_budget_remaining#0",
+        "pre_budget_remaining#0"
+      ],
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "pre_budget_remaining#0",
+        "post_budget_remaining#0"
+      ]
+    },
+    "488": {
+      "op": "-",
+      "defined_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "budget_cost_per_iteration#0"
+      ],
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "budget_cost_per_iteration#0"
+      ]
+    },
+    "489": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "budget_cost_per_iteration#0",
+        "0"
+      ]
+    },
+    "490": {
+      "op": "bytec_1 // \"length_data\"",
+      "defined_out": [
+        "\"length_data\"",
+        "0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "budget_cost_per_iteration#0"
+      ],
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "budget_cost_per_iteration#0",
+        "0",
+        "\"length_data\""
+      ]
+    },
+    "491": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "budget_cost_per_iteration#0",
+        "maybe_exists%3#0",
+        "maybe_value%3#0"
+      ],
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "budget_cost_per_iteration#0",
+        "maybe_value%3#0",
+        "maybe_exists%3#0"
+      ]
+    },
+    "492": {
+      "error": "check self.length_data exists",
+      "op": "assert // check self.length_data exists",
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "budget_cost_per_iteration#0",
+        "maybe_value%3#0"
+      ]
+    },
+    "493": {
+      "op": "*",
+      "defined_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "extra_budget_needed#0"
+      ],
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "extra_budget_needed#0"
+      ]
+    },
+    "494": {
+      "op": "pushint 10",
+      "defined_out": [
+        "10",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "extra_budget_needed#0"
+      ],
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "extra_budget_needed#0",
+        "10"
+      ]
+    },
+    "496": {
       "op": "+",
+      "defined_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0"
+      ],
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "i#0"
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0"
       ]
     },
-    "539": {
-      "op": "bury 1",
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0"
-      ]
-    },
-    "541": {
-      "op": "b run_a_training_loop_for_header@2"
-    },
-    "544": {
-      "block": "run_a_training_loop_after_for@5",
+    "497": {
+      "block": "run_a_training_loop_while_top@5",
       "stack_in": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0"
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0"
+      ],
+      "op": "dup"
+    },
+    "498": {
+      "op": "global OpcodeBudget",
+      "defined_out": [
+        "required_budget_with_buffer#0",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "required_budget_with_buffer#0",
+        "tmp%1#0"
+      ]
+    },
+    "500": {
+      "op": ">",
+      "defined_out": [
+        "required_budget_with_buffer#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "tmp%2#0"
+      ]
+    },
+    "501": {
+      "op": "bz run_a_training_loop_after_while@10",
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0"
+      ]
+    },
+    "504": {
+      "op": "itxn_begin"
+    },
+    "505": {
+      "op": "pushint 6 // appl",
+      "defined_out": [
+        "appl",
+        "required_budget_with_buffer#0"
+      ],
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "appl"
+      ]
+    },
+    "507": {
+      "op": "itxn_field TypeEnum",
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0"
+      ]
+    },
+    "509": {
+      "op": "pushint 5 // DeleteApplication",
+      "defined_out": [
+        "DeleteApplication",
+        "required_budget_with_buffer#0"
+      ],
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "DeleteApplication"
+      ]
+    },
+    "511": {
+      "op": "itxn_field OnCompletion",
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0"
+      ]
+    },
+    "513": {
+      "op": "bytec 11 // 0x068101",
+      "defined_out": [
+        "0x068101",
+        "required_budget_with_buffer#0"
+      ],
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "0x068101"
+      ]
+    },
+    "515": {
+      "op": "itxn_field ApprovalProgram",
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0"
+      ]
+    },
+    "517": {
+      "op": "bytec 11 // 0x068101",
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "0x068101"
+      ]
+    },
+    "519": {
+      "op": "itxn_field ClearStateProgram",
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0"
+      ]
+    },
+    "521": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "required_budget_with_buffer#0"
+      ],
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "0"
+      ]
+    },
+    "522": {
+      "op": "itxn_field Fee",
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0"
+      ]
+    },
+    "524": {
+      "op": "itxn_submit"
+    },
+    "525": {
+      "op": "b run_a_training_loop_while_top@5"
+    },
+    "528": {
+      "block": "run_a_training_loop_after_while@10",
+      "stack_in": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0"
       ],
       "op": "intc_0 // 0",
       "defined_out": [
         "0"
       ],
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "0"
       ]
     },
-    "545": {
-      "op": "bytec 4 // \"length_data\"",
+    "529": {
+      "op": "bytec_1 // \"length_data\"",
       "defined_out": [
         "\"length_data\"",
         "0"
       ],
       "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "0",
+        "\"length_data\""
+      ]
+    },
+    "530": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%4#0",
+        "maybe_value%4#0"
+      ],
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "maybe_value%4#0",
+        "maybe_exists%4#0"
+      ]
+    },
+    "531": {
+      "error": "check self.length_data exists",
+      "op": "assert // check self.length_data exists",
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "maybe_value%4#0"
+      ]
+    },
+    "532": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "maybe_value%4#0"
+      ],
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "maybe_value%4#0",
+        "1"
+      ]
+    },
+    "533": {
+      "op": "swap",
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "1",
+        "maybe_value%4#0"
+      ]
+    },
+    "534": {
+      "callsub": "linear_regression_contract.LinearRegressionModel.run_training_loop_by_start_and_end_index",
+      "op": "callsub run_training_loop_by_start_and_end_index",
+      "defined_out": [
+        "delta_bias#0",
+        "delta_weight#0"
+      ],
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "delta_weight#0",
+        "delta_bias#0"
+      ]
+    },
+    "537": {
+      "op": "swap",
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "delta_bias#0",
+        "delta_weight#0"
+      ]
+    },
+    "538": {
+      "op": "dig 3",
+      "defined_out": [
+        "_delta_weight#0",
+        "delta_bias#0",
+        "delta_weight#0"
+      ],
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "delta_bias#0",
+        "delta_weight#0",
+        "_delta_weight#0"
+      ]
+    },
+    "540": {
+      "op": "+",
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "delta_bias#0",
+        "delta_weight#0"
+      ]
+    },
+    "541": {
+      "op": "swap",
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "delta_weight#0",
+        "delta_bias#0"
+      ]
+    },
+    "542": {
+      "op": "dig 4",
+      "defined_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "delta_bias#0",
+        "delta_weight#0"
+      ],
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "delta_weight#0",
         "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0"
+      ]
+    },
+    "544": {
+      "op": "+",
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "delta_weight#0",
+        "delta_bias#0"
+      ]
+    },
+    "545": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "0"
+      ]
+    },
+    "546": {
+      "op": "bytec_1 // \"length_data\"",
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "delta_weight#0",
+        "delta_bias#0",
         "0",
         "\"length_data\""
       ]
@@ -3860,14 +3519,19 @@
     "547": {
       "op": "app_global_get_ex",
       "defined_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "delta_bias#0",
+        "delta_weight#0",
         "maybe_exists%5#0",
         "maybe_value%5#0"
       ],
       "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "delta_weight#0",
         "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
         "maybe_value%5#0",
         "maybe_exists%5#0"
       ]
@@ -3876,24 +3540,21 @@
       "error": "check self.length_data exists",
       "op": "assert // check self.length_data exists",
       "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "delta_weight#0",
         "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
         "maybe_value%5#0"
       ]
     },
     "549": {
-      "op": "dig 4",
-      "defined_out": [
-        "delta_weight#0",
-        "maybe_value%5#0"
-      ],
+      "op": "uncover 2",
       "stack_out": [
-        "delta_weight#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
         "maybe_value%5#0",
         "delta_weight#0"
       ]
@@ -3901,15 +3562,18 @@
     "551": {
       "op": "dig 1",
       "defined_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "delta_bias#0",
         "delta_weight#0",
         "maybe_value%5#0",
         "maybe_value%5#0 (copy)"
       ],
       "stack_out": [
-        "delta_weight#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
         "maybe_value%5#0",
         "delta_weight#0",
         "maybe_value%5#0 (copy)"
@@ -3918,144 +3582,125 @@
     "553": {
       "op": "/",
       "stack_out": [
-        "delta_weight#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
         "maybe_value%5#0",
         "delta_weight#0"
       ]
     },
     "554": {
-      "op": "dig 4",
-      "defined_out": [
-        "delta_bias#0",
-        "delta_weight#0",
-        "maybe_value%5#0"
-      ],
+      "op": "cover 2",
       "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "delta_weight#0",
         "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "maybe_value%5#0",
-        "delta_weight#0",
-        "delta_bias#0"
+        "maybe_value%5#0"
       ]
     },
     "556": {
-      "op": "uncover 2",
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "delta_weight#0",
-        "delta_bias#0",
-        "maybe_value%5#0"
-      ]
-    },
-    "558": {
       "op": "/",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "delta_weight#0",
         "delta_bias#0"
       ]
     },
-    "559": {
+    "557": {
       "op": "intc_0 // 0",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "delta_weight#0",
         "delta_bias#0",
         "0"
       ]
     },
-    "560": {
-      "op": "bytec_2 // \"weight\"",
+    "558": {
+      "op": "bytec_3 // \"weight\"",
       "defined_out": [
         "\"weight\"",
         "0",
+        "_delta_bias#0",
+        "_delta_weight#0",
         "delta_bias#0",
         "delta_weight#0"
       ],
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "delta_weight#0",
         "delta_bias#0",
         "0",
         "\"weight\""
       ]
     },
-    "561": {
+    "559": {
       "op": "app_global_get_ex",
       "defined_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
         "delta_bias#0",
         "delta_weight#0",
         "maybe_exists%7#0",
         "maybe_value%7#0"
       ],
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "delta_weight#0",
         "delta_bias#0",
         "maybe_value%7#0",
         "maybe_exists%7#0"
       ]
     },
-    "562": {
+    "560": {
       "error": "check self.weight exists",
       "op": "assert // check self.weight exists",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "delta_weight#0",
         "delta_bias#0",
         "maybe_value%7#0"
       ]
     },
-    "563": {
+    "561": {
       "op": "intc_0 // 0",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "delta_weight#0",
         "delta_bias#0",
         "maybe_value%7#0",
         "0"
       ]
     },
-    "564": {
+    "562": {
       "op": "bytec 8 // \"learning_rate\"",
       "defined_out": [
         "\"learning_rate\"",
         "0",
+        "_delta_bias#0",
+        "_delta_weight#0",
         "delta_bias#0",
         "delta_weight#0",
         "maybe_value%7#0"
       ],
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "delta_weight#0",
         "delta_bias#0",
         "maybe_value%7#0",
@@ -4063,9 +3708,11 @@
         "\"learning_rate\""
       ]
     },
-    "566": {
+    "564": {
       "op": "app_global_get_ex",
       "defined_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
         "delta_bias#0",
         "delta_weight#0",
         "maybe_exists%8#0",
@@ -4073,10 +3720,9 @@
         "maybe_value%8#0"
       ],
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "delta_weight#0",
         "delta_bias#0",
         "maybe_value%7#0",
@@ -4084,300 +3730,283 @@
         "maybe_exists%8#0"
       ]
     },
-    "567": {
+    "565": {
       "error": "check self.learning_rate exists",
       "op": "assert // check self.learning_rate exists",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "delta_weight#0",
         "delta_bias#0",
         "maybe_value%7#0",
         "maybe_value%8#0"
       ]
     },
-    "568": {
+    "566": {
       "op": "uncover 3",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "delta_bias#0",
         "maybe_value%7#0",
         "maybe_value%8#0",
         "delta_weight#0"
       ]
     },
+    "568": {
+      "op": "*",
+      "defined_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "delta_bias#0",
+        "maybe_value%7#0",
+        "tmp%13#0"
+      ],
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "delta_bias#0",
+        "maybe_value%7#0",
+        "tmp%13#0"
+      ]
+    },
+    "569": {
+      "op": "*",
+      "defined_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "delta_bias#0",
+        "tmp%14#0"
+      ],
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "delta_bias#0",
+        "tmp%14#0"
+      ]
+    },
     "570": {
-      "op": "*",
-      "defined_out": [
-        "delta_bias#0",
-        "delta_weight#0",
-        "maybe_value%7#0",
-        "tmp%12#0"
-      ],
+      "op": "bytec_3 // \"weight\"",
       "stack_out": [
-        "delta_weight#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "delta_bias#0",
-        "maybe_value%7#0",
-        "tmp%12#0"
-      ]
-    },
-    "571": {
-      "op": "*",
-      "defined_out": [
-        "delta_bias#0",
-        "delta_weight#0",
-        "tmp%13#0"
-      ],
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "delta_bias#0",
-        "tmp%13#0"
-      ]
-    },
-    "572": {
-      "op": "bytec_2 // \"weight\"",
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "delta_bias#0",
-        "tmp%13#0",
+        "tmp%14#0",
         "\"weight\""
       ]
     },
-    "573": {
+    "571": {
       "op": "swap",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "delta_bias#0",
         "\"weight\"",
-        "tmp%13#0"
+        "tmp%14#0"
       ]
     },
-    "574": {
+    "572": {
       "op": "app_global_put",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "delta_bias#0"
       ]
     },
-    "575": {
+    "573": {
       "op": "intc_0 // 0",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "delta_bias#0",
         "0"
       ]
     },
-    "576": {
-      "op": "bytec_3 // \"bias\"",
+    "574": {
+      "op": "bytec 4 // \"bias\"",
       "defined_out": [
         "\"bias\"",
         "0",
-        "delta_bias#0",
-        "delta_weight#0"
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "delta_bias#0"
       ],
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "delta_bias#0",
         "0",
         "\"bias\""
       ]
     },
-    "577": {
+    "576": {
       "op": "app_global_get_ex",
       "defined_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
         "delta_bias#0",
-        "delta_weight#0",
         "maybe_exists%9#0",
         "maybe_value%9#0"
       ],
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "delta_bias#0",
         "maybe_value%9#0",
         "maybe_exists%9#0"
       ]
     },
-    "578": {
+    "577": {
       "error": "check self.bias exists",
       "op": "assert // check self.bias exists",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "delta_bias#0",
         "maybe_value%9#0"
       ]
     },
-    "579": {
+    "578": {
       "op": "intc_0 // 0",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "delta_bias#0",
         "maybe_value%9#0",
         "0"
       ]
     },
-    "580": {
+    "579": {
       "op": "bytec 8 // \"learning_rate\"",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "delta_bias#0",
         "maybe_value%9#0",
         "0",
         "\"learning_rate\""
       ]
     },
-    "582": {
+    "581": {
       "op": "app_global_get_ex",
       "defined_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
         "delta_bias#0",
-        "delta_weight#0",
         "maybe_exists%10#0",
         "maybe_value%10#0",
         "maybe_value%9#0"
       ],
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "delta_bias#0",
         "maybe_value%9#0",
         "maybe_value%10#0",
         "maybe_exists%10#0"
       ]
     },
-    "583": {
+    "582": {
       "error": "check self.learning_rate exists",
       "op": "assert // check self.learning_rate exists",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "delta_bias#0",
         "maybe_value%9#0",
         "maybe_value%10#0"
       ]
     },
-    "584": {
+    "583": {
       "op": "uncover 2",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "maybe_value%9#0",
         "maybe_value%10#0",
         "delta_bias#0"
       ]
     },
+    "585": {
+      "op": "*",
+      "defined_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "maybe_value%9#0",
+        "tmp%15#0"
+      ],
+      "stack_out": [
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "maybe_value%9#0",
+        "tmp%15#0"
+      ]
+    },
     "586": {
       "op": "*",
       "defined_out": [
-        "delta_bias#0",
-        "delta_weight#0",
-        "maybe_value%9#0",
-        "tmp%14#0"
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "tmp%16#0"
       ],
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "maybe_value%9#0",
-        "tmp%14#0"
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "tmp%16#0"
       ]
     },
     "587": {
-      "op": "*",
-      "defined_out": [
-        "delta_bias#0",
-        "delta_weight#0",
-        "tmp%15#0"
-      ],
+      "op": "bytec 4 // \"bias\"",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "tmp%15#0"
-      ]
-    },
-    "588": {
-      "op": "bytec_3 // \"bias\"",
-      "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "tmp%15#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "tmp%16#0",
         "\"bias\""
       ]
     },
     "589": {
       "op": "swap",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "\"bias\"",
-        "tmp%15#0"
+        "tmp%16#0"
       ]
     },
     "590": {
       "op": "app_global_put",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0"
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0"
       ]
     },
     "591": {
       "op": "intc_0 // 0",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "0"
       ]
     },
@@ -4386,14 +4015,13 @@
       "defined_out": [
         "\"epochs_completed\"",
         "0",
-        "delta_bias#0",
-        "delta_weight#0"
+        "_delta_bias#0",
+        "_delta_weight#0"
       ],
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "0",
         "\"epochs_completed\""
       ]
@@ -4401,16 +4029,15 @@
     "594": {
       "op": "app_global_get_ex",
       "defined_out": [
-        "delta_bias#0",
-        "delta_weight#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
         "maybe_exists%11#0",
         "maybe_value%11#0"
       ],
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "maybe_value%11#0",
         "maybe_exists%11#0"
       ]
@@ -4419,26 +4046,18 @@
       "error": "check self.epochs_completed exists",
       "op": "assert // check self.epochs_completed exists",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "maybe_value%11#0"
       ]
     },
     "596": {
       "op": "intc_1 // 1",
-      "defined_out": [
-        "1",
-        "delta_bias#0",
-        "delta_weight#0",
-        "maybe_value%11#0"
-      ],
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "maybe_value%11#0",
         "1"
       ]
@@ -4446,26 +4065,24 @@
     "597": {
       "op": "+",
       "defined_out": [
-        "delta_bias#0",
-        "delta_weight#0",
-        "tmp%16#0"
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "tmp%17#0"
       ],
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "tmp%16#0"
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "tmp%17#0"
       ]
     },
     "598": {
       "op": "bytec 7 // \"epochs_completed\"",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "tmp%16#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "tmp%17#0",
         "\"epochs_completed\""
       ]
     },
@@ -4473,39 +4090,36 @@
       "op": "dig 1",
       "defined_out": [
         "\"epochs_completed\"",
-        "delta_bias#0",
-        "delta_weight#0",
-        "tmp%16#0",
-        "tmp%16#0 (copy)"
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "tmp%17#0",
+        "tmp%17#0 (copy)"
       ],
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "tmp%16#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "tmp%17#0",
         "\"epochs_completed\"",
-        "tmp%16#0 (copy)"
+        "tmp%17#0 (copy)"
       ]
     },
     "602": {
       "op": "app_global_put",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "tmp%16#0"
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "tmp%17#0"
       ]
     },
     "603": {
       "op": "intc_0 // 0",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "tmp%16#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "tmp%17#0",
         "0"
       ]
     },
@@ -4514,16 +4128,15 @@
       "defined_out": [
         "\"epochs\"",
         "0",
-        "delta_bias#0",
-        "delta_weight#0",
-        "tmp%16#0"
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "tmp%17#0"
       ],
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "tmp%16#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "tmp%17#0",
         "0",
         "\"epochs\""
       ]
@@ -4531,18 +4144,17 @@
     "606": {
       "op": "app_global_get_ex",
       "defined_out": [
-        "delta_bias#0",
-        "delta_weight#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
         "maybe_exists%13#0",
         "maybe_value%13#0",
-        "tmp%16#0"
+        "tmp%17#0"
       ],
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "tmp%16#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "tmp%17#0",
         "maybe_value%13#0",
         "maybe_exists%13#0"
       ]
@@ -4551,60 +4163,55 @@
       "error": "check self.epochs exists",
       "op": "assert // check self.epochs exists",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "tmp%16#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "tmp%17#0",
         "maybe_value%13#0"
       ]
     },
     "608": {
       "op": "==",
       "defined_out": [
-        "delta_bias#0",
-        "delta_weight#0",
-        "tmp%17#0"
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "tmp%18#0"
       ],
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
-        "tmp%17#0"
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
+        "tmp%18#0"
       ]
     },
     "609": {
-      "op": "bz run_a_training_loop_after_if_else@7",
+      "op": "bz run_a_training_loop_after_if_else@3",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0"
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0"
       ]
     },
     "612": {
       "op": "bytec 10 // \"training_complete\"",
       "defined_out": [
         "\"training_complete\"",
-        "delta_bias#0",
-        "delta_weight#0"
+        "_delta_bias#0",
+        "_delta_weight#0"
       ],
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "\"training_complete\""
       ]
     },
     "614": {
       "op": "intc_1 // 1",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "\"training_complete\"",
         "1"
       ]
@@ -4612,34 +4219,31 @@
     "615": {
       "op": "app_global_put",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0"
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0"
       ]
     },
     "616": {
       "op": "bytec 5 // \"ready_for_training\"",
       "defined_out": [
         "\"ready_for_training\"",
-        "delta_bias#0",
-        "delta_weight#0"
+        "_delta_bias#0",
+        "_delta_weight#0"
       ],
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "\"ready_for_training\""
       ]
     },
     "618": {
       "op": "intc_0 // 0",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "\"ready_for_training\"",
         "0"
       ]
@@ -4647,39 +4251,35 @@
     "619": {
       "op": "app_global_put",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0"
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0"
       ]
     },
     "620": {
-      "block": "run_a_training_loop_after_if_else@7",
+      "block": "run_a_training_loop_after_if_else@3",
       "stack_in": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0"
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0"
       ],
       "op": "intc_1 // 1",
       "defined_out": [
         "1"
       ],
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0",
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0",
         "1"
       ]
     },
     "621": {
       "op": "return",
       "stack_out": [
-        "delta_weight#0",
-        "delta_bias#0",
-        "box%array_length%0#0",
-        "i#0"
+        "_delta_bias#0",
+        "_delta_weight#0",
+        "required_budget_with_buffer#0"
       ]
     },
     "622": {
@@ -4841,7 +4441,7 @@
       ]
     },
     "640": {
-      "op": "bytec_2 // \"weight\"",
+      "op": "bytec_3 // \"weight\"",
       "defined_out": [
         "\"weight\"",
         "0",
@@ -4891,7 +4491,7 @@
       ]
     },
     "645": {
-      "op": "bytec_3 // \"bias\"",
+      "op": "bytec 4 // \"bias\"",
       "defined_out": [
         "\"bias\"",
         "0",
@@ -4903,7 +4503,7 @@
         "\"bias\""
       ]
     },
-    "646": {
+    "647": {
       "op": "app_global_get_ex",
       "defined_out": [
         "maybe_exists%2#0",
@@ -4916,7 +4516,7 @@
         "maybe_exists%2#0"
       ]
     },
-    "647": {
+    "648": {
       "error": "check self.bias exists",
       "op": "assert // check self.bias exists",
       "stack_out": [
@@ -4924,7 +4524,7 @@
         "maybe_value%2#0"
       ]
     },
-    "648": {
+    "649": {
       "op": "+",
       "defined_out": [
         "tmp%2#1"
@@ -4933,7 +4533,7 @@
         "tmp%2#1"
       ]
     },
-    "649": {
+    "650": {
       "op": "itob",
       "defined_out": [
         "aggregate%val_as_bytes%0#0"
@@ -4942,7 +4542,7 @@
         "aggregate%val_as_bytes%0#0"
       ]
     },
-    "650": {
+    "651": {
       "op": "pushbytes 0x151f7c75",
       "defined_out": [
         "0x151f7c75",
@@ -4953,14 +4553,14 @@
         "0x151f7c75"
       ]
     },
-    "656": {
+    "657": {
       "op": "swap",
       "stack_out": [
         "0x151f7c75",
         "aggregate%val_as_bytes%0#0"
       ]
     },
-    "657": {
+    "658": {
       "op": "concat",
       "defined_out": [
         "tmp%4#0"
@@ -4969,21 +4569,21 @@
         "tmp%4#0"
       ]
     },
-    "658": {
+    "659": {
       "op": "log",
       "stack_out": []
     },
-    "659": {
+    "660": {
       "op": "intc_1 // 1",
       "stack_out": [
         "1"
       ]
     },
-    "660": {
+    "661": {
       "op": "return",
       "stack_out": []
     },
-    "661": {
+    "662": {
       "subroutine": "linear_regression_contract.LinearRegressionModel.clear_data[routing]",
       "params": {},
       "block": "clear_data",
@@ -4996,7 +4596,7 @@
         "\"inputs\""
       ]
     },
-    "662": {
+    "663": {
       "op": "box_del",
       "defined_out": [
         "{box_del}"
@@ -5005,17 +4605,17 @@
         "{box_del}"
       ]
     },
-    "663": {
+    "664": {
       "op": "pop",
       "stack_out": []
     },
-    "664": {
+    "665": {
       "op": "bytec_0 // \"inputs\"",
       "stack_out": [
         "\"inputs\""
       ]
     },
-    "665": {
+    "666": {
       "op": "bytec 9 // 0x0000",
       "defined_out": [
         "\"inputs\"",
@@ -5026,12 +4626,12 @@
         "0x0000"
       ]
     },
-    "667": {
+    "668": {
       "op": "box_put",
       "stack_out": []
     },
-    "668": {
-      "op": "bytec_1 // \"targets\"",
+    "669": {
+      "op": "bytec_2 // \"targets\"",
       "defined_out": [
         "\"targets\""
       ],
@@ -5039,35 +4639,35 @@
         "\"targets\""
       ]
     },
-    "669": {
+    "670": {
       "op": "box_del",
       "stack_out": [
         "{box_del}"
       ]
     },
-    "670": {
+    "671": {
       "op": "pop",
       "stack_out": []
     },
-    "671": {
-      "op": "bytec_1 // \"targets\"",
+    "672": {
+      "op": "bytec_2 // \"targets\"",
       "stack_out": [
         "\"targets\""
       ]
     },
-    "672": {
+    "673": {
       "op": "bytec 9 // 0x0000",
       "stack_out": [
         "\"targets\"",
         "0x0000"
       ]
     },
-    "674": {
+    "675": {
       "op": "box_put",
       "stack_out": []
     },
-    "675": {
-      "op": "bytec 4 // \"length_data\"",
+    "676": {
+      "op": "bytec_1 // \"length_data\"",
       "defined_out": [
         "\"length_data\""
       ],
@@ -5102,6 +4702,1118 @@
     "680": {
       "op": "return",
       "stack_out": []
+    },
+    "681": {
+      "subroutine": "linear_regression_contract.LinearRegressionModel.run_training_loop_by_start_and_end_index",
+      "params": {
+        "start#0": "uint64",
+        "end#0": "uint64"
+      },
+      "block": "run_training_loop_by_start_and_end_index",
+      "stack_in": [],
+      "op": "proto 2 2"
+    },
+    "684": {
+      "op": "pushbytes \"\"",
+      "stack_out": [
+        "guessed_y#0"
+      ]
+    },
+    "686": {
+      "op": "dup",
+      "stack_out": [
+        "guessed_y#0",
+        "m#0"
+      ]
+    },
+    "687": {
+      "op": "intc_0 // 0"
+    },
+    "688": {
+      "op": "dup"
+    },
+    "689": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "delta_bias#0",
+        "delta_weight#0",
+        "i#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0"
+      ]
+    },
+    "691": {
+      "block": "run_training_loop_by_start_and_end_index_for_header@1",
+      "stack_in": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0"
+      ],
+      "op": "frame_dig 4",
+      "defined_out": [
+        "i#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "i#0"
+      ]
+    },
+    "693": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "end#0 (copy)",
+        "i#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "i#0",
+        "end#0 (copy)"
+      ]
+    },
+    "695": {
+      "op": "<",
+      "defined_out": [
+        "continue_looping%0#0",
+        "i#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "continue_looping%0#0"
+      ]
+    },
+    "696": {
+      "op": "bz run_training_loop_by_start_and_end_index_after_for@7",
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0"
+      ]
+    },
+    "699": {
+      "op": "frame_dig 4",
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "i#0"
+      ]
+    },
+    "701": {
+      "op": "intc_2 // 8",
+      "defined_out": [
+        "8",
+        "i#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "i#0",
+        "8"
+      ]
+    },
+    "702": {
+      "op": "*",
+      "defined_out": [
+        "box%element_offset%0#0",
+        "i#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "box%element_offset%0#0"
+      ]
+    },
+    "703": {
+      "op": "intc_3 // 2",
+      "defined_out": [
+        "2",
+        "box%element_offset%0#0",
+        "i#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "box%element_offset%0#0",
+        "2"
+      ]
+    },
+    "704": {
+      "op": "+",
+      "defined_out": [
+        "box%offset%0#0",
+        "i#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "box%offset%0#0"
+      ]
+    },
+    "705": {
+      "op": "bytec_0 // \"inputs\"",
+      "defined_out": [
+        "\"inputs\"",
+        "box%offset%0#0",
+        "i#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "box%offset%0#0",
+        "\"inputs\""
+      ]
+    },
+    "706": {
+      "op": "dig 1",
+      "defined_out": [
+        "\"inputs\"",
+        "box%offset%0#0",
+        "box%offset%0#0 (copy)",
+        "i#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "box%offset%0#0",
+        "\"inputs\"",
+        "box%offset%0#0 (copy)"
+      ]
+    },
+    "708": {
+      "op": "intc_2 // 8",
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "box%offset%0#0",
+        "\"inputs\"",
+        "box%offset%0#0 (copy)",
+        "8"
+      ]
+    },
+    "709": {
+      "op": "box_extract",
+      "defined_out": [
+        "box%offset%0#0",
+        "i#0",
+        "x#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "box%offset%0#0",
+        "x#0"
+      ]
+    },
+    "710": {
+      "op": "bytec_2 // \"targets\"",
+      "defined_out": [
+        "\"targets\"",
+        "box%offset%0#0",
+        "i#0",
+        "x#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "box%offset%0#0",
+        "x#0",
+        "\"targets\""
+      ]
+    },
+    "711": {
+      "op": "uncover 2",
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "x#0",
+        "\"targets\"",
+        "box%offset%0#0"
+      ]
+    },
+    "713": {
+      "op": "intc_2 // 8",
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "x#0",
+        "\"targets\"",
+        "box%offset%0#0",
+        "8"
+      ]
+    },
+    "714": {
+      "op": "box_extract",
+      "defined_out": [
+        "i#0",
+        "x#0",
+        "y#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "x#0",
+        "y#0"
+      ]
+    },
+    "715": {
+      "op": "dup",
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "x#0",
+        "y#0",
+        "y#0 (copy)"
+      ]
+    },
+    "716": {
+      "op": "uncover 2",
+      "defined_out": [
+        "i#0",
+        "x#0",
+        "y#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y#0",
+        "y#0",
+        "x#0"
+      ]
+    },
+    "718": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y#0",
+        "y#0",
+        "x#0",
+        "0"
+      ]
+    },
+    "719": {
+      "op": "bytec_3 // \"weight\"",
+      "defined_out": [
+        "\"weight\"",
+        "0",
+        "i#0",
+        "x#0",
+        "y#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y#0",
+        "y#0",
+        "x#0",
+        "0",
+        "\"weight\""
+      ]
+    },
+    "720": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "i#0",
+        "m#0",
+        "maybe_exists%0#0",
+        "x#0",
+        "y#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y#0",
+        "y#0",
+        "x#0",
+        "m#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "721": {
+      "op": "swap",
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y#0",
+        "y#0",
+        "x#0",
+        "maybe_exists%0#0",
+        "m#0"
+      ]
+    },
+    "722": {
+      "op": "dup",
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y#0",
+        "y#0",
+        "x#0",
+        "maybe_exists%0#0",
+        "m#0",
+        "m#0 (copy)"
+      ]
+    },
+    "723": {
+      "op": "cover 2",
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y#0",
+        "y#0",
+        "x#0",
+        "m#0",
+        "maybe_exists%0#0",
+        "m#0"
+      ]
+    },
+    "725": {
+      "op": "frame_bury 1",
+      "defined_out": [
+        "i#0",
+        "m#0",
+        "maybe_exists%0#0",
+        "x#0",
+        "y#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y#0",
+        "y#0",
+        "x#0",
+        "m#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "727": {
+      "error": "check self.weight exists",
+      "op": "assert // check self.weight exists",
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y#0",
+        "y#0",
+        "x#0",
+        "m#0"
+      ]
+    },
+    "728": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y#0",
+        "y#0",
+        "x#0",
+        "m#0",
+        "0"
+      ]
+    },
+    "729": {
+      "op": "bytec 4 // \"bias\"",
+      "defined_out": [
+        "\"bias\"",
+        "0",
+        "i#0",
+        "m#0",
+        "x#0",
+        "y#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y#0",
+        "y#0",
+        "x#0",
+        "m#0",
+        "0",
+        "\"bias\""
+      ]
+    },
+    "731": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "b#0",
+        "i#0",
+        "m#0",
+        "maybe_exists%1#0",
+        "x#0",
+        "y#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y#0",
+        "y#0",
+        "x#0",
+        "m#0",
+        "b#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "732": {
+      "error": "check self.bias exists",
+      "op": "assert // check self.bias exists",
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y#0",
+        "y#0",
+        "x#0",
+        "m#0",
+        "b#0"
+      ]
+    },
+    "733": {
+      "op": "uncover 2",
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y#0",
+        "y#0",
+        "m#0",
+        "b#0",
+        "x#0"
+      ]
+    },
+    "735": {
+      "op": "btoi",
+      "defined_out": [
+        "b#0",
+        "i#0",
+        "m#0",
+        "tmp%0#0",
+        "y#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y#0",
+        "y#0",
+        "m#0",
+        "b#0",
+        "tmp%0#0"
+      ]
+    },
+    "736": {
+      "op": "uncover 2",
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y#0",
+        "y#0",
+        "b#0",
+        "tmp%0#0",
+        "m#0"
+      ]
+    },
+    "738": {
+      "op": "*",
+      "defined_out": [
+        "b#0",
+        "i#0",
+        "m#0",
+        "tmp%1#0",
+        "y#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y#0",
+        "y#0",
+        "b#0",
+        "tmp%1#0"
+      ]
+    },
+    "739": {
+      "op": "+",
+      "defined_out": [
+        "guessed_y#0",
+        "i#0",
+        "m#0",
+        "y#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y#0",
+        "y#0",
+        "guessed_y#0"
+      ]
+    },
+    "740": {
+      "op": "dup",
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y#0",
+        "y#0",
+        "guessed_y#0",
+        "guessed_y#0"
+      ]
+    },
+    "741": {
+      "op": "frame_bury 0",
+      "defined_out": [
+        "guessed_y#0",
+        "i#0",
+        "m#0",
+        "y#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y#0",
+        "y#0",
+        "guessed_y#0"
+      ]
+    },
+    "743": {
+      "op": "itob",
+      "defined_out": [
+        "guessed_y#0",
+        "i#0",
+        "m#0",
+        "tmp%3#0",
+        "y#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y#0",
+        "y#0",
+        "tmp%3#0"
+      ]
+    },
+    "744": {
+      "op": "b<=",
+      "defined_out": [
+        "guessed_y#0",
+        "i#0",
+        "m#0",
+        "tmp%4#0",
+        "y#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y#0",
+        "tmp%4#0"
+      ]
+    },
+    "745": {
+      "op": "bz run_training_loop_by_start_and_end_index_else_body@4",
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y#0"
+      ]
+    },
+    "748": {
+      "op": "btoi",
+      "defined_out": [
+        "guessed_y#0",
+        "i#0",
+        "m#0",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "tmp%5#0"
+      ]
+    },
+    "749": {
+      "op": "frame_dig 0",
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "tmp%5#0",
+        "guessed_y#0"
+      ]
+    },
+    "751": {
+      "op": "swap",
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "guessed_y#0",
+        "tmp%5#0"
+      ]
+    },
+    "752": {
+      "op": "-",
+      "defined_out": [
+        "guessed_y#0",
+        "i#0",
+        "m#0",
+        "y_error#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y_error#0"
+      ]
+    },
+    "753": {
+      "block": "run_training_loop_by_start_and_end_index_after_if_else@5",
+      "stack_in": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y_error#0"
+      ],
+      "op": "dup",
+      "defined_out": [
+        "y_error#0",
+        "y_error#0 (copy)"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y_error#0",
+        "y_error#0 (copy)"
+      ]
+    },
+    "754": {
+      "op": "frame_dig 1",
+      "defined_out": [
+        "m#0",
+        "y_error#0",
+        "y_error#0 (copy)"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y_error#0",
+        "y_error#0 (copy)",
+        "m#0"
+      ]
+    },
+    "756": {
+      "op": "*",
+      "defined_out": [
+        "m#0",
+        "tmp%9#0",
+        "y_error#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y_error#0",
+        "tmp%9#0"
+      ]
+    },
+    "757": {
+      "op": "frame_dig 2",
+      "defined_out": [
+        "delta_weight#0",
+        "m#0",
+        "tmp%9#0",
+        "y_error#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y_error#0",
+        "tmp%9#0",
+        "delta_weight#0"
+      ]
+    },
+    "759": {
+      "op": "+",
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y_error#0",
+        "delta_weight#0"
+      ]
+    },
+    "760": {
+      "op": "frame_bury 2",
+      "defined_out": [
+        "delta_weight#0",
+        "m#0",
+        "y_error#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y_error#0"
+      ]
+    },
+    "762": {
+      "op": "frame_dig 3",
+      "defined_out": [
+        "delta_bias#0",
+        "delta_weight#0",
+        "m#0",
+        "y_error#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y_error#0",
+        "delta_bias#0"
+      ]
+    },
+    "764": {
+      "op": "+",
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "delta_bias#0"
+      ]
+    },
+    "765": {
+      "op": "frame_bury 3",
+      "defined_out": [
+        "delta_bias#0",
+        "delta_weight#0",
+        "m#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0"
+      ]
+    },
+    "767": {
+      "op": "frame_dig 4",
+      "defined_out": [
+        "delta_bias#0",
+        "delta_weight#0",
+        "i#0",
+        "m#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "i#0"
+      ]
+    },
+    "769": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "delta_bias#0",
+        "delta_weight#0",
+        "i#0",
+        "m#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "i#0",
+        "1"
+      ]
+    },
+    "770": {
+      "op": "+",
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "i#0"
+      ]
+    },
+    "771": {
+      "op": "frame_bury 4",
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0"
+      ]
+    },
+    "773": {
+      "op": "b run_training_loop_by_start_and_end_index_for_header@1"
+    },
+    "776": {
+      "block": "run_training_loop_by_start_and_end_index_else_body@4",
+      "stack_in": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y#0"
+      ],
+      "op": "btoi",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "tmp%7#0"
+      ]
+    },
+    "777": {
+      "op": "frame_dig 0",
+      "defined_out": [
+        "guessed_y#0",
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "tmp%7#0",
+        "guessed_y#0"
+      ]
+    },
+    "779": {
+      "op": "-",
+      "defined_out": [
+        "guessed_y#0",
+        "y_error#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "y_error#0"
+      ]
+    },
+    "780": {
+      "op": "b run_training_loop_by_start_and_end_index_after_if_else@5"
+    },
+    "783": {
+      "block": "run_training_loop_by_start_and_end_index_after_for@7",
+      "stack_in": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0"
+      ],
+      "op": "frame_dig 2",
+      "defined_out": [
+        "delta_weight#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "delta_weight#0"
+      ]
+    },
+    "785": {
+      "op": "frame_dig 3",
+      "defined_out": [
+        "delta_bias#0",
+        "delta_weight#0"
+      ],
+      "stack_out": [
+        "guessed_y#0",
+        "m#0",
+        "delta_weight#0",
+        "delta_bias#0",
+        "i#0",
+        "delta_weight#0",
+        "delta_bias#0"
+      ]
+    },
+    "787": {
+      "op": "frame_bury 1"
+    },
+    "789": {
+      "op": "frame_bury 0"
+    },
+    "791": {
+      "retsub": true,
+      "op": "retsub"
     }
   }
 }

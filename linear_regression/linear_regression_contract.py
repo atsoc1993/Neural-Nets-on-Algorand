@@ -1,5 +1,5 @@
 #TODO Convert Linear Regression Model to Contract State, then create training files and test contract predictions
-from algopy import ARC4Contract, UInt64, arc4, Box, gtxn, Global, Txn, itxn, urange
+from algopy import ARC4Contract, UInt64, arc4, Box, gtxn, Global, Txn, itxn, urange, subroutine, ensure_budget, OpUpFeeSource
 from algopy.arc4 import abimethod, DynamicArray
 
 Data = DynamicArray[arc4.UInt64]
@@ -125,35 +125,34 @@ class LinearRegressionModel(ARC4Contract):
         current_epoch = self.epochs_completed
         assert current_epoch < self.epochs, "All epochs for training have already been completed, no more training loops needed"
 
-        # Get all data for x_inputs and y_targets
-        x_inputs = self.x_inputs_box.value.copy()
-        y_targets = self.y_targets_box.value.copy()
 
-
-        # Initialize our deltas for weight and bias for this training loop
-        # These keep track of error sums to apply to our global weight and bias
-        delta_weight = UInt64(0)
-        delta_bias = UInt64(0)
 
         # There is no zip method currently available in puyapy
         # Although they did add 'in' operator for iterating through dynamic arrays
         # we will need to use urange and indexing for now
 
-        for i in urange(x_inputs.length):
-            # Get each x, y pair in our training data for this epoch
-            x = x_inputs[i]
-            y = y_targets[i]
+        # Get the budget cost before an iteration
+        pre_budget_remaining = Global.opcode_budget()
 
-            # Guess the value of Y using equation of a line with our weight and bias; y = mx + b, where m = weight and b = bias
-            m = self.weight
-            b = self.bias
-            guessed_y = m * x.as_uint64() + b
+        # Run one iteration of a training loop, be resourceful and sum these deltas with full training loop deltas later
+        _delta_weight, _delta_bias = self.run_training_loop_by_start_and_end_index(UInt64(0), UInt64(1))
 
-            # Check how wrong we were and get the difference of the guessed y target and the actual y target
-            y_error = guessed_y - y.as_uint64()
+        # Get the budget cost after an iteration
+        post_budget_remaining = Global.opcode_budget()
 
-            delta_weight += y_error * m
-            delta_bias += y_error
+        # Calculate difference in budget
+        budget_cost_per_iteration = pre_budget_remaining - post_budget_remaining
+
+        # Calculate extra budget needed
+        extra_budget_needed = self.length_data * budget_cost_per_iteration
+
+        # Ensure the extra budget is met, OpUp fees come from outer transaction
+        ensure_budget(required_budget=extra_budget_needed, fee_source=OpUpFeeSource.GroupCredit)
+
+        delta_weight, delta_bias = self.run_training_loop_by_start_and_end_index(UInt64(1), self.length_data)
+
+        delta_weight += _delta_weight
+        delta_bias += _delta_bias
 
         # Average our delta weight and delta bias by the length of data
         delta_weight //= self.length_data
@@ -173,6 +172,41 @@ class LinearRegressionModel(ARC4Contract):
             
             # Set ready for training to false
             self.ready_for_training = False
+
+    @subroutine
+    def run_training_loop_by_start_and_end_index(self, start: UInt64, end: UInt64) -> tuple[UInt64, UInt64]:
+
+        # Initialize our deltas for weight and bias for this training loop
+        # These keep track of error sums to apply to our global weight and bias
+        delta_weight = UInt64(0)
+        delta_bias = UInt64(0)
+
+        # Get all data for x_inputs and y_targets
+        x_inputs = self.x_inputs_box.value.copy()
+        y_targets = self.y_targets_box.value.copy()
+
+        for i in urange(start, end):
+            # Get each x, y pair in our training data for this epoch
+            x = x_inputs[i]
+            y = y_targets[i]
+
+            # Guess the value of Y using equation of a line with our weight and bias; y = mx + b, where m = weight and b = bias
+            m = self.weight
+            b = self.bias
+            guessed_y = m * x.as_uint64() + b
+
+            # Check how wrong we were and get the difference of the guessed y target and the actual y target
+            error_was_negative = False
+            if guessed_y >= y:
+                y_error = guessed_y - y.as_uint64()
+            else:
+                y_error = y.as_uint64() - guessed_y
+                error_was_negative = True
+
+            delta_weight += y_error * m
+            delta_bias += y_error
+
+        return delta_weight, delta_bias
 
     @abimethod
     def predict(self, x: UInt64) -> UInt64:
