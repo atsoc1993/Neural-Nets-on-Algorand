@@ -75,14 +75,14 @@ tests: list[tuple[int, str]] = [
 
 for test in tests:
 
-    age, gender = test
-    normalized_age = normalize_age(age)
-    normalized_gender = 0 if gender == 'Male' else 1
+    age_int, gender_str = test
+    normalized_age = normalize_age(age_int)
+    normalized_gender = 0 if gender_str == 'Male' else 1
 
     predicted_y = age_weight * normalized_age + gender_weight * normalized_gender + bias
     activated_y_prediction = sigmoid(predicted_y)
 
     cbp_predicted_y = 'Yes' if activated_y_prediction > 0.5 else 'No'
-    expected_y = 'Yes' if gender == 'Female' and age < 50 else 'No'
-    print(f'Prediction for {age} year old {gender}: {cbp_predicted_y} ({activated_y_prediction}); Expected: {expected_y}')
+    expected_y = 'Yes' if gender_str == 'Female' and age_int < 50 else 'No'
+    print(f'Prediction for {age_int} year old {gender_str}: {cbp_predicted_y} ({activated_y_prediction}); Expected: {expected_y}')
     

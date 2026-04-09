@@ -188,17 +188,17 @@ tests: list[tuple[int, str]] = [
 ]
 
 for test in tests:
-    age, gender = test
-    normalized_age = normalize_age(age)
-    normalized_gender = 0 if gender == 'Male' else 1
+    age_int, gender_str = test
+    normalized_age = normalize_age(age_int)
+    normalized_gender = 0 if gender_str == 'Male' else 1
     
     preactivated_hidden_layer_output_value = hidden_layer_weights[0] * normalized_age + hidden_layer_weights[1] * normalized_gender + hidden_layer_bias
     activated_hidden_layer_output_value = relu(preactivated_hidden_layer_output_value)
     y_prediction = activated_hidden_layer_output_value * output_layer_weight + output_layer_bias
     activated_y_prediction = sigmoid(y_prediction)          
     cbp_predicted_y = 'Yes' if activated_y_prediction > 0.5 else 'No'
-    expected_y = 'Yes' if gender == 'Female' and age < 50 else 'No'
-    print(f'Prediction for {age} year old {gender}: {cbp_predicted_y} ({activated_y_prediction}); Expected: {expected_y}')
+    expected_y = 'Yes' if gender_str == 'Female' and age_int < 50 else 'No'
+    print(f'Prediction for {age_int} year old {gender_str}: {cbp_predicted_y} ({activated_y_prediction}); Expected: {expected_y}')
     
 '''
 Example Outputs for Tests
