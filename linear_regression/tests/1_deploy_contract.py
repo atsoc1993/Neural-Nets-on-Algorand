@@ -26,7 +26,3 @@ fund_linear_regression_app_tx = ALGORAND.send.payment(
     )
 )
 logging.info(f'Funded Account MBR to Linear Regression Model App')
-
-
-
-
