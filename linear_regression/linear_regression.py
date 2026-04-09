@@ -66,7 +66,7 @@ bias = 0.0
 # More epochs, Lower learning rate — 
 # Less Epochs, Higher Learning Rate
 epochs = 10_000
-learning_rate = 0.001
+learning_rate = 0.005
 
 # Begin our training loop
 for epoch in range(epochs):
@@ -165,6 +165,7 @@ print('\n')
 test_x = 6
 predicted_y = weight * test_x + bias
 expected_y = 19.3 * test_x + 72.5 # 188.3
+print(f'Final Weight: {weight}; Final Bias: {bias}')
 print(f'Predicted for f({test_x}): {predicted_y}; Correct Y: {expected_y}; Error: {predicted_y - expected_y}')
 
 
