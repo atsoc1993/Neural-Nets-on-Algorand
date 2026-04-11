@@ -1,0 +1,5244 @@
+#pragma version 11
+#pragma typetrack false
+
+// algopy.arc4.ARC4Contract.approval_program() -> uint64:
+main:
+    intcblock 0 1 8 2
+    bytecblock "hidden_neurons" "hidden_layers" 0x0000 "length_data" "f_h_w_mag" "f_h_w_sign" "ages" "h_w_mag" "h_w_sign" "o_w_mag" "o_w_sign" "learning_rate" "scale_factor" "genders" "targets" "h_b_mag" "h_b_sign" "epochs_completed" "fees_used" "output_bias_magnitude" "output_bias_is_negative" "input_feature_count" "epochs" "ready_for_training" "training_complete" "extra_budget_needed" "calculated_budget_needed" 0x068101 0x0000000000000000
+    intc_0 // 0
+    dupn 6
+    pushbytes ""
+    dupn 29
+    txn ApplicationID
+    bnz main_after_if_else@2
+    // logistic_neural_network_contract.py:9
+    // self.input_feature_count = UInt64(2)
+    bytec 21 // "input_feature_count"
+    intc_3 // 2
+    app_global_put
+    // logistic_neural_network_contract.py:11
+    // self.hidden_layers = UInt64(0)
+    bytec_1 // "hidden_layers"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:12
+    // self.hidden_neurons = UInt64(0)
+    bytec_0 // "hidden_neurons"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:14
+    // self.epochs = UInt64(0)
+    bytec 22 // "epochs"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:15
+    // self.epochs_completed = UInt64(0)
+    bytec 17 // "epochs_completed"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:16
+    // self.learning_rate = UInt64(0)
+    bytec 11 // "learning_rate"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:17
+    // self.scale_factor = UInt64(0)
+    bytec 12 // "scale_factor"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:19
+    // self.length_data = UInt64(0)
+    bytec_3 // "length_data"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:20
+    // self.ready_for_training = False
+    bytec 23 // "ready_for_training"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:21
+    // self.training_complete = False
+    bytec 24 // "training_complete"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:23
+    // self.extra_budget_needed = UInt64(0)
+    bytec 25 // "extra_budget_needed"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:24
+    // self.calculated_budget_needed = False
+    bytec 26 // "calculated_budget_needed"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:25
+    // self.fees_used = UInt64(0)
+    bytec 18 // "fees_used"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:43
+    // self.output_bias_magnitude = UInt64(0)
+    bytec 19 // "output_bias_magnitude"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:44
+    // self.output_bias_is_negative = False
+    bytec 20 // "output_bias_is_negative"
+    intc_0 // 0
+    app_global_put
+
+main_after_if_else@2:
+    // logistic_neural_network_contract.py:7
+    // class LogisticNeuralNetwork(ARC4Contract):
+    txn NumAppArgs
+    bz main___algopy_default_create@15
+    txn OnCompletion
+    !
+    assert
+    txn ApplicationID
+    assert
+    pushbytess 0x5ee8a615 0x09b63405 0xa783f5b7 0x743847c7 0x201a9123 0xa30ce7ff // method "add_inputs_and_targets(uint64[],uint64[],uint64[],pay)void", method "prime_training(uint64,uint64,uint64,uint64,uint64,pay)void", method "run_training_loops()void", method "predict(uint64,uint64)uint64", method "clear_data()void", method "dummy()void"
+    txna ApplicationArgs 0
+    match main_add_inputs_and_targets_route@6 main_prime_training_route@7 main_run_training_loops_route@8 main_predict_route@9 main_clear_data_route@10 main_after_if_else@51
+    err
+
+main_after_if_else@51:
+    // logistic_neural_network_contract.py:98
+    // @abimethod
+    intc_1 // 1
+    return
+
+main_clear_data_route@10:
+    // logistic_neural_network_contract.py:661
+    // self.age_inputs_box.value = Data()
+    bytec 6 // "ages"
+    box_del
+    pop
+    bytec 6 // "ages"
+    bytec_2 // 0x0000
+    box_put
+    // logistic_neural_network_contract.py:662
+    // self.gender_inputs_box.value = Data()
+    bytec 13 // "genders"
+    box_del
+    pop
+    bytec 13 // "genders"
+    // logistic_neural_network_contract.py:661
+    // self.age_inputs_box.value = Data()
+    bytec_2 // 0x0000
+    // logistic_neural_network_contract.py:662
+    // self.gender_inputs_box.value = Data()
+    box_put
+    // logistic_neural_network_contract.py:663
+    // self.y_targets_box.value = Data()
+    bytec 14 // "targets"
+    box_del
+    pop
+    bytec 14 // "targets"
+    // logistic_neural_network_contract.py:661
+    // self.age_inputs_box.value = Data()
+    bytec_2 // 0x0000
+    // logistic_neural_network_contract.py:663
+    // self.y_targets_box.value = Data()
+    box_put
+    // logistic_neural_network_contract.py:665
+    // self.first_hidden_weight_magnitudes_box.value = Data()
+    bytec 4 // "f_h_w_mag"
+    box_del
+    pop
+    bytec 4 // "f_h_w_mag"
+    // logistic_neural_network_contract.py:661
+    // self.age_inputs_box.value = Data()
+    bytec_2 // 0x0000
+    // logistic_neural_network_contract.py:665
+    // self.first_hidden_weight_magnitudes_box.value = Data()
+    box_put
+    // logistic_neural_network_contract.py:666
+    // self.first_hidden_weight_signs_box.value = Data()
+    bytec 5 // "f_h_w_sign"
+    box_del
+    pop
+    bytec 5 // "f_h_w_sign"
+    // logistic_neural_network_contract.py:661
+    // self.age_inputs_box.value = Data()
+    bytec_2 // 0x0000
+    // logistic_neural_network_contract.py:666
+    // self.first_hidden_weight_signs_box.value = Data()
+    box_put
+    // logistic_neural_network_contract.py:668
+    // self.hidden_weight_magnitudes_box.value = Data()
+    bytec 7 // "h_w_mag"
+    box_del
+    pop
+    bytec 7 // "h_w_mag"
+    // logistic_neural_network_contract.py:661
+    // self.age_inputs_box.value = Data()
+    bytec_2 // 0x0000
+    // logistic_neural_network_contract.py:668
+    // self.hidden_weight_magnitudes_box.value = Data()
+    box_put
+    // logistic_neural_network_contract.py:669
+    // self.hidden_weight_signs_box.value = Data()
+    bytec 8 // "h_w_sign"
+    box_del
+    pop
+    bytec 8 // "h_w_sign"
+    // logistic_neural_network_contract.py:661
+    // self.age_inputs_box.value = Data()
+    bytec_2 // 0x0000
+    // logistic_neural_network_contract.py:669
+    // self.hidden_weight_signs_box.value = Data()
+    box_put
+    // logistic_neural_network_contract.py:671
+    // self.hidden_bias_magnitudes_box.value = Data()
+    bytec 15 // "h_b_mag"
+    box_del
+    pop
+    bytec 15 // "h_b_mag"
+    // logistic_neural_network_contract.py:661
+    // self.age_inputs_box.value = Data()
+    bytec_2 // 0x0000
+    // logistic_neural_network_contract.py:671
+    // self.hidden_bias_magnitudes_box.value = Data()
+    box_put
+    // logistic_neural_network_contract.py:672
+    // self.hidden_bias_signs_box.value = Data()
+    bytec 16 // "h_b_sign"
+    box_del
+    pop
+    bytec 16 // "h_b_sign"
+    // logistic_neural_network_contract.py:661
+    // self.age_inputs_box.value = Data()
+    bytec_2 // 0x0000
+    // logistic_neural_network_contract.py:672
+    // self.hidden_bias_signs_box.value = Data()
+    box_put
+    // logistic_neural_network_contract.py:674
+    // self.output_weight_magnitudes_box.value = Data()
+    bytec 9 // "o_w_mag"
+    box_del
+    pop
+    bytec 9 // "o_w_mag"
+    // logistic_neural_network_contract.py:661
+    // self.age_inputs_box.value = Data()
+    bytec_2 // 0x0000
+    // logistic_neural_network_contract.py:674
+    // self.output_weight_magnitudes_box.value = Data()
+    box_put
+    // logistic_neural_network_contract.py:675
+    // self.output_weight_signs_box.value = Data()
+    bytec 10 // "o_w_sign"
+    box_del
+    pop
+    bytec 10 // "o_w_sign"
+    // logistic_neural_network_contract.py:661
+    // self.age_inputs_box.value = Data()
+    bytec_2 // 0x0000
+    // logistic_neural_network_contract.py:675
+    // self.output_weight_signs_box.value = Data()
+    box_put
+    // logistic_neural_network_contract.py:677
+    // self.output_bias_magnitude = UInt64(0)
+    bytec 19 // "output_bias_magnitude"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:678
+    // self.output_bias_is_negative = False
+    bytec 20 // "output_bias_is_negative"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:680
+    // self.hidden_layers = UInt64(0)
+    bytec_1 // "hidden_layers"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:681
+    // self.hidden_neurons = UInt64(0)
+    bytec_0 // "hidden_neurons"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:683
+    // self.length_data = UInt64(0)
+    bytec_3 // "length_data"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:684
+    // self.epochs = UInt64(0)
+    bytec 22 // "epochs"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:685
+    // self.epochs_completed = UInt64(0)
+    bytec 17 // "epochs_completed"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:686
+    // self.learning_rate = UInt64(0)
+    bytec 11 // "learning_rate"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:687
+    // self.scale_factor = UInt64(0)
+    bytec 12 // "scale_factor"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:689
+    // self.ready_for_training = False
+    bytec 23 // "ready_for_training"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:690
+    // self.training_complete = False
+    bytec 24 // "training_complete"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:692
+    // self.extra_budget_needed = UInt64(0)
+    bytec 25 // "extra_budget_needed"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:693
+    // self.calculated_budget_needed = False
+    bytec 26 // "calculated_budget_needed"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:694
+    // self.fees_used = UInt64(0)
+    bytec 18 // "fees_used"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:659
+    // @abimethod
+    intc_1 // 1
+    return
+
+main_predict_route@9:
+    // logistic_neural_network_contract.py:582
+    // @abimethod
+    txna ApplicationArgs 1
+    dup
+    len
+    intc_2 // 8
+    ==
+    assert // invalid number of bytes for arc4.uint64
+    btoi
+    bury 30
+    txna ApplicationArgs 2
+    dup
+    len
+    intc_2 // 8
+    ==
+    assert // invalid number of bytes for arc4.uint64
+    btoi
+    bury 25
+    // logistic_neural_network_contract.py:584
+    // assert self.training_complete == True, "Model has not been fully trained"
+    intc_0 // 0
+    bytec 24 // "training_complete"
+    app_global_get_ex
+    assert // check self.training_complete exists
+    intc_1 // 1
+    ==
+    assert // Model has not been fully trained
+    // logistic_neural_network_contract.py:586
+    // hidden_state_count = self.hidden_layers * self.hidden_neurons
+    intc_0 // 0
+    bytec_1 // "hidden_layers"
+    app_global_get_ex
+    assert // check self.hidden_layers exists
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    assert // check self.hidden_neurons exists
+    *
+    // logistic_neural_network_contract.py:600
+    // hidden_activations = self.make_zero_array(hidden_state_count)
+    callsub make_zero_array
+    bury 34
+    // logistic_neural_network_contract.py:602
+    // for layer in urange(self.hidden_layers):
+    intc_0 // 0
+    bytec_1 // "hidden_layers"
+    app_global_get_ex
+    swap
+    bury 18
+    assert // check self.hidden_layers exists
+    intc_0 // 0
+    bury 21
+
+main_for_header@23:
+    // logistic_neural_network_contract.py:602
+    // for layer in urange(self.hidden_layers):
+    dig 20
+    dig 17
+    <
+    bz main_after_for@34
+    // logistic_neural_network_contract.py:603
+    // for neuron in urange(self.hidden_neurons):
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    swap
+    bury 17
+    assert // check self.hidden_neurons exists
+    intc_0 // 0
+    bury 12
+
+main_for_header@25:
+    // logistic_neural_network_contract.py:603
+    // for neuron in urange(self.hidden_neurons):
+    dig 11
+    dig 16
+    <
+    bz main_after_for@33
+    // logistic_neural_network_contract.py:740
+    // return (layer * self.hidden_neurons) + neuron
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    assert // check self.hidden_neurons exists
+    dig 21
+    *
+    dig 12
+    +
+    // logistic_neural_network_contract.py:605
+    // preactivation_magnitude = hidden_bias_magnitudes[bias_index].as_uint64()
+    intc_2 // 8
+    *
+    dup
+    bury 30
+    intc_3 // 2
+    +
+    // logistic_neural_network_contract.py:594
+    // hidden_bias_magnitudes = self.hidden_bias_magnitudes_box.value.copy()
+    bytec 15 // "h_b_mag"
+    // logistic_neural_network_contract.py:605
+    // preactivation_magnitude = hidden_bias_magnitudes[bias_index].as_uint64()
+    dig 1
+    intc_2 // 8
+    box_extract
+    btoi
+    bury 9
+    // logistic_neural_network_contract.py:595
+    // hidden_bias_signs = self.hidden_bias_signs_box.value.copy()
+    bytec 16 // "h_b_sign"
+    // logistic_neural_network_contract.py:606
+    // preactivation_is_negative = self.uint_to_bool(hidden_bias_signs[bias_index].as_uint64())
+    swap
+    intc_2 // 8
+    box_extract
+    btoi
+    // logistic_neural_network_contract.py:821
+    // if value == 0:
+    bnz main_after_if_else@104
+    // logistic_neural_network_contract.py:822
+    // return False
+    intc_0 // 0
+    bury 9
+
+main_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@105:
+    // logistic_neural_network_contract.py:608
+    // if layer == 0:
+    dig 20
+    bnz main_else_body@28
+    // logistic_neural_network_contract.py:732
+    // return neuron * self.input_feature_count + feature
+    intc_0 // 0
+    bytec 21 // "input_feature_count"
+    app_global_get_ex
+    assert // check self.input_feature_count exists
+    dig 12
+    *
+    dup
+    // logistic_neural_network_contract.py:610
+    // gender_weight_index = self.first_hidden_weight_index(neuron, UInt64(1))
+    intc_1 // 1
+    // logistic_neural_network_contract.py:732
+    // return neuron * self.input_feature_count + feature
+    +
+    bury 25
+    // logistic_neural_network_contract.py:615
+    // first_hidden_weight_magnitudes[age_weight_index].as_uint64(),
+    intc_2 // 8
+    *
+    intc_3 // 2
+    +
+    // logistic_neural_network_contract.py:588
+    // first_hidden_weight_magnitudes = self.first_hidden_weight_magnitudes_box.value.copy()
+    bytec 4 // "f_h_w_mag"
+    // logistic_neural_network_contract.py:615
+    // first_hidden_weight_magnitudes[age_weight_index].as_uint64(),
+    dig 1
+    intc_2 // 8
+    box_extract
+    btoi
+    bury 4
+    // logistic_neural_network_contract.py:589
+    // first_hidden_weight_signs = self.first_hidden_weight_signs_box.value.copy()
+    bytec 5 // "f_h_w_sign"
+    // logistic_neural_network_contract.py:616
+    // self.uint_to_bool(first_hidden_weight_signs[age_weight_index].as_uint64()),
+    swap
+    intc_2 // 8
+    box_extract
+    btoi
+    // logistic_neural_network_contract.py:821
+    // if value == 0:
+    bnz main_after_if_else@90
+    // logistic_neural_network_contract.py:822
+    // return False
+    intc_0 // 0
+
+main_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@91:
+    // logistic_neural_network_contract.py:767
+    // product_magnitude = self.scale_down_product(weight_magnitude, unsigned_input)
+    dig 3
+    dig 31
+    callsub scale_down_product
+    // logistic_neural_network_contract.py:768-773
+    // return self.signed_add(
+    //     acc_magnitude,
+    //     acc_is_negative,
+    //     product_magnitude,
+    //     weight_is_negative,
+    // )
+    dig 9
+    dig 11
+    uncover 2
+    uncover 3
+    callsub signed_add
+    bury 10
+    bury 8
+    // logistic_neural_network_contract.py:623
+    // first_hidden_weight_magnitudes[gender_weight_index].as_uint64(),
+    dig 23
+    intc_2 // 8
+    *
+    intc_3 // 2
+    +
+    // logistic_neural_network_contract.py:588
+    // first_hidden_weight_magnitudes = self.first_hidden_weight_magnitudes_box.value.copy()
+    bytec 4 // "f_h_w_mag"
+    // logistic_neural_network_contract.py:623
+    // first_hidden_weight_magnitudes[gender_weight_index].as_uint64(),
+    dig 1
+    intc_2 // 8
+    box_extract
+    btoi
+    bury 4
+    // logistic_neural_network_contract.py:589
+    // first_hidden_weight_signs = self.first_hidden_weight_signs_box.value.copy()
+    bytec 5 // "f_h_w_sign"
+    // logistic_neural_network_contract.py:624
+    // self.uint_to_bool(first_hidden_weight_signs[gender_weight_index].as_uint64()),
+    swap
+    intc_2 // 8
+    box_extract
+    btoi
+    // logistic_neural_network_contract.py:821
+    // if value == 0:
+    bnz main_after_if_else@96
+    // logistic_neural_network_contract.py:822
+    // return False
+    intc_0 // 0
+
+main_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@97:
+    // logistic_neural_network_contract.py:767
+    // product_magnitude = self.scale_down_product(weight_magnitude, unsigned_input)
+    dig 3
+    dig 26
+    callsub scale_down_product
+    // logistic_neural_network_contract.py:768-773
+    // return self.signed_add(
+    //     acc_magnitude,
+    //     acc_is_negative,
+    //     product_magnitude,
+    //     weight_is_negative,
+    // )
+    dig 9
+    dig 11
+    uncover 2
+    uncover 3
+    callsub signed_add
+    bury 10
+    bury 8
+
+main_after_if_else@32:
+    // logistic_neural_network_contract.py:777
+    // if is_negative:
+    dig 8
+    bz main_after_if_else@74
+    // logistic_neural_network_contract.py:778
+    // return UInt64(0)
+    intc_0 // 0
+
+main_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.relu@75:
+    // logistic_neural_network_contract.py:640-642
+    // hidden_activations[bias_index] = arc4.UInt64(
+    //     self.relu(preactivation_magnitude, preactivation_is_negative)
+    // )
+    itob
+    dig 29
+    intc_3 // 2
+    +
+    dig 35
+    swap
+    uncover 2
+    replace3 // on error: index access is out of bounds
+    bury 34
+    // logistic_neural_network_contract.py:603
+    // for neuron in urange(self.hidden_neurons):
+    dig 11
+    intc_1 // 1
+    +
+    bury 12
+    b main_for_header@25
+
+main_after_if_else@74:
+    dig 7
+    // logistic_neural_network_contract.py:641
+    // self.relu(preactivation_magnitude, preactivation_is_negative)
+    b main_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.relu@75
+
+main_after_if_else@96:
+    // logistic_neural_network_contract.py:823
+    // return True
+    intc_1 // 1
+    // logistic_neural_network_contract.py:624
+    // self.uint_to_bool(first_hidden_weight_signs[gender_weight_index].as_uint64()),
+    b main_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@97
+
+main_after_if_else@90:
+    // logistic_neural_network_contract.py:823
+    // return True
+    intc_1 // 1
+    // logistic_neural_network_contract.py:616
+    // self.uint_to_bool(first_hidden_weight_signs[age_weight_index].as_uint64()),
+    b main_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@91
+
+main_else_body@28:
+    // logistic_neural_network_contract.py:628
+    // for prev_neuron in urange(self.hidden_neurons):
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    swap
+    bury 16
+    assert // check self.hidden_neurons exists
+    intc_0 // 0
+    bury 6
+
+main_for_header@29:
+    // logistic_neural_network_contract.py:628
+    // for prev_neuron in urange(self.hidden_neurons):
+    dig 5
+    dig 15
+    <
+    bz main_after_if_else@32
+    // logistic_neural_network_contract.py:629
+    // weight_index = self.hidden_weight_index(layer, neuron, prev_neuron)
+    dig 20
+    dup
+    dig 13
+    dig 8
+    dup
+    cover 4
+    callsub hidden_weight_index
+    // logistic_neural_network_contract.py:630
+    // prev_activation_index = self.hidden_bias_index(layer - UInt64(1), prev_neuron)
+    swap
+    intc_1 // 1
+    -
+    // logistic_neural_network_contract.py:740
+    // return (layer * self.hidden_neurons) + neuron
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    assert // check self.hidden_neurons exists
+    *
+    uncover 2
+    +
+    bury 8
+    // logistic_neural_network_contract.py:635
+    // hidden_weight_magnitudes[weight_index].as_uint64(),
+    intc_2 // 8
+    *
+    intc_3 // 2
+    +
+    // logistic_neural_network_contract.py:591
+    // hidden_weight_magnitudes = self.hidden_weight_magnitudes_box.value.copy()
+    bytec 7 // "h_w_mag"
+    // logistic_neural_network_contract.py:635
+    // hidden_weight_magnitudes[weight_index].as_uint64(),
+    dig 1
+    intc_2 // 8
+    box_extract
+    btoi
+    bury 4
+    // logistic_neural_network_contract.py:592
+    // hidden_weight_signs = self.hidden_weight_signs_box.value.copy()
+    bytec 8 // "h_w_sign"
+    // logistic_neural_network_contract.py:636
+    // self.uint_to_bool(hidden_weight_signs[weight_index].as_uint64()),
+    swap
+    intc_2 // 8
+    box_extract
+    btoi
+    // logistic_neural_network_contract.py:821
+    // if value == 0:
+    bnz main_after_if_else@80
+    // logistic_neural_network_contract.py:822
+    // return False
+    intc_0 // 0
+
+main_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@81:
+    // logistic_neural_network_contract.py:637
+    // hidden_activations[prev_activation_index].as_uint64(),
+    dig 34
+    extract 2 0
+    dig 8
+    intc_2 // 8
+    *
+    extract_uint64
+    // logistic_neural_network_contract.py:767
+    // product_magnitude = self.scale_down_product(weight_magnitude, unsigned_input)
+    dig 4
+    swap
+    callsub scale_down_product
+    // logistic_neural_network_contract.py:768-773
+    // return self.signed_add(
+    //     acc_magnitude,
+    //     acc_is_negative,
+    //     product_magnitude,
+    //     weight_is_negative,
+    // )
+    dig 9
+    dig 11
+    uncover 2
+    uncover 3
+    callsub signed_add
+    bury 10
+    bury 8
+    // logistic_neural_network_contract.py:628
+    // for prev_neuron in urange(self.hidden_neurons):
+    dig 5
+    intc_1 // 1
+    +
+    bury 6
+    b main_for_header@29
+
+main_after_if_else@80:
+    // logistic_neural_network_contract.py:823
+    // return True
+    intc_1 // 1
+    // logistic_neural_network_contract.py:636
+    // self.uint_to_bool(hidden_weight_signs[weight_index].as_uint64()),
+    b main_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@81
+
+main_after_if_else@104:
+    // logistic_neural_network_contract.py:823
+    // return True
+    intc_1 // 1
+    bury 9
+    // logistic_neural_network_contract.py:606
+    // preactivation_is_negative = self.uint_to_bool(hidden_bias_signs[bias_index].as_uint64())
+    b main_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@105
+
+main_after_for@33:
+    // logistic_neural_network_contract.py:602
+    // for layer in urange(self.hidden_layers):
+    dig 20
+    intc_1 // 1
+    +
+    bury 21
+    b main_for_header@23
+
+main_after_for@34:
+    // logistic_neural_network_contract.py:644
+    // z_out_magnitude = self.output_bias_magnitude
+    intc_0 // 0
+    bytec 19 // "output_bias_magnitude"
+    app_global_get_ex
+    swap
+    bury 2
+    assert // check self.output_bias_magnitude exists
+    // logistic_neural_network_contract.py:645
+    // z_out_is_negative = self.output_bias_is_negative
+    intc_0 // 0
+    bytec 20 // "output_bias_is_negative"
+    app_global_get_ex
+    swap
+    bury 3
+    assert // check self.output_bias_is_negative exists
+    // logistic_neural_network_contract.py:647
+    // for neuron in urange(self.hidden_neurons):
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    swap
+    bury 15
+    assert // check self.hidden_neurons exists
+    intc_0 // 0
+    bury 12
+
+main_for_header@35:
+    // logistic_neural_network_contract.py:647
+    // for neuron in urange(self.hidden_neurons):
+    dig 11
+    dig 14
+    <
+    bz main_after_for@37
+    // logistic_neural_network_contract.py:648
+    // last_hidden_index = self.hidden_bias_index(self.hidden_layers - UInt64(1), neuron)
+    intc_0 // 0
+    bytec_1 // "hidden_layers"
+    app_global_get_ex
+    assert // check self.hidden_layers exists
+    intc_1 // 1
+    -
+    // logistic_neural_network_contract.py:740
+    // return (layer * self.hidden_neurons) + neuron
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    assert // check self.hidden_neurons exists
+    *
+    dig 12
+    dup
+    cover 2
+    +
+    bury 23
+    // logistic_neural_network_contract.py:652
+    // output_weight_magnitudes[neuron].as_uint64(),
+    intc_2 // 8
+    *
+    intc_3 // 2
+    +
+    // logistic_neural_network_contract.py:597
+    // output_weight_magnitudes = self.output_weight_magnitudes_box.value.copy()
+    bytec 9 // "o_w_mag"
+    // logistic_neural_network_contract.py:652
+    // output_weight_magnitudes[neuron].as_uint64(),
+    dig 1
+    intc_2 // 8
+    box_extract
+    btoi
+    bury 4
+    // logistic_neural_network_contract.py:598
+    // output_weight_signs = self.output_weight_signs_box.value.copy()
+    bytec 10 // "o_w_sign"
+    // logistic_neural_network_contract.py:653
+    // self.uint_to_bool(output_weight_signs[neuron].as_uint64()),
+    swap
+    intc_2 // 8
+    box_extract
+    btoi
+    // logistic_neural_network_contract.py:821
+    // if value == 0:
+    bnz main_after_if_else@68
+    // logistic_neural_network_contract.py:822
+    // return False
+    intc_0 // 0
+
+main_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@69:
+    // logistic_neural_network_contract.py:654
+    // hidden_activations[last_hidden_index].as_uint64(),
+    dig 34
+    extract 2 0
+    dig 23
+    intc_2 // 8
+    *
+    extract_uint64
+    // logistic_neural_network_contract.py:767
+    // product_magnitude = self.scale_down_product(weight_magnitude, unsigned_input)
+    dig 4
+    swap
+    callsub scale_down_product
+    // logistic_neural_network_contract.py:768-773
+    // return self.signed_add(
+    //     acc_magnitude,
+    //     acc_is_negative,
+    //     product_magnitude,
+    //     weight_is_negative,
+    // )
+    dig 2
+    dig 4
+    uncover 2
+    uncover 3
+    callsub signed_add
+    bury 3
+    bury 1
+    // logistic_neural_network_contract.py:647
+    // for neuron in urange(self.hidden_neurons):
+    dig 11
+    intc_1 // 1
+    +
+    bury 12
+    b main_for_header@35
+
+main_after_if_else@68:
+    // logistic_neural_network_contract.py:823
+    // return True
+    intc_1 // 1
+    // logistic_neural_network_contract.py:653
+    // self.uint_to_bool(output_weight_signs[neuron].as_uint64()),
+    b main_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@69
+
+main_after_for@37:
+    // logistic_neural_network_contract.py:657
+    // return self.hard_sigmoid(z_out_magnitude, z_out_is_negative)
+    dup
+    dig 2
+    callsub hard_sigmoid
+    // logistic_neural_network_contract.py:582
+    // @abimethod
+    itob
+    pushbytes 0x151f7c75
+    swap
+    concat
+    log
+    intc_1 // 1
+    return
+
+main_run_training_loops_route@8:
+    // logistic_neural_network_contract.py:152
+    // assert self.ready_for_training, \
+    intc_0 // 0
+    bytec 23 // "ready_for_training"
+    app_global_get_ex
+    assert // check self.ready_for_training exists
+    // logistic_neural_network_contract.py:152-154
+    // assert self.ready_for_training, \
+    // "If you have already added your inputs & targets via 'add_inputs_and_targets' " \
+    // "you must first call 'prime_training' before calling this method"
+    assert // If you have already added your inputs & targets via 'add_inputs_and_targets' you must first call 'prime_training' before calling this method
+    // logistic_neural_network_contract.py:156
+    // ensure_budget(700 * 248, OpUpFeeSource.GroupCredit)
+    pushint 173600
+    intc_0 // 0
+    callsub ensure_budget
+    // logistic_neural_network_contract.py:158
+    // if not self.calculated_budget_needed:
+    intc_0 // 0
+    bytec 26 // "calculated_budget_needed"
+    app_global_get_ex
+    assert // check self.calculated_budget_needed exists
+    bnz main_after_if_else@41
+    // logistic_neural_network_contract.py:174
+    // pre_budget_remaining = Global.opcode_budget()
+    global OpcodeBudget
+    // logistic_neural_network_contract.py:176
+    // self.run_a_training_loop()
+    callsub run_a_training_loop
+    // logistic_neural_network_contract.py:178
+    // post_budget_remaining = Global.opcode_budget()
+    global OpcodeBudget
+    // logistic_neural_network_contract.py:180
+    // budget_cost_per_iteration = pre_budget_remaining - post_budget_remaining
+    -
+    // logistic_neural_network_contract.py:181
+    // self.extra_budget_needed = budget_cost_per_iteration
+    bytec 25 // "extra_budget_needed"
+    swap
+    app_global_put
+    // logistic_neural_network_contract.py:182
+    // self.calculated_budget_needed = True
+    bytec 26 // "calculated_budget_needed"
+    intc_1 // 1
+    app_global_put
+
+main_after_if_else@41:
+    // logistic_neural_network_contract.py:161
+    // epochs_remaining = self.epochs - self.epochs_completed
+    intc_0 // 0
+    bytec 22 // "epochs"
+    app_global_get_ex
+    assert // check self.epochs exists
+    intc_0 // 0
+    bytec 17 // "epochs_completed"
+    app_global_get_ex
+    assert // check self.epochs_completed exists
+    -
+    dup
+    bury 28
+    // logistic_neural_network_contract.py:162
+    // max_epochs_runnable = Global.opcode_budget() // self.extra_budget_needed
+    global OpcodeBudget
+    intc_0 // 0
+    bytec 25 // "extra_budget_needed"
+    app_global_get_ex
+    assert // check self.extra_budget_needed exists
+    /
+    dup
+    bury 20
+    // logistic_neural_network_contract.py:164
+    // if max_epochs_runnable > epochs_remaining:
+    <
+    bz main_else_body@43
+    dig 26
+
+main_after_if_else@44:
+    // logistic_neural_network_contract.py:169
+    // for epoch in urange(epochs_to_run - 10000):
+    pushint 10000
+    -
+    bury 4
+    intc_0 // 0
+    bury 28
+
+main_for_header@45:
+    // logistic_neural_network_contract.py:169
+    // for epoch in urange(epochs_to_run - 10000):
+    dig 27
+    dig 4
+    <
+    bz main_after_if_else@51
+    // logistic_neural_network_contract.py:170
+    // self.run_a_training_loop()
+    callsub run_a_training_loop
+    // logistic_neural_network_contract.py:169
+    // for epoch in urange(epochs_to_run - 10000):
+    dig 27
+    intc_1 // 1
+    +
+    bury 28
+    b main_for_header@45
+
+main_else_body@43:
+    dig 17
+    b main_after_if_else@44
+
+main_prime_training_route@7:
+    // logistic_neural_network_contract.py:98
+    // @abimethod
+    txna ApplicationArgs 1
+    dup
+    len
+    intc_2 // 8
+    ==
+    assert // invalid number of bytes for arc4.uint64
+    btoi
+    txna ApplicationArgs 2
+    dup
+    len
+    intc_2 // 8
+    ==
+    assert // invalid number of bytes for arc4.uint64
+    btoi
+    txna ApplicationArgs 3
+    dup
+    len
+    intc_2 // 8
+    ==
+    assert // invalid number of bytes for arc4.uint64
+    btoi
+    txna ApplicationArgs 4
+    dup
+    len
+    intc_2 // 8
+    ==
+    assert // invalid number of bytes for arc4.uint64
+    btoi
+    txna ApplicationArgs 5
+    dup
+    len
+    intc_2 // 8
+    ==
+    assert // invalid number of bytes for arc4.uint64
+    btoi
+    txn GroupIndex
+    intc_1 // 1
+    -
+    dup
+    bury 19
+    gtxns TypeEnum
+    intc_1 // pay
+    ==
+    assert // transaction type is pay
+    // logistic_neural_network_contract.py:108
+    // assert self.age_inputs_box.value.length != 0, "Inputs & Targets Data has not been set"
+    bytec 6 // "ages"
+    intc_0 // 0
+    intc_3 // 2
+    box_extract
+    btoi
+    assert // Inputs & Targets Data has not been set
+    // logistic_neural_network_contract.py:109
+    // assert self.length_data > 0
+    intc_0 // 0
+    bytec_3 // "length_data"
+    app_global_get_ex
+    assert // check self.length_data exists
+    assert
+    // logistic_neural_network_contract.py:110
+    // assert epochs > 0
+    dig 2
+    assert
+    // logistic_neural_network_contract.py:111
+    // assert learning_rate > 0
+    dig 3
+    assert
+    // logistic_neural_network_contract.py:112
+    // assert hidden_layers > 0
+    dig 1
+    assert
+    // logistic_neural_network_contract.py:113
+    // assert hidden_neurons > 0
+    dup
+    assert
+    // logistic_neural_network_contract.py:115
+    // self.scale_factor = scale_factor
+    bytec 12 // "scale_factor"
+    uncover 5
+    app_global_put
+    // logistic_neural_network_contract.py:116
+    // self.learning_rate = learning_rate
+    bytec 11 // "learning_rate"
+    uncover 4
+    app_global_put
+    // logistic_neural_network_contract.py:117
+    // self.epochs = epochs
+    bytec 22 // "epochs"
+    uncover 3
+    app_global_put
+    // logistic_neural_network_contract.py:118
+    // self.epochs_completed = UInt64(0)
+    bytec 17 // "epochs_completed"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:120
+    // self.hidden_layers = hidden_layers
+    bytec_1 // "hidden_layers"
+    dig 2
+    app_global_put
+    // logistic_neural_network_contract.py:121
+    // self.hidden_neurons = hidden_neurons
+    bytec_0 // "hidden_neurons"
+    dig 1
+    app_global_put
+    // logistic_neural_network_contract.py:123
+    // self.output_bias_magnitude = UInt64(0)
+    bytec 19 // "output_bias_magnitude"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:124
+    // self.output_bias_is_negative = False
+    bytec 20 // "output_bias_is_negative"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:126
+    // self.extra_budget_needed = UInt64(0)
+    bytec 25 // "extra_budget_needed"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:127
+    // self.calculated_budget_needed = False
+    bytec 26 // "calculated_budget_needed"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:129
+    // self.training_complete = False
+    bytec 24 // "training_complete"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:130
+    // self.ready_for_training = True
+    bytec 23 // "ready_for_training"
+    intc_1 // 1
+    app_global_put
+    // logistic_neural_network_contract.py:131
+    // self.fees_used = UInt64(0)
+    bytec 18 // "fees_used"
+    intc_0 // 0
+    app_global_put
+    // logistic_neural_network_contract.py:133
+    // ensure_budget(hidden_layers * hidden_neurons * 700, fee_source=OpUpFeeSource.GroupCredit)
+    *
+    pushint 700
+    *
+    intc_0 // 0
+    callsub ensure_budget
+    // logistic_neural_network_contract.py:135
+    // pre_mbr = Global.current_application_address.min_balance
+    global CurrentApplicationAddress
+    acct_params_get AcctMinBalance
+    swap
+    bury 11
+    assert // account funded
+    // logistic_neural_network_contract.py:698
+    // first_hidden_weight_count = self.hidden_neurons * self.input_feature_count
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    assert // check self.hidden_neurons exists
+    intc_0 // 0
+    bytec 21 // "input_feature_count"
+    app_global_get_ex
+    assert // check self.input_feature_count exists
+    *
+    bury 26
+    // logistic_neural_network_contract.py:700
+    // hidden_weight_count = UInt64(0)
+    intc_0 // 0
+    bury 23
+    // logistic_neural_network_contract.py:701
+    // if self.hidden_layers > 1:
+    intc_0 // 0
+    bytec_1 // "hidden_layers"
+    app_global_get_ex
+    assert // check self.hidden_layers exists
+    intc_1 // 1
+    >
+    bz main_after_if_else@63
+    // logistic_neural_network_contract.py:702
+    // hidden_weight_count = (self.hidden_layers - UInt64(1)) * self.hidden_neurons * self.hidden_neurons
+    intc_0 // 0
+    bytec_1 // "hidden_layers"
+    app_global_get_ex
+    assert // check self.hidden_layers exists
+    intc_1 // 1
+    -
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    assert // check self.hidden_neurons exists
+    swap
+    dig 1
+    *
+    *
+    bury 23
+
+main_after_if_else@63:
+    // logistic_neural_network_contract.py:704
+    // hidden_bias_count = self.hidden_layers * self.hidden_neurons
+    intc_0 // 0
+    bytec_1 // "hidden_layers"
+    app_global_get_ex
+    assert // check self.hidden_layers exists
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    assert // check self.hidden_neurons exists
+    swap
+    dig 1
+    *
+    // logistic_neural_network_contract.py:707
+    // self.write_zero_box(self.first_hidden_weight_magnitudes_box, first_hidden_weight_count)
+    bytec 4 // "f_h_w_mag"
+    dig 28
+    dup
+    cover 2
+    callsub write_zero_box
+    // logistic_neural_network_contract.py:708
+    // self.write_zero_box(self.first_hidden_weight_signs_box, first_hidden_weight_count)
+    bytec 5 // "f_h_w_sign"
+    swap
+    callsub write_zero_box
+    // logistic_neural_network_contract.py:710
+    // self.write_zero_box(self.hidden_weight_magnitudes_box, hidden_weight_count)
+    bytec 7 // "h_w_mag"
+    dig 25
+    dup
+    cover 2
+    callsub write_zero_box
+    // logistic_neural_network_contract.py:711
+    // self.write_zero_box(self.hidden_weight_signs_box, hidden_weight_count)
+    bytec 8 // "h_w_sign"
+    swap
+    callsub write_zero_box
+    // logistic_neural_network_contract.py:713
+    // self.write_zero_box(self.hidden_bias_magnitudes_box, hidden_bias_count)
+    bytec 15 // "h_b_mag"
+    dig 1
+    callsub write_zero_box
+    // logistic_neural_network_contract.py:714
+    // self.write_zero_box(self.hidden_bias_signs_box, hidden_bias_count)
+    bytec 16 // "h_b_sign"
+    swap
+    callsub write_zero_box
+    // logistic_neural_network_contract.py:716
+    // self.write_zero_box(self.output_weight_magnitudes_box, output_weight_count)
+    bytec 9 // "o_w_mag"
+    dig 1
+    callsub write_zero_box
+    // logistic_neural_network_contract.py:717
+    // self.write_zero_box(self.output_weight_signs_box, output_weight_count)
+    bytec 10 // "o_w_sign"
+    swap
+    callsub write_zero_box
+    // logistic_neural_network_contract.py:139
+    // post_mbr = Global.current_application_address.min_balance
+    global CurrentApplicationAddress
+    acct_params_get AcctMinBalance
+    assert // account funded
+    // logistic_neural_network_contract.py:141
+    // mbr_needed = post_mbr - pre_mbr
+    dig 10
+    -
+    // logistic_neural_network_contract.py:142
+    // refund_amount = mbr_payment.amount - mbr_needed
+    dig 13
+    gtxns Amount
+    swap
+    -
+    dup
+    bury 6
+    // logistic_neural_network_contract.py:144
+    // if refund_amount > 0:
+    bz main_after_if_else@51
+    // logistic_neural_network_contract.py:145-148
+    // itxn.Payment(
+    //     receiver=Txn.sender,
+    //     amount=refund_amount,
+    // ).submit()
+    itxn_begin
+    // logistic_neural_network_contract.py:146
+    // receiver=Txn.sender,
+    txn Sender
+    dig 5
+    itxn_field Amount
+    itxn_field Receiver
+    // logistic_neural_network_contract.py:145
+    // itxn.Payment(
+    intc_1 // pay
+    itxn_field TypeEnum
+    intc_0 // 0
+    itxn_field Fee
+    // logistic_neural_network_contract.py:145-148
+    // itxn.Payment(
+    //     receiver=Txn.sender,
+    //     amount=refund_amount,
+    // ).submit()
+    itxn_submit
+    b main_after_if_else@51
+
+main_add_inputs_and_targets_route@6:
+    // logistic_neural_network_contract.py:46
+    // @abimethod
+    txna ApplicationArgs 1
+    dup
+    bury 34
+    dup
+    intc_0 // 0
+    extract_uint16 // on error: invalid array length header
+    dup
+    bury 13
+    dup
+    intc_2 // 8
+    *
+    intc_3 // 2
+    +
+    uncover 2
+    len
+    dup
+    bury 23
+    ==
+    assert // invalid number of bytes for arc4.dynamic_array<arc4.uint64>
+    txna ApplicationArgs 2
+    dup
+    bury 34
+    dup
+    intc_0 // 0
+    extract_uint16 // on error: invalid array length header
+    dup
+    intc_2 // 8
+    *
+    intc_3 // 2
+    +
+    uncover 2
+    len
+    dup
+    bury 23
+    ==
+    assert // invalid number of bytes for arc4.dynamic_array<arc4.uint64>
+    txna ApplicationArgs 3
+    dup
+    bury 34
+    dup
+    intc_0 // 0
+    extract_uint16 // on error: invalid array length header
+    dup
+    intc_2 // 8
+    *
+    intc_3 // 2
+    +
+    uncover 2
+    len
+    dup
+    cover 5
+    ==
+    assert // invalid number of bytes for arc4.dynamic_array<arc4.uint64>
+    txn GroupIndex
+    intc_1 // 1
+    -
+    dup
+    bury 18
+    gtxns TypeEnum
+    intc_1 // pay
+    ==
+    assert // transaction type is pay
+    // logistic_neural_network_contract.py:54
+    // assert self.ready_for_training == False
+    intc_0 // 0
+    bytec 23 // "ready_for_training"
+    app_global_get_ex
+    assert // check self.ready_for_training exists
+    !
+    assert
+    // logistic_neural_network_contract.py:55
+    // assert parts_age_inputs.length == parts_gender_inputs.length
+    dig 2
+    uncover 2
+    ==
+    assert
+    // logistic_neural_network_contract.py:56
+    // assert parts_age_inputs.length == parts_y_targets.length
+    ==
+    assert
+    // logistic_neural_network_contract.py:58
+    // current_ages = self.age_inputs_box.get(default=Data()).copy()
+    bytec 6 // "ages"
+    box_get
+    bytec_2 // 0x0000
+    cover 2
+    select
+    dup
+    bury 39
+    // logistic_neural_network_contract.py:59
+    // current_genders = self.gender_inputs_box.get(default=Data()).copy()
+    bytec 13 // "genders"
+    box_get
+    // logistic_neural_network_contract.py:58
+    // current_ages = self.age_inputs_box.get(default=Data()).copy()
+    bytec_2 // 0x0000
+    // logistic_neural_network_contract.py:59
+    // current_genders = self.gender_inputs_box.get(default=Data()).copy()
+    cover 2
+    select
+    bury 38
+    // logistic_neural_network_contract.py:60
+    // current_targets = self.y_targets_box.get(default=Data()).copy()
+    bytec 14 // "targets"
+    box_get
+    // logistic_neural_network_contract.py:58
+    // current_ages = self.age_inputs_box.get(default=Data()).copy()
+    bytec_2 // 0x0000
+    // logistic_neural_network_contract.py:60
+    // current_targets = self.y_targets_box.get(default=Data()).copy()
+    cover 2
+    select
+    bury 37
+    // logistic_neural_network_contract.py:64
+    // pre_mbr = Global.current_application_address.min_balance
+    global CurrentApplicationAddress
+    acct_params_get AcctMinBalance
+    swap
+    bury 13
+    assert // account funded
+    // logistic_neural_network_contract.py:66
+    // if current_ages.length == 0:
+    intc_0 // 0
+    extract_uint16 // on error: invalid array length header
+    bnz main_else_body@55
+    // logistic_neural_network_contract.py:67
+    // self.age_inputs_box.create(size=parts_age_inputs.bytes.length)
+    bytec 6 // "ages"
+    dig 21
+    box_create
+    pop
+    // logistic_neural_network_contract.py:68
+    // self.gender_inputs_box.create(size=parts_gender_inputs.bytes.length)
+    bytec 13 // "genders"
+    dig 20
+    box_create
+    pop
+    // logistic_neural_network_contract.py:69
+    // self.y_targets_box.create(size=parts_y_targets.bytes.length)
+    bytec 14 // "targets"
+    swap
+    box_create
+    pop
+
+main_after_if_else@56:
+    // logistic_neural_network_contract.py:75
+    // post_mbr = Global.current_application_address.min_balance
+    global CurrentApplicationAddress
+    acct_params_get AcctMinBalance
+    assert // account funded
+    // logistic_neural_network_contract.py:77
+    // current_ages.extend(parts_age_inputs)
+    dig 33
+    extract 2 0
+    dig 38
+    swap
+    concat // on error: max array length exceeded
+    dup
+    extract 2 0
+    len
+    intc_2 // 8
+    /
+    itob
+    extract 6 2
+    replace2 0
+    // logistic_neural_network_contract.py:78
+    // current_genders.extend(parts_gender_inputs)
+    dig 33
+    extract 2 0
+    dig 38
+    swap
+    concat // on error: max array length exceeded
+    dup
+    extract 2 0
+    len
+    intc_2 // 8
+    /
+    itob
+    extract 6 2
+    replace2 0
+    // logistic_neural_network_contract.py:79
+    // current_targets.extend(parts_y_targets)
+    dig 33
+    extract 2 0
+    dig 38
+    swap
+    concat // on error: max array length exceeded
+    dup
+    extract 2 0
+    len
+    intc_2 // 8
+    /
+    itob
+    extract 6 2
+    replace2 0
+    // logistic_neural_network_contract.py:81
+    // self.age_inputs_box.value = current_ages.copy()
+    bytec 6 // "ages"
+    box_del
+    pop
+    bytec 6 // "ages"
+    uncover 3
+    box_put
+    // logistic_neural_network_contract.py:82
+    // self.gender_inputs_box.value = current_genders.copy()
+    bytec 13 // "genders"
+    box_del
+    pop
+    bytec 13 // "genders"
+    uncover 2
+    box_put
+    // logistic_neural_network_contract.py:83
+    // self.y_targets_box.value = current_targets.copy()
+    bytec 14 // "targets"
+    box_del
+    pop
+    bytec 14 // "targets"
+    swap
+    box_put
+    // logistic_neural_network_contract.py:85
+    // self.length_data += parts_length
+    intc_0 // 0
+    bytec_3 // "length_data"
+    app_global_get_ex
+    assert // check self.length_data exists
+    dig 12
+    +
+    bytec_3 // "length_data"
+    swap
+    app_global_put
+    // logistic_neural_network_contract.py:87
+    // mbr_needed = post_mbr - pre_mbr
+    dig 10
+    -
+    // logistic_neural_network_contract.py:88
+    // refund_amount = mbr_payment.amount - mbr_needed
+    dig 13
+    gtxns Amount
+    swap
+    -
+    dup
+    bury 6
+    // logistic_neural_network_contract.py:90
+    // if refund_amount > 0:
+    bz main_after_if_else@58
+    // logistic_neural_network_contract.py:91-94
+    // itxn.Payment(
+    //     receiver=Txn.sender,
+    //     amount=refund_amount,
+    // ).submit()
+    itxn_begin
+    // logistic_neural_network_contract.py:92
+    // receiver=Txn.sender,
+    txn Sender
+    dig 5
+    itxn_field Amount
+    itxn_field Receiver
+    // logistic_neural_network_contract.py:91
+    // itxn.Payment(
+    intc_1 // pay
+    itxn_field TypeEnum
+    intc_0 // 0
+    itxn_field Fee
+    // logistic_neural_network_contract.py:91-94
+    // itxn.Payment(
+    //     receiver=Txn.sender,
+    //     amount=refund_amount,
+    // ).submit()
+    itxn_submit
+
+main_after_if_else@58:
+    // logistic_neural_network_contract.py:96
+    // self.fees_used += Txn.fee
+    intc_0 // 0
+    bytec 18 // "fees_used"
+    app_global_get_ex
+    assert // check self.fees_used exists
+    txn Fee
+    +
+    bytec 18 // "fees_used"
+    swap
+    app_global_put
+    // logistic_neural_network_contract.py:46
+    // @abimethod
+    intc_1 // 1
+    return
+
+main_else_body@55:
+    // logistic_neural_network_contract.py:71
+    // self.age_inputs_box.resize(new_size=current_ages.bytes.length + parts_age_inputs.bytes.length)
+    dig 37
+    len
+    dig 21
+    +
+    bytec 6 // "ages"
+    swap
+    box_resize
+    // logistic_neural_network_contract.py:72
+    // self.gender_inputs_box.resize(new_size=current_genders.bytes.length + parts_gender_inputs.bytes.length)
+    dig 36
+    len
+    dig 20
+    +
+    bytec 13 // "genders"
+    swap
+    box_resize
+    // logistic_neural_network_contract.py:73
+    // self.y_targets_box.resize(new_size=current_targets.bytes.length + parts_y_targets.bytes.length)
+    dig 35
+    len
+    +
+    bytec 14 // "targets"
+    swap
+    box_resize
+    b main_after_if_else@56
+
+main___algopy_default_create@15:
+    txn OnCompletion
+    !
+    txn ApplicationID
+    !
+    &&
+    return
+
+
+// _puya_lib.util.ensure_budget(required_budget: uint64, fee_source: uint64) -> void:
+ensure_budget:
+    proto 2 0
+    frame_dig -2
+    pushint 10
+    +
+
+ensure_budget_while_top@1:
+    frame_dig 0
+    global OpcodeBudget
+    >
+    bz ensure_budget_after_while@6
+    itxn_begin
+    pushint 6 // appl
+    itxn_field TypeEnum
+    pushint 5 // DeleteApplication
+    itxn_field OnCompletion
+    bytec 27 // 0x068101
+    itxn_field ApprovalProgram
+    bytec 27 // 0x068101
+    itxn_field ClearStateProgram
+    frame_dig -1
+    switch ensure_budget_switch_case_0@3 ensure_budget_switch_case_1@4
+
+ensure_budget_switch_case_next@5:
+    itxn_submit
+    b ensure_budget_while_top@1
+
+ensure_budget_switch_case_1@4:
+    global MinTxnFee
+    itxn_field Fee
+    b ensure_budget_switch_case_next@5
+
+ensure_budget_switch_case_0@3:
+    intc_0 // 0
+    itxn_field Fee
+    b ensure_budget_switch_case_next@5
+
+ensure_budget_after_while@6:
+    retsub
+
+
+// logistic_neural_network_contract.LogisticNeuralNetwork.run_a_training_loop() -> void:
+run_a_training_loop:
+    // logistic_neural_network_contract.py:184-185
+    // @subroutine
+    // def run_a_training_loop(self) -> None:
+    proto 0 0
+    intc_0 // 0
+    dupn 20
+    pushbytes ""
+    dupn 85
+    // logistic_neural_network_contract.py:186
+    // assert self.epochs_completed < self.epochs, "All epochs for training have already been completed"
+    intc_0 // 0
+    bytec 17 // "epochs_completed"
+    app_global_get_ex
+    assert // check self.epochs_completed exists
+    intc_0 // 0
+    bytec 22 // "epochs"
+    app_global_get_ex
+    assert // check self.epochs exists
+    <
+    assert // All epochs for training have already been completed
+    // logistic_neural_network_contract.py:188
+    // hidden_state_count = self.hidden_layers * self.hidden_neurons
+    intc_0 // 0
+    bytec_1 // "hidden_layers"
+    app_global_get_ex
+    assert // check self.hidden_layers exists
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    assert // check self.hidden_neurons exists
+    dup2
+    *
+    cover 2
+    // logistic_neural_network_contract.py:189
+    // first_hidden_weight_count = self.hidden_neurons * self.input_feature_count
+    intc_0 // 0
+    bytec 21 // "input_feature_count"
+    app_global_get_ex
+    assert // check self.input_feature_count exists
+    *
+    swap
+    // logistic_neural_network_contract.py:191
+    // hidden_weight_count = UInt64(0)
+    intc_0 // 0
+    swap
+    // logistic_neural_network_contract.py:192
+    // if self.hidden_layers > 1:
+    intc_1 // 1
+    >
+    bz run_a_training_loop_after_if_else@2
+    // logistic_neural_network_contract.py:193
+    // hidden_weight_count = (self.hidden_layers - UInt64(1)) * self.hidden_neurons * self.hidden_neurons
+    intc_0 // 0
+    bytec_1 // "hidden_layers"
+    app_global_get_ex
+    assert // check self.hidden_layers exists
+    intc_1 // 1
+    -
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    assert // check self.hidden_neurons exists
+    swap
+    dig 1
+    *
+    *
+    frame_bury 109
+
+run_a_training_loop_after_if_else@2:
+    // logistic_neural_network_contract.py:199
+    // first_hidden_weight_magnitudes = self.first_hidden_weight_magnitudes_box.value.copy()
+    bytec 4 // "f_h_w_mag"
+    box_get
+    swap
+    frame_bury 8
+    assert // check self.first_hidden_weight_magnitudes_box exists
+    // logistic_neural_network_contract.py:200
+    // first_hidden_weight_signs = self.first_hidden_weight_signs_box.value.copy()
+    bytec 5 // "f_h_w_sign"
+    box_get
+    swap
+    frame_bury 9
+    assert // check self.first_hidden_weight_signs_box exists
+    // logistic_neural_network_contract.py:202
+    // hidden_weight_magnitudes = self.hidden_weight_magnitudes_box.value.copy()
+    bytec 7 // "h_w_mag"
+    box_get
+    swap
+    frame_bury 17
+    assert // check self.hidden_weight_magnitudes_box exists
+    // logistic_neural_network_contract.py:203
+    // hidden_weight_signs = self.hidden_weight_signs_box.value.copy()
+    bytec 8 // "h_w_sign"
+    box_get
+    swap
+    frame_bury 18
+    assert // check self.hidden_weight_signs_box exists
+    // logistic_neural_network_contract.py:205
+    // hidden_bias_magnitudes = self.hidden_bias_magnitudes_box.value.copy()
+    bytec 15 // "h_b_mag"
+    box_get
+    swap
+    frame_bury 11
+    assert // check self.hidden_bias_magnitudes_box exists
+    // logistic_neural_network_contract.py:206
+    // hidden_bias_signs = self.hidden_bias_signs_box.value.copy()
+    bytec 16 // "h_b_sign"
+    box_get
+    swap
+    frame_bury 12
+    assert // check self.hidden_bias_signs_box exists
+    // logistic_neural_network_contract.py:208
+    // output_weight_magnitudes = self.output_weight_magnitudes_box.value.copy()
+    bytec 9 // "o_w_mag"
+    box_get
+    swap
+    frame_bury 19
+    assert // check self.output_weight_magnitudes_box exists
+    // logistic_neural_network_contract.py:209
+    // output_weight_signs = self.output_weight_signs_box.value.copy()
+    bytec 10 // "o_w_sign"
+    box_get
+    swap
+    frame_bury 20
+    assert // check self.output_weight_signs_box exists
+    // logistic_neural_network_contract.py:211
+    // delta_first_hidden_weight_magnitudes = self.make_zero_array(first_hidden_weight_count)
+    frame_dig 108
+    dup
+    callsub make_zero_array
+    frame_bury 0
+    // logistic_neural_network_contract.py:212
+    // delta_first_hidden_weight_signs = self.make_zero_array(first_hidden_weight_count)
+    callsub make_zero_array
+    frame_bury 1
+    // logistic_neural_network_contract.py:214
+    // delta_hidden_weight_magnitudes_arr = self.make_zero_array(hidden_weight_count)
+    frame_dig 109
+    dup
+    callsub make_zero_array
+    frame_bury 4
+    // logistic_neural_network_contract.py:215
+    // delta_hidden_weight_signs_arr = self.make_zero_array(hidden_weight_count)
+    callsub make_zero_array
+    frame_bury 5
+    // logistic_neural_network_contract.py:217
+    // delta_hidden_bias_magnitudes = self.make_zero_array(hidden_state_count)
+    frame_dig 107
+    dup
+    callsub make_zero_array
+    frame_bury 2
+    // logistic_neural_network_contract.py:218
+    // delta_hidden_bias_signs = self.make_zero_array(hidden_state_count)
+    dup
+    callsub make_zero_array
+    frame_bury 3
+    // logistic_neural_network_contract.py:220
+    // delta_output_weight_magnitudes = self.make_zero_array(self.hidden_neurons)
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    assert // check self.hidden_neurons exists
+    callsub make_zero_array
+    frame_bury 6
+    // logistic_neural_network_contract.py:221
+    // delta_output_weight_signs = self.make_zero_array(self.hidden_neurons)
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    assert // check self.hidden_neurons exists
+    callsub make_zero_array
+    frame_bury 7
+    // logistic_neural_network_contract.py:223
+    // delta_output_bias_magnitude = UInt64(0)
+    intc_0 // 0
+    frame_bury 54
+    // logistic_neural_network_contract.py:224
+    // delta_output_bias_is_negative = False
+    intc_0 // 0
+    frame_bury 53
+    // logistic_neural_network_contract.py:226
+    // hidden_preactivated_magnitudes = self.make_zero_array(hidden_state_count)
+    dup
+    callsub make_zero_array
+    frame_bury 15
+    // logistic_neural_network_contract.py:227
+    // hidden_preactivated_signs = self.make_zero_array(hidden_state_count)
+    dup
+    callsub make_zero_array
+    frame_bury 16
+    // logistic_neural_network_contract.py:228
+    // hidden_activations = self.make_zero_array(hidden_state_count)
+    dup
+    callsub make_zero_array
+    frame_bury 10
+    // logistic_neural_network_contract.py:230
+    // hidden_error_magnitudes = self.make_zero_array(hidden_state_count)
+    dup
+    callsub make_zero_array
+    frame_bury 13
+    // logistic_neural_network_contract.py:231
+    // hidden_error_signs = self.make_zero_array(hidden_state_count)
+    callsub make_zero_array
+    frame_bury 14
+    // logistic_neural_network_contract.py:233
+    // for data_index in urange(self.length_data):
+    intc_0 // 0
+    bytec_3 // "length_data"
+    app_global_get_ex
+    swap
+    frame_bury 68
+    assert // check self.length_data exists
+    intc_0 // 0
+    frame_bury 52
+
+run_a_training_loop_for_header@3:
+    // logistic_neural_network_contract.py:233
+    // for data_index in urange(self.length_data):
+    frame_dig 52
+    frame_dig 68
+    <
+    bz run_a_training_loop_after_for@66
+    // logistic_neural_network_contract.py:234
+    // self.zero_existing_array(hidden_preactivated_magnitudes, hidden_state_count)
+    frame_dig 15
+    frame_dig 107
+    dup
+    cover 2
+    callsub zero_existing_array
+    frame_bury 15
+    // logistic_neural_network_contract.py:235
+    // self.zero_existing_array(hidden_preactivated_signs, hidden_state_count)
+    frame_dig 16
+    dig 1
+    callsub zero_existing_array
+    frame_bury 16
+    // logistic_neural_network_contract.py:236
+    // self.zero_existing_array(hidden_activations, hidden_state_count)
+    frame_dig 10
+    dig 1
+    callsub zero_existing_array
+    frame_bury 10
+    // logistic_neural_network_contract.py:237
+    // self.zero_existing_array(hidden_error_magnitudes, hidden_state_count)
+    frame_dig 13
+    dig 1
+    callsub zero_existing_array
+    frame_bury 13
+    // logistic_neural_network_contract.py:238
+    // self.zero_existing_array(hidden_error_signs, hidden_state_count)
+    frame_dig 14
+    swap
+    callsub zero_existing_array
+    frame_bury 14
+    // logistic_neural_network_contract.py:240
+    // age = age_inputs[data_index].as_uint64()
+    frame_dig 52
+    intc_2 // 8
+    *
+    intc_3 // 2
+    +
+    // logistic_neural_network_contract.py:195
+    // age_inputs = self.age_inputs_box.value.copy()
+    bytec 6 // "ages"
+    // logistic_neural_network_contract.py:240
+    // age = age_inputs[data_index].as_uint64()
+    dig 1
+    intc_2 // 8
+    box_extract
+    btoi
+    frame_bury 22
+    // logistic_neural_network_contract.py:196
+    // gender_inputs = self.gender_inputs_box.value.copy()
+    bytec 13 // "genders"
+    // logistic_neural_network_contract.py:241
+    // gender = gender_inputs[data_index].as_uint64()
+    dig 1
+    intc_2 // 8
+    box_extract
+    btoi
+    frame_bury 56
+    // logistic_neural_network_contract.py:197
+    // y_targets = self.y_targets_box.value.copy()
+    bytec 14 // "targets"
+    // logistic_neural_network_contract.py:242
+    // y = y_targets[data_index].as_uint64()
+    swap
+    intc_2 // 8
+    box_extract
+    btoi
+    frame_bury 102
+    // logistic_neural_network_contract.py:244
+    // for layer in urange(self.hidden_layers):
+    intc_0 // 0
+    bytec_1 // "hidden_layers"
+    app_global_get_ex
+    swap
+    frame_bury 69
+    assert // check self.hidden_layers exists
+    intc_0 // 0
+    frame_bury 66
+
+run_a_training_loop_for_header@5:
+    // logistic_neural_network_contract.py:244
+    // for layer in urange(self.hidden_layers):
+    frame_dig 66
+    frame_dig 69
+    <
+    bz run_a_training_loop_after_for@19
+    // logistic_neural_network_contract.py:245
+    // for neuron in urange(self.hidden_neurons):
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    swap
+    frame_bury 70
+    assert // check self.hidden_neurons exists
+    intc_0 // 0
+    frame_bury 82
+
+run_a_training_loop_for_header@7:
+    // logistic_neural_network_contract.py:245
+    // for neuron in urange(self.hidden_neurons):
+    frame_dig 82
+    frame_dig 70
+    <
+    bz run_a_training_loop_after_for@17
+    // logistic_neural_network_contract.py:740
+    // return (layer * self.hidden_neurons) + neuron
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    assert // check self.hidden_neurons exists
+    frame_dig 66
+    *
+    frame_dig 82
+    +
+    // logistic_neural_network_contract.py:247
+    // preactivation_magnitude = hidden_bias_magnitudes[bias_index].as_uint64()
+    intc_2 // 8
+    *
+    dup
+    frame_bury 48
+    intc_3 // 2
+    +
+    // logistic_neural_network_contract.py:205
+    // hidden_bias_magnitudes = self.hidden_bias_magnitudes_box.value.copy()
+    bytec 15 // "h_b_mag"
+    // logistic_neural_network_contract.py:247
+    // preactivation_magnitude = hidden_bias_magnitudes[bias_index].as_uint64()
+    dig 1
+    intc_2 // 8
+    box_extract
+    btoi
+    frame_bury 85
+    // logistic_neural_network_contract.py:206
+    // hidden_bias_signs = self.hidden_bias_signs_box.value.copy()
+    bytec 16 // "h_b_sign"
+    // logistic_neural_network_contract.py:248
+    // preactivation_is_negative = self.uint_to_bool(hidden_bias_signs[bias_index].as_uint64())
+    swap
+    intc_2 // 8
+    box_extract
+    btoi
+    // logistic_neural_network_contract.py:821
+    // if value == 0:
+    bnz run_a_training_loop_after_if_else@317
+    // logistic_neural_network_contract.py:822
+    // return False
+    intc_0 // 0
+    frame_bury 84
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@318:
+    // logistic_neural_network_contract.py:250
+    // if layer == 0:
+    frame_dig 66
+    bnz run_a_training_loop_else_body@10
+    // logistic_neural_network_contract.py:732
+    // return neuron * self.input_feature_count + feature
+    intc_0 // 0
+    bytec 21 // "input_feature_count"
+    app_global_get_ex
+    assert // check self.input_feature_count exists
+    frame_dig 82
+    *
+    dup
+    // logistic_neural_network_contract.py:252
+    // first_weight_index_gender = self.first_hidden_weight_index(neuron, UInt64(1))
+    intc_1 // 1
+    // logistic_neural_network_contract.py:732
+    // return neuron * self.input_feature_count + feature
+    +
+    frame_bury 55
+    // logistic_neural_network_contract.py:257
+    // first_hidden_weight_magnitudes[first_weight_index_age].as_uint64(),
+    intc_2 // 8
+    *
+    intc_3 // 2
+    +
+    // logistic_neural_network_contract.py:199
+    // first_hidden_weight_magnitudes = self.first_hidden_weight_magnitudes_box.value.copy()
+    bytec 4 // "f_h_w_mag"
+    // logistic_neural_network_contract.py:257
+    // first_hidden_weight_magnitudes[first_weight_index_age].as_uint64(),
+    dig 1
+    intc_2 // 8
+    box_extract
+    btoi
+    frame_bury 99
+    // logistic_neural_network_contract.py:200
+    // first_hidden_weight_signs = self.first_hidden_weight_signs_box.value.copy()
+    bytec 5 // "f_h_w_sign"
+    // logistic_neural_network_contract.py:258
+    // self.uint_to_bool(first_hidden_weight_signs[first_weight_index_age].as_uint64()),
+    swap
+    intc_2 // 8
+    box_extract
+    btoi
+    // logistic_neural_network_contract.py:821
+    // if value == 0:
+    bnz run_a_training_loop_after_if_else@303
+    // logistic_neural_network_contract.py:822
+    // return False
+    intc_0 // 0
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@304:
+    // logistic_neural_network_contract.py:767
+    // product_magnitude = self.scale_down_product(weight_magnitude, unsigned_input)
+    frame_dig 99
+    frame_dig 22
+    callsub scale_down_product
+    // logistic_neural_network_contract.py:768-773
+    // return self.signed_add(
+    //     acc_magnitude,
+    //     acc_is_negative,
+    //     product_magnitude,
+    //     weight_is_negative,
+    // )
+    frame_dig 85
+    frame_dig 84
+    uncover 2
+    uncover 3
+    callsub signed_add
+    frame_bury 84
+    frame_bury 85
+    // logistic_neural_network_contract.py:265
+    // first_hidden_weight_magnitudes[first_weight_index_gender].as_uint64(),
+    frame_dig 55
+    intc_2 // 8
+    *
+    intc_3 // 2
+    +
+    // logistic_neural_network_contract.py:199
+    // first_hidden_weight_magnitudes = self.first_hidden_weight_magnitudes_box.value.copy()
+    bytec 4 // "f_h_w_mag"
+    // logistic_neural_network_contract.py:265
+    // first_hidden_weight_magnitudes[first_weight_index_gender].as_uint64(),
+    dig 1
+    intc_2 // 8
+    box_extract
+    btoi
+    frame_bury 99
+    // logistic_neural_network_contract.py:200
+    // first_hidden_weight_signs = self.first_hidden_weight_signs_box.value.copy()
+    bytec 5 // "f_h_w_sign"
+    // logistic_neural_network_contract.py:266
+    // self.uint_to_bool(first_hidden_weight_signs[first_weight_index_gender].as_uint64()),
+    swap
+    intc_2 // 8
+    box_extract
+    btoi
+    // logistic_neural_network_contract.py:821
+    // if value == 0:
+    bnz run_a_training_loop_after_if_else@309
+    // logistic_neural_network_contract.py:822
+    // return False
+    intc_0 // 0
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@310:
+    // logistic_neural_network_contract.py:767
+    // product_magnitude = self.scale_down_product(weight_magnitude, unsigned_input)
+    frame_dig 99
+    frame_dig 56
+    callsub scale_down_product
+    // logistic_neural_network_contract.py:768-773
+    // return self.signed_add(
+    //     acc_magnitude,
+    //     acc_is_negative,
+    //     product_magnitude,
+    //     weight_is_negative,
+    // )
+    frame_dig 85
+    frame_dig 84
+    uncover 2
+    uncover 3
+    callsub signed_add
+    frame_bury 84
+    frame_bury 85
+
+run_a_training_loop_after_if_else@15:
+    // logistic_neural_network_contract.py:282
+    // hidden_preactivated_magnitudes[bias_index] = arc4.UInt64(preactivation_magnitude)
+    frame_dig 85
+    itob
+    frame_dig 48
+    intc_3 // 2
+    +
+    dup
+    frame_bury 34
+    frame_dig 15
+    swap
+    uncover 2
+    replace3 // on error: index access is out of bounds
+    frame_bury 15
+    // logistic_neural_network_contract.py:815
+    // if value:
+    frame_dig 84
+    bz run_a_training_loop_after_if_else@283
+    // logistic_neural_network_contract.py:816
+    // return UInt64(1)
+    intc_1 // 1
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.bool_to_uint@284:
+    // logistic_neural_network_contract.py:283
+    // hidden_preactivated_signs[bias_index] = arc4.UInt64(self.bool_to_uint(preactivation_is_negative))
+    itob
+    frame_dig 16
+    frame_dig 34
+    uncover 2
+    replace3 // on error: index access is out of bounds
+    frame_bury 16
+    // logistic_neural_network_contract.py:777
+    // if is_negative:
+    frame_dig 84
+    bz run_a_training_loop_after_if_else@287
+    // logistic_neural_network_contract.py:778
+    // return UInt64(0)
+    intc_0 // 0
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.relu@288:
+    // logistic_neural_network_contract.py:284-286
+    // hidden_activations[bias_index] = arc4.UInt64(
+    //     self.relu(preactivation_magnitude, preactivation_is_negative)
+    // )
+    itob
+    frame_dig 10
+    frame_dig 34
+    uncover 2
+    replace3 // on error: index access is out of bounds
+    frame_bury 10
+    // logistic_neural_network_contract.py:245
+    // for neuron in urange(self.hidden_neurons):
+    frame_dig 82
+    intc_1 // 1
+    +
+    frame_bury 82
+    b run_a_training_loop_for_header@7
+
+run_a_training_loop_after_if_else@287:
+    frame_dig 85
+    // logistic_neural_network_contract.py:285
+    // self.relu(preactivation_magnitude, preactivation_is_negative)
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.relu@288
+
+run_a_training_loop_after_if_else@283:
+    // logistic_neural_network_contract.py:817
+    // return UInt64(0)
+    intc_0 // 0
+    // logistic_neural_network_contract.py:283
+    // hidden_preactivated_signs[bias_index] = arc4.UInt64(self.bool_to_uint(preactivation_is_negative))
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.bool_to_uint@284
+
+run_a_training_loop_after_if_else@309:
+    // logistic_neural_network_contract.py:823
+    // return True
+    intc_1 // 1
+    // logistic_neural_network_contract.py:266
+    // self.uint_to_bool(first_hidden_weight_signs[first_weight_index_gender].as_uint64()),
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@310
+
+run_a_training_loop_after_if_else@303:
+    // logistic_neural_network_contract.py:823
+    // return True
+    intc_1 // 1
+    // logistic_neural_network_contract.py:258
+    // self.uint_to_bool(first_hidden_weight_signs[first_weight_index_age].as_uint64()),
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@304
+
+run_a_training_loop_else_body@10:
+    // logistic_neural_network_contract.py:270
+    // for prev_neuron in urange(self.hidden_neurons):
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    swap
+    frame_bury 71
+    assert // check self.hidden_neurons exists
+    intc_0 // 0
+    frame_bury 87
+
+run_a_training_loop_for_header@11:
+    // logistic_neural_network_contract.py:270
+    // for prev_neuron in urange(self.hidden_neurons):
+    frame_dig 87
+    frame_dig 71
+    <
+    bz run_a_training_loop_after_if_else@15
+    // logistic_neural_network_contract.py:271
+    // weight_index = self.hidden_weight_index(layer, neuron, prev_neuron)
+    frame_dig 66
+    dup
+    frame_dig 82
+    frame_dig 87
+    dup
+    cover 4
+    callsub hidden_weight_index
+    // logistic_neural_network_contract.py:272
+    // prev_activation_index = self.hidden_bias_index(layer - UInt64(1), prev_neuron)
+    swap
+    intc_1 // 1
+    -
+    // logistic_neural_network_contract.py:740
+    // return (layer * self.hidden_neurons) + neuron
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    assert // check self.hidden_neurons exists
+    *
+    uncover 2
+    +
+    frame_bury 86
+    // logistic_neural_network_contract.py:277
+    // hidden_weight_magnitudes[weight_index].as_uint64(),
+    intc_2 // 8
+    *
+    intc_3 // 2
+    +
+    // logistic_neural_network_contract.py:202
+    // hidden_weight_magnitudes = self.hidden_weight_magnitudes_box.value.copy()
+    bytec 7 // "h_w_mag"
+    // logistic_neural_network_contract.py:277
+    // hidden_weight_magnitudes[weight_index].as_uint64(),
+    dig 1
+    intc_2 // 8
+    box_extract
+    btoi
+    frame_bury 99
+    // logistic_neural_network_contract.py:203
+    // hidden_weight_signs = self.hidden_weight_signs_box.value.copy()
+    bytec 8 // "h_w_sign"
+    // logistic_neural_network_contract.py:278
+    // self.uint_to_bool(hidden_weight_signs[weight_index].as_uint64()),
+    swap
+    intc_2 // 8
+    box_extract
+    btoi
+    // logistic_neural_network_contract.py:821
+    // if value == 0:
+    bnz run_a_training_loop_after_if_else@293
+    // logistic_neural_network_contract.py:822
+    // return False
+    intc_0 // 0
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@294:
+    // logistic_neural_network_contract.py:279
+    // hidden_activations[prev_activation_index].as_uint64(),
+    frame_dig 10
+    extract 2 0
+    frame_dig 86
+    intc_2 // 8
+    *
+    extract_uint64
+    // logistic_neural_network_contract.py:767
+    // product_magnitude = self.scale_down_product(weight_magnitude, unsigned_input)
+    frame_dig 99
+    swap
+    callsub scale_down_product
+    // logistic_neural_network_contract.py:768-773
+    // return self.signed_add(
+    //     acc_magnitude,
+    //     acc_is_negative,
+    //     product_magnitude,
+    //     weight_is_negative,
+    // )
+    frame_dig 85
+    frame_dig 84
+    uncover 2
+    uncover 3
+    callsub signed_add
+    frame_bury 84
+    frame_bury 85
+    // logistic_neural_network_contract.py:270
+    // for prev_neuron in urange(self.hidden_neurons):
+    frame_dig 87
+    intc_1 // 1
+    +
+    frame_bury 87
+    b run_a_training_loop_for_header@11
+
+run_a_training_loop_after_if_else@293:
+    // logistic_neural_network_contract.py:823
+    // return True
+    intc_1 // 1
+    // logistic_neural_network_contract.py:278
+    // self.uint_to_bool(hidden_weight_signs[weight_index].as_uint64()),
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@294
+
+run_a_training_loop_after_if_else@317:
+    // logistic_neural_network_contract.py:823
+    // return True
+    intc_1 // 1
+    frame_bury 84
+    // logistic_neural_network_contract.py:248
+    // preactivation_is_negative = self.uint_to_bool(hidden_bias_signs[bias_index].as_uint64())
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@318
+
+run_a_training_loop_after_for@17:
+    // logistic_neural_network_contract.py:244
+    // for layer in urange(self.hidden_layers):
+    frame_dig 66
+    intc_1 // 1
+    +
+    frame_bury 66
+    b run_a_training_loop_for_header@5
+
+run_a_training_loop_after_for@19:
+    // logistic_neural_network_contract.py:288
+    // z_out_magnitude = self.output_bias_magnitude
+    intc_0 // 0
+    bytec 19 // "output_bias_magnitude"
+    app_global_get_ex
+    swap
+    frame_bury 106
+    assert // check self.output_bias_magnitude exists
+    // logistic_neural_network_contract.py:289
+    // z_out_is_negative = self.output_bias_is_negative
+    intc_0 // 0
+    bytec 20 // "output_bias_is_negative"
+    app_global_get_ex
+    swap
+    frame_bury 105
+    assert // check self.output_bias_is_negative exists
+    // logistic_neural_network_contract.py:291
+    // for neuron in urange(self.hidden_neurons):
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    swap
+    frame_bury 72
+    assert // check self.hidden_neurons exists
+    intc_0 // 0
+    frame_bury 82
+
+run_a_training_loop_for_header@20:
+    // logistic_neural_network_contract.py:291
+    // for neuron in urange(self.hidden_neurons):
+    frame_dig 82
+    frame_dig 72
+    <
+    bz run_a_training_loop_after_for@23
+    // logistic_neural_network_contract.py:292
+    // last_hidden_index = self.hidden_bias_index(self.hidden_layers - UInt64(1), neuron)
+    intc_0 // 0
+    bytec_1 // "hidden_layers"
+    app_global_get_ex
+    assert // check self.hidden_layers exists
+    intc_1 // 1
+    -
+    // logistic_neural_network_contract.py:740
+    // return (layer * self.hidden_neurons) + neuron
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    assert // check self.hidden_neurons exists
+    *
+    frame_dig 82
+    dup
+    cover 2
+    +
+    frame_bury 65
+    // logistic_neural_network_contract.py:296
+    // output_weight_magnitudes[neuron].as_uint64(),
+    intc_2 // 8
+    *
+    intc_3 // 2
+    +
+    // logistic_neural_network_contract.py:208
+    // output_weight_magnitudes = self.output_weight_magnitudes_box.value.copy()
+    bytec 9 // "o_w_mag"
+    // logistic_neural_network_contract.py:296
+    // output_weight_magnitudes[neuron].as_uint64(),
+    dig 1
+    intc_2 // 8
+    box_extract
+    btoi
+    frame_bury 99
+    // logistic_neural_network_contract.py:209
+    // output_weight_signs = self.output_weight_signs_box.value.copy()
+    bytec 10 // "o_w_sign"
+    // logistic_neural_network_contract.py:297
+    // self.uint_to_bool(output_weight_signs[neuron].as_uint64()),
+    swap
+    intc_2 // 8
+    box_extract
+    btoi
+    // logistic_neural_network_contract.py:821
+    // if value == 0:
+    bnz run_a_training_loop_after_if_else@277
+    // logistic_neural_network_contract.py:822
+    // return False
+    intc_0 // 0
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@278:
+    // logistic_neural_network_contract.py:298
+    // hidden_activations[last_hidden_index].as_uint64(),
+    frame_dig 10
+    extract 2 0
+    frame_dig 65
+    intc_2 // 8
+    *
+    extract_uint64
+    // logistic_neural_network_contract.py:767
+    // product_magnitude = self.scale_down_product(weight_magnitude, unsigned_input)
+    frame_dig 99
+    swap
+    callsub scale_down_product
+    // logistic_neural_network_contract.py:768-773
+    // return self.signed_add(
+    //     acc_magnitude,
+    //     acc_is_negative,
+    //     product_magnitude,
+    //     weight_is_negative,
+    // )
+    frame_dig 106
+    frame_dig 105
+    uncover 2
+    uncover 3
+    callsub signed_add
+    frame_bury 105
+    frame_bury 106
+    // logistic_neural_network_contract.py:291
+    // for neuron in urange(self.hidden_neurons):
+    frame_dig 82
+    intc_1 // 1
+    +
+    frame_bury 82
+    b run_a_training_loop_for_header@20
+
+run_a_training_loop_after_if_else@277:
+    // logistic_neural_network_contract.py:823
+    // return True
+    intc_1 // 1
+    // logistic_neural_network_contract.py:297
+    // self.uint_to_bool(output_weight_signs[neuron].as_uint64()),
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@278
+
+run_a_training_loop_after_for@23:
+    // logistic_neural_network_contract.py:301
+    // y_prediction = self.hard_sigmoid(z_out_magnitude, z_out_is_negative)
+    frame_dig 106
+    frame_dig 105
+    callsub hard_sigmoid
+    // logistic_neural_network_contract.py:305
+    // False,
+    intc_0 // 0
+    // logistic_neural_network_contract.py:849-854
+    // return self.signed_add(
+    //     a_magnitude,
+    //     a_is_negative,
+    //     b_magnitude,
+    //     not b_is_negative,
+    // )
+    frame_dig 102
+    // logistic_neural_network_contract.py:853
+    // not b_is_negative,
+    intc_1 // 1
+    // logistic_neural_network_contract.py:849-854
+    // return self.signed_add(
+    //     a_magnitude,
+    //     a_is_negative,
+    //     b_magnitude,
+    //     not b_is_negative,
+    // )
+    callsub signed_add
+    frame_bury 103
+    frame_bury 104
+    // logistic_neural_network_contract.py:310
+    // for neuron in urange(self.hidden_neurons):
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    swap
+    frame_bury 73
+    assert // check self.hidden_neurons exists
+    intc_0 // 0
+    frame_bury 82
+
+run_a_training_loop_for_header@24:
+    // logistic_neural_network_contract.py:310
+    // for neuron in urange(self.hidden_neurons):
+    frame_dig 82
+    frame_dig 73
+    <
+    bz run_a_training_loop_after_for@27
+    // logistic_neural_network_contract.py:311
+    // last_hidden_index = self.hidden_bias_index(self.hidden_layers - UInt64(1), neuron)
+    intc_0 // 0
+    bytec_1 // "hidden_layers"
+    app_global_get_ex
+    assert // check self.hidden_layers exists
+    intc_1 // 1
+    -
+    // logistic_neural_network_contract.py:740
+    // return (layer * self.hidden_neurons) + neuron
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    assert // check self.hidden_neurons exists
+    *
+    frame_dig 82
+    dup
+    cover 2
+    +
+    // logistic_neural_network_contract.py:315
+    // hidden_activations[last_hidden_index].as_uint64(),
+    frame_dig 10
+    extract 2 0
+    swap
+    intc_2 // 8
+    *
+    extract_uint64
+    // logistic_neural_network_contract.py:313-316
+    // grad_output_weight_magnitude = self.scale_down_product(
+    //     y_error_magnitude,
+    //     hidden_activations[last_hidden_index].as_uint64(),
+    // )
+    frame_dig 104
+    swap
+    callsub scale_down_product
+    frame_bury 61
+    // logistic_neural_network_contract.py:320
+    // delta_output_weight_magnitudes[neuron].as_uint64(),
+    frame_dig 6
+    extract 2 0
+    swap
+    intc_2 // 8
+    *
+    dup
+    frame_bury 32
+    swap
+    dig 1
+    extract_uint64
+    frame_bury 96
+    // logistic_neural_network_contract.py:321
+    // self.uint_to_bool(delta_output_weight_signs[neuron].as_uint64()),
+    frame_dig 7
+    extract 2 0
+    swap
+    extract_uint64
+    // logistic_neural_network_contract.py:821
+    // if value == 0:
+    bnz run_a_training_loop_after_if_else@265
+    // logistic_neural_network_contract.py:822
+    // return False
+    intc_0 // 0
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@266:
+    // logistic_neural_network_contract.py:319-324
+    // new_mag, new_sign = self.signed_add(
+    //     delta_output_weight_magnitudes[neuron].as_uint64(),
+    //     self.uint_to_bool(delta_output_weight_signs[neuron].as_uint64()),
+    //     grad_output_weight_magnitude,
+    //     grad_output_weight_is_negative,
+    // )
+    frame_dig 96
+    swap
+    frame_dig 61
+    frame_dig 103
+    callsub signed_add
+    // logistic_neural_network_contract.py:325
+    // delta_output_weight_magnitudes[neuron] = arc4.UInt64(new_mag)
+    swap
+    itob
+    frame_dig 32
+    intc_3 // 2
+    +
+    dup
+    frame_bury 42
+    frame_dig 6
+    swap
+    uncover 2
+    replace3 // on error: index access is out of bounds
+    frame_bury 6
+    // logistic_neural_network_contract.py:815
+    // if value:
+    bz run_a_training_loop_after_if_else@269
+    // logistic_neural_network_contract.py:816
+    // return UInt64(1)
+    intc_1 // 1
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.bool_to_uint@270:
+    // logistic_neural_network_contract.py:326
+    // delta_output_weight_signs[neuron] = arc4.UInt64(self.bool_to_uint(new_sign))
+    itob
+    frame_dig 7
+    frame_dig 42
+    uncover 2
+    replace3 // on error: index access is out of bounds
+    frame_bury 7
+    // logistic_neural_network_contract.py:310
+    // for neuron in urange(self.hidden_neurons):
+    frame_dig 82
+    intc_1 // 1
+    +
+    frame_bury 82
+    b run_a_training_loop_for_header@24
+
+run_a_training_loop_after_if_else@269:
+    // logistic_neural_network_contract.py:817
+    // return UInt64(0)
+    intc_0 // 0
+    // logistic_neural_network_contract.py:326
+    // delta_output_weight_signs[neuron] = arc4.UInt64(self.bool_to_uint(new_sign))
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.bool_to_uint@270
+
+run_a_training_loop_after_if_else@265:
+    // logistic_neural_network_contract.py:823
+    // return True
+    intc_1 // 1
+    // logistic_neural_network_contract.py:321
+    // self.uint_to_bool(delta_output_weight_signs[neuron].as_uint64()),
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@266
+
+run_a_training_loop_after_for@27:
+    // logistic_neural_network_contract.py:328-333
+    // delta_output_bias_magnitude, delta_output_bias_is_negative = self.signed_add(
+    //     delta_output_bias_magnitude,
+    //     delta_output_bias_is_negative,
+    //     y_error_magnitude,
+    //     y_error_is_negative,
+    // )
+    frame_dig 54
+    frame_dig 53
+    frame_dig 104
+    frame_dig 103
+    callsub signed_add
+    frame_bury 53
+    frame_bury 54
+    // logistic_neural_network_contract.py:335
+    // for neuron in urange(self.hidden_neurons):
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    swap
+    frame_bury 74
+    assert // check self.hidden_neurons exists
+    intc_0 // 0
+    frame_bury 82
+
+run_a_training_loop_for_header@28:
+    // logistic_neural_network_contract.py:335
+    // for neuron in urange(self.hidden_neurons):
+    frame_dig 82
+    frame_dig 74
+    <
+    bz run_a_training_loop_after_for@33
+    // logistic_neural_network_contract.py:336
+    // last_index = self.hidden_bias_index(self.hidden_layers - UInt64(1), neuron)
+    intc_0 // 0
+    bytec_1 // "hidden_layers"
+    app_global_get_ex
+    assert // check self.hidden_layers exists
+    intc_1 // 1
+    -
+    // logistic_neural_network_contract.py:740
+    // return (layer * self.hidden_neurons) + neuron
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    assert // check self.hidden_neurons exists
+    *
+    frame_dig 82
+    +
+    // logistic_neural_network_contract.py:338
+    // hidden_preactivated_magnitudes[last_index].as_uint64(),
+    frame_dig 15
+    extract 2 0
+    swap
+    intc_2 // 8
+    *
+    dup
+    frame_bury 23
+    swap
+    dig 1
+    extract_uint64
+    frame_bury 67
+    // logistic_neural_network_contract.py:339
+    // self.uint_to_bool(hidden_preactivated_signs[last_index].as_uint64()),
+    frame_dig 16
+    extract 2 0
+    swap
+    extract_uint64
+    // logistic_neural_network_contract.py:821
+    // if value == 0:
+    bnz run_a_training_loop_after_if_else@245
+    // logistic_neural_network_contract.py:822
+    // return False
+    intc_0 // 0
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@246:
+    // logistic_neural_network_contract.py:783
+    // if is_negative:
+    bz run_a_training_loop_after_if_else@249
+
+run_a_training_loop_if_body@248:
+    // logistic_neural_network_contract.py:784
+    // return UInt64(0)
+    intc_0 // 0
+    frame_bury 89
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.relu_derivative@252:
+    // logistic_neural_network_contract.py:344
+    // output_weight_magnitudes[neuron].as_uint64(),
+    frame_dig 82
+    intc_2 // 8
+    *
+    intc_3 // 2
+    +
+    // logistic_neural_network_contract.py:208
+    // output_weight_magnitudes = self.output_weight_magnitudes_box.value.copy()
+    bytec 9 // "o_w_mag"
+    // logistic_neural_network_contract.py:344
+    // output_weight_magnitudes[neuron].as_uint64(),
+    dig 1
+    intc_2 // 8
+    box_extract
+    btoi
+    // logistic_neural_network_contract.py:342-345
+    // base_error_magnitude = self.scale_down_product(
+    //     y_error_magnitude,
+    //     output_weight_magnitudes[neuron].as_uint64(),
+    // )
+    frame_dig 104
+    swap
+    callsub scale_down_product
+    frame_bury 47
+    // logistic_neural_network_contract.py:209
+    // output_weight_signs = self.output_weight_signs_box.value.copy()
+    bytec 10 // "o_w_sign"
+    // logistic_neural_network_contract.py:348
+    // self.uint_to_bool(output_weight_signs[neuron].as_uint64()),
+    swap
+    intc_2 // 8
+    box_extract
+    btoi
+    // logistic_neural_network_contract.py:821
+    // if value == 0:
+    bnz run_a_training_loop_after_if_else@255
+    // logistic_neural_network_contract.py:822
+    // return False
+    intc_0 // 0
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@256:
+    // logistic_neural_network_contract.py:809
+    // if a == b:
+    frame_dig 103
+    ==
+    bz run_a_training_loop_after_if_else@259
+    // logistic_neural_network_contract.py:810
+    // return False
+    intc_0 // 0
+    frame_bury 46
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.xor_signs@260:
+    // logistic_neural_network_contract.py:351
+    // if relu_deriv == UInt64(1):
+    frame_dig 89
+    intc_1 // 1
+    ==
+    bz run_a_training_loop_after_if_else@31
+    // logistic_neural_network_contract.py:352
+    // hidden_error_magnitudes[last_index] = arc4.UInt64(base_error_magnitude)
+    frame_dig 47
+    itob
+    frame_dig 23
+    intc_3 // 2
+    +
+    dup
+    frame_bury 43
+    frame_dig 13
+    swap
+    uncover 2
+    replace3 // on error: index access is out of bounds
+    frame_bury 13
+    // logistic_neural_network_contract.py:815
+    // if value:
+    frame_dig 46
+    bz run_a_training_loop_after_if_else@239
+    // logistic_neural_network_contract.py:816
+    // return UInt64(1)
+    intc_1 // 1
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.bool_to_uint@240:
+    // logistic_neural_network_contract.py:353
+    // hidden_error_signs[last_index] = arc4.UInt64(self.bool_to_uint(base_error_is_negative))
+    itob
+    frame_dig 14
+    frame_dig 43
+    uncover 2
+    replace3 // on error: index access is out of bounds
+    frame_bury 14
+
+run_a_training_loop_after_if_else@31:
+    // logistic_neural_network_contract.py:335
+    // for neuron in urange(self.hidden_neurons):
+    frame_dig 82
+    intc_1 // 1
+    +
+    frame_bury 82
+    b run_a_training_loop_for_header@28
+
+run_a_training_loop_after_if_else@239:
+    // logistic_neural_network_contract.py:817
+    // return UInt64(0)
+    intc_0 // 0
+    // logistic_neural_network_contract.py:353
+    // hidden_error_signs[last_index] = arc4.UInt64(self.bool_to_uint(base_error_is_negative))
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.bool_to_uint@240
+
+run_a_training_loop_after_if_else@259:
+    // logistic_neural_network_contract.py:811
+    // return True
+    intc_1 // 1
+    frame_bury 46
+    // logistic_neural_network_contract.py:346-349
+    // base_error_is_negative = self.xor_signs(
+    //     y_error_is_negative,
+    //     self.uint_to_bool(output_weight_signs[neuron].as_uint64()),
+    // )
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.xor_signs@260
+
+run_a_training_loop_after_if_else@255:
+    // logistic_neural_network_contract.py:823
+    // return True
+    intc_1 // 1
+    // logistic_neural_network_contract.py:348
+    // self.uint_to_bool(output_weight_signs[neuron].as_uint64()),
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@256
+
+run_a_training_loop_after_if_else@249:
+    // logistic_neural_network_contract.py:785
+    // if magnitude == 0:
+    frame_dig 67
+    bz run_a_training_loop_if_body@248
+    // logistic_neural_network_contract.py:787
+    // return UInt64(1)
+    intc_1 // 1
+    frame_bury 89
+    // logistic_neural_network_contract.py:337-340
+    // relu_deriv = self.relu_derivative(
+    //     hidden_preactivated_magnitudes[last_index].as_uint64(),
+    //     self.uint_to_bool(hidden_preactivated_signs[last_index].as_uint64()),
+    // )
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.relu_derivative@252
+
+run_a_training_loop_after_if_else@245:
+    // logistic_neural_network_contract.py:823
+    // return True
+    intc_1 // 1
+    // logistic_neural_network_contract.py:339
+    // self.uint_to_bool(hidden_preactivated_signs[last_index].as_uint64()),
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@246
+
+run_a_training_loop_after_for@33:
+    // logistic_neural_network_contract.py:355
+    // if self.hidden_layers > 1:
+    intc_0 // 0
+    bytec_1 // "hidden_layers"
+    app_global_get_ex
+    assert // check self.hidden_layers exists
+    intc_1 // 1
+    >
+    bz run_a_training_loop_after_if_else@49
+    // logistic_neural_network_contract.py:356
+    // for reverse_offset in urange(self.hidden_layers - UInt64(1)):
+    intc_0 // 0
+    bytec_1 // "hidden_layers"
+    app_global_get_ex
+    assert // check self.hidden_layers exists
+    intc_1 // 1
+    -
+    frame_bury 97
+    intc_0 // 0
+    frame_bury 91
+
+run_a_training_loop_for_header@35:
+    // logistic_neural_network_contract.py:356
+    // for reverse_offset in urange(self.hidden_layers - UInt64(1)):
+    frame_dig 91
+    frame_dig 97
+    <
+    bz run_a_training_loop_after_if_else@49
+    // logistic_neural_network_contract.py:357
+    // reverse_layer = (self.hidden_layers - UInt64(2)) - reverse_offset
+    intc_0 // 0
+    bytec_1 // "hidden_layers"
+    app_global_get_ex
+    assert // check self.hidden_layers exists
+    intc_3 // 2
+    -
+    frame_dig 91
+    -
+    frame_bury 90
+    // logistic_neural_network_contract.py:359
+    // for neuron in urange(self.hidden_neurons):
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    swap
+    frame_bury 75
+    assert // check self.hidden_neurons exists
+    intc_0 // 0
+    frame_bury 82
+
+run_a_training_loop_for_header@37:
+    // logistic_neural_network_contract.py:359
+    // for neuron in urange(self.hidden_neurons):
+    frame_dig 82
+    frame_dig 75
+    <
+    bz run_a_training_loop_after_for@46
+    // logistic_neural_network_contract.py:360
+    // weighted_error_sum_magnitude = UInt64(0)
+    intc_0 // 0
+    frame_bury 101
+    // logistic_neural_network_contract.py:361
+    // weighted_error_sum_is_negative = False
+    intc_0 // 0
+    frame_bury 100
+    // logistic_neural_network_contract.py:363
+    // for next_neuron in urange(self.hidden_neurons):
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    swap
+    frame_bury 76
+    assert // check self.hidden_neurons exists
+    intc_0 // 0
+    frame_bury 83
+
+run_a_training_loop_for_header@39:
+    // logistic_neural_network_contract.py:363
+    // for next_neuron in urange(self.hidden_neurons):
+    frame_dig 83
+    frame_dig 76
+    <
+    bz run_a_training_loop_after_for@42
+    // logistic_neural_network_contract.py:364
+    // next_error_index = self.hidden_bias_index(reverse_layer + UInt64(1), next_neuron)
+    frame_dig 90
+    intc_1 // 1
+    +
+    // logistic_neural_network_contract.py:740
+    // return (layer * self.hidden_neurons) + neuron
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    assert // check self.hidden_neurons exists
+    dig 1
+    *
+    frame_dig 83
+    dup
+    cover 2
+    +
+    // logistic_neural_network_contract.py:365
+    // next_weight_index = self.hidden_weight_index(reverse_layer + UInt64(1), next_neuron, neuron)
+    cover 2
+    frame_dig 82
+    callsub hidden_weight_index
+    // logistic_neural_network_contract.py:368
+    // hidden_error_magnitudes[next_error_index].as_uint64(),
+    frame_dig 13
+    extract 2 0
+    uncover 2
+    intc_2 // 8
+    *
+    swap
+    dig 1
+    extract_uint64
+    // logistic_neural_network_contract.py:369
+    // hidden_weight_magnitudes[next_weight_index].as_uint64(),
+    uncover 2
+    intc_2 // 8
+    *
+    intc_3 // 2
+    +
+    dup
+    frame_bury 49
+    // logistic_neural_network_contract.py:202
+    // hidden_weight_magnitudes = self.hidden_weight_magnitudes_box.value.copy()
+    bytec 7 // "h_w_mag"
+    // logistic_neural_network_contract.py:369
+    // hidden_weight_magnitudes[next_weight_index].as_uint64(),
+    swap
+    intc_2 // 8
+    box_extract
+    btoi
+    // logistic_neural_network_contract.py:367-370
+    // product_magnitude = self.scale_down_product(
+    //     hidden_error_magnitudes[next_error_index].as_uint64(),
+    //     hidden_weight_magnitudes[next_weight_index].as_uint64(),
+    // )
+    callsub scale_down_product
+    frame_bury 88
+    // logistic_neural_network_contract.py:372
+    // self.uint_to_bool(hidden_error_signs[next_error_index].as_uint64()),
+    frame_dig 14
+    extract 2 0
+    swap
+    extract_uint64
+    // logistic_neural_network_contract.py:821
+    // if value == 0:
+    bnz run_a_training_loop_after_if_else@227
+    // logistic_neural_network_contract.py:822
+    // return False
+    intc_0 // 0
+    frame_bury 21
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@228:
+    // logistic_neural_network_contract.py:203
+    // hidden_weight_signs = self.hidden_weight_signs_box.value.copy()
+    bytec 8 // "h_w_sign"
+    // logistic_neural_network_contract.py:373
+    // self.uint_to_bool(hidden_weight_signs[next_weight_index].as_uint64()),
+    frame_dig 49
+    intc_2 // 8
+    box_extract
+    btoi
+    // logistic_neural_network_contract.py:821
+    // if value == 0:
+    bnz run_a_training_loop_after_if_else@231
+    // logistic_neural_network_contract.py:822
+    // return False
+    intc_0 // 0
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@232:
+    // logistic_neural_network_contract.py:809
+    // if a == b:
+    frame_dig 21
+    ==
+    bz run_a_training_loop_after_if_else@235
+    // logistic_neural_network_contract.py:810
+    // return False
+    intc_0 // 0
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.xor_signs@236:
+    // logistic_neural_network_contract.py:376-381
+    // weighted_error_sum_magnitude, weighted_error_sum_is_negative = self.signed_add(
+    //     weighted_error_sum_magnitude,
+    //     weighted_error_sum_is_negative,
+    //     product_magnitude,
+    //     product_is_negative,
+    // )
+    frame_dig 101
+    frame_dig 100
+    frame_dig 88
+    uncover 3
+    callsub signed_add
+    frame_bury 100
+    frame_bury 101
+    // logistic_neural_network_contract.py:363
+    // for next_neuron in urange(self.hidden_neurons):
+    frame_dig 83
+    intc_1 // 1
+    +
+    frame_bury 83
+    b run_a_training_loop_for_header@39
+
+run_a_training_loop_after_if_else@235:
+    // logistic_neural_network_contract.py:811
+    // return True
+    intc_1 // 1
+    // logistic_neural_network_contract.py:371-374
+    // product_is_negative = self.xor_signs(
+    //     self.uint_to_bool(hidden_error_signs[next_error_index].as_uint64()),
+    //     self.uint_to_bool(hidden_weight_signs[next_weight_index].as_uint64()),
+    // )
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.xor_signs@236
+
+run_a_training_loop_after_if_else@231:
+    // logistic_neural_network_contract.py:823
+    // return True
+    intc_1 // 1
+    // logistic_neural_network_contract.py:373
+    // self.uint_to_bool(hidden_weight_signs[next_weight_index].as_uint64()),
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@232
+
+run_a_training_loop_after_if_else@227:
+    // logistic_neural_network_contract.py:823
+    // return True
+    intc_1 // 1
+    frame_bury 21
+    // logistic_neural_network_contract.py:372
+    // self.uint_to_bool(hidden_error_signs[next_error_index].as_uint64()),
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@228
+
+run_a_training_loop_after_for@42:
+    // logistic_neural_network_contract.py:740
+    // return (layer * self.hidden_neurons) + neuron
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    assert // check self.hidden_neurons exists
+    frame_dig 90
+    *
+    frame_dig 82
+    +
+    // logistic_neural_network_contract.py:385
+    // hidden_preactivated_magnitudes[current_index].as_uint64(),
+    frame_dig 15
+    extract 2 0
+    swap
+    intc_2 // 8
+    *
+    dup
+    frame_bury 24
+    swap
+    dig 1
+    extract_uint64
+    frame_bury 67
+    // logistic_neural_network_contract.py:386
+    // self.uint_to_bool(hidden_preactivated_signs[current_index].as_uint64()),
+    frame_dig 16
+    extract 2 0
+    swap
+    extract_uint64
+    // logistic_neural_network_contract.py:821
+    // if value == 0:
+    bnz run_a_training_loop_after_if_else@215
+    // logistic_neural_network_contract.py:822
+    // return False
+    intc_0 // 0
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@216:
+    // logistic_neural_network_contract.py:783
+    // if is_negative:
+    bz run_a_training_loop_after_if_else@219
+
+run_a_training_loop_if_body@218:
+    // logistic_neural_network_contract.py:784
+    // return UInt64(0)
+    intc_0 // 0
+    frame_bury 89
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.relu_derivative@222:
+    // logistic_neural_network_contract.py:389
+    // if relu_deriv == UInt64(1):
+    frame_dig 89
+    intc_1 // 1
+    ==
+    bz run_a_training_loop_after_if_else@44
+    // logistic_neural_network_contract.py:390
+    // hidden_error_magnitudes[current_index] = arc4.UInt64(weighted_error_sum_magnitude)
+    frame_dig 101
+    itob
+    frame_dig 24
+    intc_3 // 2
+    +
+    dup
+    frame_bury 44
+    frame_dig 13
+    swap
+    uncover 2
+    replace3 // on error: index access is out of bounds
+    frame_bury 13
+    // logistic_neural_network_contract.py:815
+    // if value:
+    frame_dig 100
+    bz run_a_training_loop_after_if_else@209
+    // logistic_neural_network_contract.py:816
+    // return UInt64(1)
+    intc_1 // 1
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.bool_to_uint@210:
+    // logistic_neural_network_contract.py:391
+    // hidden_error_signs[current_index] = arc4.UInt64(self.bool_to_uint(weighted_error_sum_is_negative))
+    itob
+    frame_dig 14
+    frame_dig 44
+    uncover 2
+    replace3 // on error: index access is out of bounds
+    frame_bury 14
+
+run_a_training_loop_after_if_else@44:
+    // logistic_neural_network_contract.py:359
+    // for neuron in urange(self.hidden_neurons):
+    frame_dig 82
+    intc_1 // 1
+    +
+    frame_bury 82
+    b run_a_training_loop_for_header@37
+
+run_a_training_loop_after_if_else@209:
+    // logistic_neural_network_contract.py:817
+    // return UInt64(0)
+    intc_0 // 0
+    // logistic_neural_network_contract.py:391
+    // hidden_error_signs[current_index] = arc4.UInt64(self.bool_to_uint(weighted_error_sum_is_negative))
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.bool_to_uint@210
+
+run_a_training_loop_after_if_else@219:
+    // logistic_neural_network_contract.py:785
+    // if magnitude == 0:
+    frame_dig 67
+    bz run_a_training_loop_if_body@218
+    // logistic_neural_network_contract.py:787
+    // return UInt64(1)
+    intc_1 // 1
+    frame_bury 89
+    // logistic_neural_network_contract.py:384-387
+    // relu_deriv = self.relu_derivative(
+    //     hidden_preactivated_magnitudes[current_index].as_uint64(),
+    //     self.uint_to_bool(hidden_preactivated_signs[current_index].as_uint64()),
+    // )
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.relu_derivative@222
+
+run_a_training_loop_after_if_else@215:
+    // logistic_neural_network_contract.py:823
+    // return True
+    intc_1 // 1
+    // logistic_neural_network_contract.py:386
+    // self.uint_to_bool(hidden_preactivated_signs[current_index].as_uint64()),
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@216
+
+run_a_training_loop_after_for@46:
+    // logistic_neural_network_contract.py:356
+    // for reverse_offset in urange(self.hidden_layers - UInt64(1)):
+    frame_dig 91
+    intc_1 // 1
+    +
+    frame_bury 91
+    b run_a_training_loop_for_header@35
+
+run_a_training_loop_after_if_else@49:
+    // logistic_neural_network_contract.py:393
+    // for layer in urange(self.hidden_layers):
+    intc_0 // 0
+    bytec_1 // "hidden_layers"
+    app_global_get_ex
+    swap
+    frame_bury 77
+    assert // check self.hidden_layers exists
+    intc_0 // 0
+    frame_bury 66
+
+run_a_training_loop_for_header@50:
+    // logistic_neural_network_contract.py:393
+    // for layer in urange(self.hidden_layers):
+    frame_dig 66
+    frame_dig 77
+    <
+    bz run_a_training_loop_after_for@64
+    // logistic_neural_network_contract.py:394
+    // for neuron in urange(self.hidden_neurons):
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    swap
+    frame_bury 78
+    assert // check self.hidden_neurons exists
+    intc_0 // 0
+    frame_bury 82
+
+run_a_training_loop_for_header@52:
+    // logistic_neural_network_contract.py:394
+    // for neuron in urange(self.hidden_neurons):
+    frame_dig 82
+    frame_dig 78
+    <
+    bz run_a_training_loop_after_for@62
+    // logistic_neural_network_contract.py:740
+    // return (layer * self.hidden_neurons) + neuron
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    assert // check self.hidden_neurons exists
+    frame_dig 66
+    *
+    frame_dig 82
+    +
+    // logistic_neural_network_contract.py:396
+    // hidden_error_magnitude = hidden_error_magnitudes[error_index].as_uint64()
+    frame_dig 13
+    extract 2 0
+    swap
+    intc_2 // 8
+    *
+    dup
+    frame_bury 25
+    swap
+    dig 1
+    extract_uint64
+    frame_bury 63
+    // logistic_neural_network_contract.py:397
+    // hidden_error_is_negative = self.uint_to_bool(hidden_error_signs[error_index].as_uint64())
+    frame_dig 14
+    extract 2 0
+    swap
+    extract_uint64
+    // logistic_neural_network_contract.py:821
+    // if value == 0:
+    bnz run_a_training_loop_after_if_else@205
+    // logistic_neural_network_contract.py:822
+    // return False
+    intc_0 // 0
+    frame_bury 62
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@206:
+    // logistic_neural_network_contract.py:399
+    // if layer == 0:
+    frame_dig 66
+    bnz run_a_training_loop_else_body@55
+    // logistic_neural_network_contract.py:732
+    // return neuron * self.input_feature_count + feature
+    intc_0 // 0
+    bytec 21 // "input_feature_count"
+    app_global_get_ex
+    assert // check self.input_feature_count exists
+    frame_dig 82
+    *
+    dup
+    // logistic_neural_network_contract.py:401
+    // gender_weight_delta_index = self.first_hidden_weight_index(neuron, UInt64(1))
+    intc_1 // 1
+    // logistic_neural_network_contract.py:732
+    // return neuron * self.input_feature_count + feature
+    +
+    frame_bury 57
+    // logistic_neural_network_contract.py:403
+    // grad_age_magnitude = self.scale_down_product(hidden_error_magnitude, age)
+    frame_dig 63
+    dup
+    frame_dig 22
+    callsub scale_down_product
+    frame_bury 58
+    // logistic_neural_network_contract.py:404
+    // grad_gender_magnitude = self.scale_down_product(hidden_error_magnitude, gender)
+    frame_dig 56
+    callsub scale_down_product
+    frame_bury 59
+    // logistic_neural_network_contract.py:407
+    // delta_first_hidden_weight_magnitudes[age_weight_delta_index].as_uint64(),
+    frame_dig 0
+    extract 2 0
+    swap
+    intc_2 // 8
+    *
+    dup
+    frame_bury 26
+    swap
+    dig 1
+    extract_uint64
+    frame_bury 92
+    // logistic_neural_network_contract.py:408
+    // self.uint_to_bool(delta_first_hidden_weight_signs[age_weight_delta_index].as_uint64()),
+    frame_dig 1
+    extract 2 0
+    swap
+    extract_uint64
+    // logistic_neural_network_contract.py:821
+    // if value == 0:
+    bnz run_a_training_loop_after_if_else@187
+    // logistic_neural_network_contract.py:822
+    // return False
+    intc_0 // 0
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@188:
+    // logistic_neural_network_contract.py:406-411
+    // new_mag, new_sign = self.signed_add(
+    //     delta_first_hidden_weight_magnitudes[age_weight_delta_index].as_uint64(),
+    //     self.uint_to_bool(delta_first_hidden_weight_signs[age_weight_delta_index].as_uint64()),
+    //     grad_age_magnitude,
+    //     hidden_error_is_negative,
+    // )
+    frame_dig 92
+    swap
+    frame_dig 58
+    frame_dig 62
+    callsub signed_add
+    // logistic_neural_network_contract.py:412
+    // delta_first_hidden_weight_magnitudes[age_weight_delta_index] = arc4.UInt64(new_mag)
+    swap
+    itob
+    frame_dig 26
+    intc_3 // 2
+    +
+    dup
+    frame_bury 45
+    frame_dig 0
+    swap
+    uncover 2
+    replace3 // on error: index access is out of bounds
+    frame_bury 0
+    // logistic_neural_network_contract.py:815
+    // if value:
+    bz run_a_training_loop_after_if_else@191
+    // logistic_neural_network_contract.py:816
+    // return UInt64(1)
+    intc_1 // 1
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.bool_to_uint@192:
+    // logistic_neural_network_contract.py:413
+    // delta_first_hidden_weight_signs[age_weight_delta_index] = arc4.UInt64(self.bool_to_uint(new_sign))
+    itob
+    frame_dig 1
+    frame_dig 45
+    uncover 2
+    replace3 // on error: index access is out of bounds
+    dup
+    frame_bury 1
+    // logistic_neural_network_contract.py:416
+    // delta_first_hidden_weight_magnitudes[gender_weight_delta_index].as_uint64(),
+    frame_dig 0
+    extract 2 0
+    frame_dig 57
+    intc_2 // 8
+    *
+    dup
+    frame_bury 27
+    swap
+    dig 1
+    extract_uint64
+    frame_bury 93
+    // logistic_neural_network_contract.py:417
+    // self.uint_to_bool(delta_first_hidden_weight_signs[gender_weight_delta_index].as_uint64()),
+    swap
+    extract 2 0
+    swap
+    extract_uint64
+    // logistic_neural_network_contract.py:821
+    // if value == 0:
+    bnz run_a_training_loop_after_if_else@195
+    // logistic_neural_network_contract.py:822
+    // return False
+    intc_0 // 0
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@196:
+    // logistic_neural_network_contract.py:415-420
+    // new_mag, new_sign = self.signed_add(
+    //     delta_first_hidden_weight_magnitudes[gender_weight_delta_index].as_uint64(),
+    //     self.uint_to_bool(delta_first_hidden_weight_signs[gender_weight_delta_index].as_uint64()),
+    //     grad_gender_magnitude,
+    //     hidden_error_is_negative,
+    // )
+    frame_dig 93
+    swap
+    frame_dig 59
+    frame_dig 62
+    callsub signed_add
+    // logistic_neural_network_contract.py:421
+    // delta_first_hidden_weight_magnitudes[gender_weight_delta_index] = arc4.UInt64(new_mag)
+    swap
+    itob
+    frame_dig 27
+    intc_3 // 2
+    +
+    dup
+    frame_bury 35
+    frame_dig 0
+    swap
+    uncover 2
+    replace3 // on error: index access is out of bounds
+    frame_bury 0
+    // logistic_neural_network_contract.py:815
+    // if value:
+    bz run_a_training_loop_after_if_else@199
+    // logistic_neural_network_contract.py:816
+    // return UInt64(1)
+    intc_1 // 1
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.bool_to_uint@200:
+    // logistic_neural_network_contract.py:422
+    // delta_first_hidden_weight_signs[gender_weight_delta_index] = arc4.UInt64(self.bool_to_uint(new_sign))
+    itob
+    frame_dig 1
+    frame_dig 35
+    uncover 2
+    replace3 // on error: index access is out of bounds
+    frame_bury 1
+
+run_a_training_loop_after_if_else@60:
+    // logistic_neural_network_contract.py:443
+    // delta_hidden_bias_magnitudes[error_index].as_uint64(),
+    frame_dig 2
+    extract 2 0
+    frame_dig 25
+    dup
+    cover 2
+    extract_uint64
+    frame_bury 95
+    // logistic_neural_network_contract.py:444
+    // self.uint_to_bool(delta_hidden_bias_signs[error_index].as_uint64()),
+    frame_dig 3
+    extract 2 0
+    swap
+    extract_uint64
+    // logistic_neural_network_contract.py:821
+    // if value == 0:
+    bnz run_a_training_loop_after_if_else@165
+    // logistic_neural_network_contract.py:822
+    // return False
+    intc_0 // 0
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@166:
+    // logistic_neural_network_contract.py:442-447
+    // new_mag, new_sign = self.signed_add(
+    //     delta_hidden_bias_magnitudes[error_index].as_uint64(),
+    //     self.uint_to_bool(delta_hidden_bias_signs[error_index].as_uint64()),
+    //     hidden_error_magnitude,
+    //     hidden_error_is_negative,
+    // )
+    frame_dig 95
+    swap
+    frame_dig 63
+    frame_dig 62
+    callsub signed_add
+    // logistic_neural_network_contract.py:448
+    // delta_hidden_bias_magnitudes[error_index] = arc4.UInt64(new_mag)
+    swap
+    itob
+    frame_dig 25
+    intc_3 // 2
+    +
+    dup
+    frame_bury 37
+    frame_dig 2
+    swap
+    uncover 2
+    replace3 // on error: index access is out of bounds
+    frame_bury 2
+    // logistic_neural_network_contract.py:815
+    // if value:
+    bz run_a_training_loop_after_if_else@169
+    // logistic_neural_network_contract.py:816
+    // return UInt64(1)
+    intc_1 // 1
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.bool_to_uint@170:
+    // logistic_neural_network_contract.py:449
+    // delta_hidden_bias_signs[error_index] = arc4.UInt64(self.bool_to_uint(new_sign))
+    itob
+    frame_dig 3
+    frame_dig 37
+    uncover 2
+    replace3 // on error: index access is out of bounds
+    frame_bury 3
+    // logistic_neural_network_contract.py:394
+    // for neuron in urange(self.hidden_neurons):
+    frame_dig 82
+    intc_1 // 1
+    +
+    frame_bury 82
+    b run_a_training_loop_for_header@52
+
+run_a_training_loop_after_if_else@169:
+    // logistic_neural_network_contract.py:817
+    // return UInt64(0)
+    intc_0 // 0
+    // logistic_neural_network_contract.py:449
+    // delta_hidden_bias_signs[error_index] = arc4.UInt64(self.bool_to_uint(new_sign))
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.bool_to_uint@170
+
+run_a_training_loop_after_if_else@165:
+    // logistic_neural_network_contract.py:823
+    // return True
+    intc_1 // 1
+    // logistic_neural_network_contract.py:444
+    // self.uint_to_bool(delta_hidden_bias_signs[error_index].as_uint64()),
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@166
+
+run_a_training_loop_after_if_else@199:
+    // logistic_neural_network_contract.py:817
+    // return UInt64(0)
+    intc_0 // 0
+    // logistic_neural_network_contract.py:422
+    // delta_first_hidden_weight_signs[gender_weight_delta_index] = arc4.UInt64(self.bool_to_uint(new_sign))
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.bool_to_uint@200
+
+run_a_training_loop_after_if_else@195:
+    // logistic_neural_network_contract.py:823
+    // return True
+    intc_1 // 1
+    // logistic_neural_network_contract.py:417
+    // self.uint_to_bool(delta_first_hidden_weight_signs[gender_weight_delta_index].as_uint64()),
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@196
+
+run_a_training_loop_after_if_else@191:
+    // logistic_neural_network_contract.py:817
+    // return UInt64(0)
+    intc_0 // 0
+    // logistic_neural_network_contract.py:413
+    // delta_first_hidden_weight_signs[age_weight_delta_index] = arc4.UInt64(self.bool_to_uint(new_sign))
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.bool_to_uint@192
+
+run_a_training_loop_after_if_else@187:
+    // logistic_neural_network_contract.py:823
+    // return True
+    intc_1 // 1
+    // logistic_neural_network_contract.py:408
+    // self.uint_to_bool(delta_first_hidden_weight_signs[age_weight_delta_index].as_uint64()),
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@188
+
+run_a_training_loop_else_body@55:
+    // logistic_neural_network_contract.py:424
+    // for prev_neuron in urange(self.hidden_neurons):
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    swap
+    frame_bury 79
+    assert // check self.hidden_neurons exists
+    intc_0 // 0
+    frame_bury 87
+
+run_a_training_loop_for_header@56:
+    // logistic_neural_network_contract.py:424
+    // for prev_neuron in urange(self.hidden_neurons):
+    frame_dig 87
+    frame_dig 79
+    <
+    bz run_a_training_loop_after_if_else@60
+    // logistic_neural_network_contract.py:425
+    // weight_delta_index = self.hidden_weight_index(layer, neuron, prev_neuron)
+    frame_dig 66
+    dup
+    frame_dig 82
+    frame_dig 87
+    dup
+    cover 4
+    callsub hidden_weight_index
+    // logistic_neural_network_contract.py:426
+    // prev_activation_index = self.hidden_bias_index(layer - UInt64(1), prev_neuron)
+    swap
+    intc_1 // 1
+    -
+    // logistic_neural_network_contract.py:740
+    // return (layer * self.hidden_neurons) + neuron
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    assert // check self.hidden_neurons exists
+    *
+    uncover 2
+    +
+    // logistic_neural_network_contract.py:430
+    // hidden_activations[prev_activation_index].as_uint64(),
+    frame_dig 10
+    extract 2 0
+    swap
+    intc_2 // 8
+    *
+    extract_uint64
+    // logistic_neural_network_contract.py:428-431
+    // grad_hidden_weight_magnitude = self.scale_down_product(
+    //     hidden_error_magnitude,
+    //     hidden_activations[prev_activation_index].as_uint64(),
+    // )
+    frame_dig 63
+    swap
+    callsub scale_down_product
+    frame_bury 60
+    // logistic_neural_network_contract.py:434
+    // delta_hidden_weight_magnitudes_arr[weight_delta_index].as_uint64(),
+    frame_dig 4
+    extract 2 0
+    swap
+    intc_2 // 8
+    *
+    dup
+    frame_bury 28
+    swap
+    dig 1
+    extract_uint64
+    frame_bury 94
+    // logistic_neural_network_contract.py:435
+    // self.uint_to_bool(delta_hidden_weight_signs_arr[weight_delta_index].as_uint64()),
+    frame_dig 5
+    extract 2 0
+    swap
+    extract_uint64
+    // logistic_neural_network_contract.py:821
+    // if value == 0:
+    bnz run_a_training_loop_after_if_else@175
+    // logistic_neural_network_contract.py:822
+    // return False
+    intc_0 // 0
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@176:
+    // logistic_neural_network_contract.py:433-438
+    // new_mag, new_sign = self.signed_add(
+    //     delta_hidden_weight_magnitudes_arr[weight_delta_index].as_uint64(),
+    //     self.uint_to_bool(delta_hidden_weight_signs_arr[weight_delta_index].as_uint64()),
+    //     grad_hidden_weight_magnitude,
+    //     hidden_error_is_negative,
+    // )
+    frame_dig 94
+    swap
+    frame_dig 60
+    frame_dig 62
+    callsub signed_add
+    // logistic_neural_network_contract.py:439
+    // delta_hidden_weight_magnitudes_arr[weight_delta_index] = arc4.UInt64(new_mag)
+    swap
+    itob
+    frame_dig 28
+    intc_3 // 2
+    +
+    dup
+    frame_bury 36
+    frame_dig 4
+    swap
+    uncover 2
+    replace3 // on error: index access is out of bounds
+    frame_bury 4
+    // logistic_neural_network_contract.py:815
+    // if value:
+    bz run_a_training_loop_after_if_else@179
+    // logistic_neural_network_contract.py:816
+    // return UInt64(1)
+    intc_1 // 1
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.bool_to_uint@180:
+    // logistic_neural_network_contract.py:440
+    // delta_hidden_weight_signs_arr[weight_delta_index] = arc4.UInt64(self.bool_to_uint(new_sign))
+    itob
+    frame_dig 5
+    frame_dig 36
+    uncover 2
+    replace3 // on error: index access is out of bounds
+    frame_bury 5
+    // logistic_neural_network_contract.py:424
+    // for prev_neuron in urange(self.hidden_neurons):
+    frame_dig 87
+    intc_1 // 1
+    +
+    frame_bury 87
+    b run_a_training_loop_for_header@56
+
+run_a_training_loop_after_if_else@179:
+    // logistic_neural_network_contract.py:817
+    // return UInt64(0)
+    intc_0 // 0
+    // logistic_neural_network_contract.py:440
+    // delta_hidden_weight_signs_arr[weight_delta_index] = arc4.UInt64(self.bool_to_uint(new_sign))
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.bool_to_uint@180
+
+run_a_training_loop_after_if_else@175:
+    // logistic_neural_network_contract.py:823
+    // return True
+    intc_1 // 1
+    // logistic_neural_network_contract.py:435
+    // self.uint_to_bool(delta_hidden_weight_signs_arr[weight_delta_index].as_uint64()),
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@176
+
+run_a_training_loop_after_if_else@205:
+    // logistic_neural_network_contract.py:823
+    // return True
+    intc_1 // 1
+    frame_bury 62
+    // logistic_neural_network_contract.py:397
+    // hidden_error_is_negative = self.uint_to_bool(hidden_error_signs[error_index].as_uint64())
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@206
+
+run_a_training_loop_after_for@62:
+    // logistic_neural_network_contract.py:393
+    // for layer in urange(self.hidden_layers):
+    frame_dig 66
+    intc_1 // 1
+    +
+    frame_bury 66
+    b run_a_training_loop_for_header@50
+
+run_a_training_loop_after_for@64:
+    // logistic_neural_network_contract.py:233
+    // for data_index in urange(self.length_data):
+    frame_dig 52
+    intc_1 // 1
+    +
+    frame_bury 52
+    b run_a_training_loop_for_header@3
+
+run_a_training_loop_after_for@66:
+    // logistic_neural_network_contract.py:451
+    // for i in urange(first_hidden_weight_count):
+    intc_0 // 0
+    frame_bury 64
+
+run_a_training_loop_for_header@67:
+    // logistic_neural_network_contract.py:451
+    // for i in urange(first_hidden_weight_count):
+    frame_dig 64
+    frame_dig 108
+    <
+    bz run_a_training_loop_after_for@70
+    // logistic_neural_network_contract.py:453
+    // delta_first_hidden_weight_magnitudes[i].as_uint64() // self.length_data
+    frame_dig 0
+    dup
+    extract 2 0
+    frame_dig 64
+    dup
+    cover 3
+    intc_2 // 8
+    *
+    swap
+    dig 1
+    extract_uint64
+    intc_0 // 0
+    bytec_3 // "length_data"
+    app_global_get_ex
+    assert // check self.length_data exists
+    /
+    // logistic_neural_network_contract.py:452-454
+    // delta_first_hidden_weight_magnitudes[i] = arc4.UInt64(
+    //     delta_first_hidden_weight_magnitudes[i].as_uint64() // self.length_data
+    // )
+    itob
+    swap
+    intc_3 // 2
+    +
+    swap
+    replace3 // on error: index access is out of bounds
+    frame_bury 0
+    // logistic_neural_network_contract.py:451
+    // for i in urange(first_hidden_weight_count):
+    intc_1 // 1
+    +
+    frame_bury 64
+    b run_a_training_loop_for_header@67
+
+run_a_training_loop_after_for@70:
+    // logistic_neural_network_contract.py:456
+    // if self.hidden_layers > 1:
+    intc_0 // 0
+    bytec_1 // "hidden_layers"
+    app_global_get_ex
+    assert // check self.hidden_layers exists
+    intc_1 // 1
+    >
+    bz run_a_training_loop_after_if_else@76
+    // logistic_neural_network_contract.py:457
+    // for i in urange(hidden_weight_count):
+    intc_0 // 0
+    frame_bury 64
+
+run_a_training_loop_for_header@72:
+    // logistic_neural_network_contract.py:457
+    // for i in urange(hidden_weight_count):
+    frame_dig 64
+    frame_dig 109
+    <
+    bz run_a_training_loop_after_if_else@76
+    // logistic_neural_network_contract.py:459
+    // delta_hidden_weight_magnitudes_arr[i].as_uint64() // self.length_data
+    frame_dig 4
+    dup
+    extract 2 0
+    frame_dig 64
+    dup
+    cover 3
+    intc_2 // 8
+    *
+    swap
+    dig 1
+    extract_uint64
+    intc_0 // 0
+    bytec_3 // "length_data"
+    app_global_get_ex
+    assert // check self.length_data exists
+    /
+    // logistic_neural_network_contract.py:458-460
+    // delta_hidden_weight_magnitudes_arr[i] = arc4.UInt64(
+    //     delta_hidden_weight_magnitudes_arr[i].as_uint64() // self.length_data
+    // )
+    itob
+    swap
+    intc_3 // 2
+    +
+    swap
+    replace3 // on error: index access is out of bounds
+    frame_bury 4
+    // logistic_neural_network_contract.py:457
+    // for i in urange(hidden_weight_count):
+    intc_1 // 1
+    +
+    frame_bury 64
+    b run_a_training_loop_for_header@72
+
+run_a_training_loop_after_if_else@76:
+    // logistic_neural_network_contract.py:462
+    // for i in urange(hidden_state_count):
+    intc_0 // 0
+    frame_bury 64
+
+run_a_training_loop_for_header@77:
+    // logistic_neural_network_contract.py:462
+    // for i in urange(hidden_state_count):
+    frame_dig 64
+    frame_dig 107
+    <
+    bz run_a_training_loop_after_for@80
+    // logistic_neural_network_contract.py:464
+    // delta_hidden_bias_magnitudes[i].as_uint64() // self.length_data
+    frame_dig 2
+    dup
+    extract 2 0
+    frame_dig 64
+    dup
+    cover 3
+    intc_2 // 8
+    *
+    swap
+    dig 1
+    extract_uint64
+    intc_0 // 0
+    bytec_3 // "length_data"
+    app_global_get_ex
+    assert // check self.length_data exists
+    /
+    // logistic_neural_network_contract.py:463-465
+    // delta_hidden_bias_magnitudes[i] = arc4.UInt64(
+    //     delta_hidden_bias_magnitudes[i].as_uint64() // self.length_data
+    // )
+    itob
+    swap
+    intc_3 // 2
+    +
+    swap
+    replace3 // on error: index access is out of bounds
+    frame_bury 2
+    // logistic_neural_network_contract.py:462
+    // for i in urange(hidden_state_count):
+    intc_1 // 1
+    +
+    frame_bury 64
+    b run_a_training_loop_for_header@77
+
+run_a_training_loop_after_for@80:
+    // logistic_neural_network_contract.py:467
+    // for i in urange(self.hidden_neurons):
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    swap
+    frame_bury 80
+    assert // check self.hidden_neurons exists
+    intc_0 // 0
+    frame_bury 64
+
+run_a_training_loop_for_header@81:
+    // logistic_neural_network_contract.py:467
+    // for i in urange(self.hidden_neurons):
+    frame_dig 64
+    frame_dig 80
+    <
+    bz run_a_training_loop_after_for@84
+    // logistic_neural_network_contract.py:469
+    // delta_output_weight_magnitudes[i].as_uint64() // self.length_data
+    frame_dig 6
+    dup
+    extract 2 0
+    frame_dig 64
+    dup
+    cover 3
+    intc_2 // 8
+    *
+    swap
+    dig 1
+    extract_uint64
+    intc_0 // 0
+    bytec_3 // "length_data"
+    app_global_get_ex
+    assert // check self.length_data exists
+    /
+    // logistic_neural_network_contract.py:468-470
+    // delta_output_weight_magnitudes[i] = arc4.UInt64(
+    //     delta_output_weight_magnitudes[i].as_uint64() // self.length_data
+    // )
+    itob
+    swap
+    intc_3 // 2
+    +
+    swap
+    replace3 // on error: index access is out of bounds
+    frame_bury 6
+    // logistic_neural_network_contract.py:467
+    // for i in urange(self.hidden_neurons):
+    intc_1 // 1
+    +
+    frame_bury 64
+    b run_a_training_loop_for_header@81
+
+run_a_training_loop_after_for@84:
+    // logistic_neural_network_contract.py:472
+    // delta_output_bias_magnitude = delta_output_bias_magnitude // self.length_data
+    intc_0 // 0
+    bytec_3 // "length_data"
+    app_global_get_ex
+    assert // check self.length_data exists
+    frame_dig 54
+    swap
+    /
+    frame_bury 54
+    // logistic_neural_network_contract.py:474
+    // for i in urange(first_hidden_weight_count):
+    intc_0 // 0
+    frame_bury 64
+
+run_a_training_loop_for_header@85:
+    // logistic_neural_network_contract.py:474
+    // for i in urange(first_hidden_weight_count):
+    frame_dig 64
+    frame_dig 108
+    <
+    bz run_a_training_loop_after_for@88
+    // logistic_neural_network_contract.py:476
+    // self.learning_rate,
+    intc_0 // 0
+    bytec 11 // "learning_rate"
+    app_global_get_ex
+    assert // check self.learning_rate exists
+    // logistic_neural_network_contract.py:477
+    // delta_first_hidden_weight_magnitudes[i].as_uint64(),
+    frame_dig 0
+    extract 2 0
+    frame_dig 64
+    intc_2 // 8
+    *
+    dup
+    frame_bury 29
+    swap
+    dig 1
+    extract_uint64
+    // logistic_neural_network_contract.py:475-478
+    // update_amount = self.scale_down_product(
+    //     self.learning_rate,
+    //     delta_first_hidden_weight_magnitudes[i].as_uint64(),
+    // )
+    uncover 2
+    swap
+    callsub scale_down_product
+    frame_bury 98
+    // logistic_neural_network_contract.py:479
+    // current_mag = first_hidden_weight_magnitudes[i].as_uint64()
+    frame_dig 8
+    extract 2 0
+    dig 1
+    extract_uint64
+    frame_bury 50
+    // logistic_neural_network_contract.py:480
+    // current_sign = self.uint_to_bool(first_hidden_weight_signs[i].as_uint64())
+    frame_dig 9
+    extract 2 0
+    swap
+    extract_uint64
+    // logistic_neural_network_contract.py:821
+    // if value == 0:
+    bnz run_a_training_loop_after_if_else@151
+    // logistic_neural_network_contract.py:822
+    // return False
+    intc_0 // 0
+    frame_bury 51
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@152:
+    // logistic_neural_network_contract.py:481
+    // delta_sign = self.uint_to_bool(delta_first_hidden_weight_signs[i].as_uint64())
+    frame_dig 1
+    extract 2 0
+    frame_dig 29
+    extract_uint64
+    // logistic_neural_network_contract.py:821
+    // if value == 0:
+    bnz run_a_training_loop_after_if_else@155
+    // logistic_neural_network_contract.py:822
+    // return False
+    intc_0 // 0
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@156:
+    // logistic_neural_network_contract.py:853
+    // not b_is_negative,
+    !
+    // logistic_neural_network_contract.py:849-854
+    // return self.signed_add(
+    //     a_magnitude,
+    //     a_is_negative,
+    //     b_magnitude,
+    //     not b_is_negative,
+    // )
+    frame_dig 50
+    frame_dig 51
+    frame_dig 98
+    uncover 3
+    callsub signed_add
+    // logistic_neural_network_contract.py:490
+    // first_hidden_weight_magnitudes[i] = arc4.UInt64(new_mag)
+    swap
+    itob
+    frame_dig 29
+    intc_3 // 2
+    +
+    dup
+    frame_bury 38
+    frame_dig 8
+    swap
+    uncover 2
+    replace3 // on error: index access is out of bounds
+    frame_bury 8
+    // logistic_neural_network_contract.py:815
+    // if value:
+    bz run_a_training_loop_after_if_else@161
+    // logistic_neural_network_contract.py:816
+    // return UInt64(1)
+    intc_1 // 1
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.bool_to_uint@162:
+    // logistic_neural_network_contract.py:491
+    // first_hidden_weight_signs[i] = arc4.UInt64(self.bool_to_uint(new_sign))
+    itob
+    frame_dig 9
+    frame_dig 38
+    uncover 2
+    replace3 // on error: index access is out of bounds
+    frame_bury 9
+    // logistic_neural_network_contract.py:474
+    // for i in urange(first_hidden_weight_count):
+    frame_dig 64
+    intc_1 // 1
+    +
+    frame_bury 64
+    b run_a_training_loop_for_header@85
+
+run_a_training_loop_after_if_else@161:
+    // logistic_neural_network_contract.py:817
+    // return UInt64(0)
+    intc_0 // 0
+    // logistic_neural_network_contract.py:491
+    // first_hidden_weight_signs[i] = arc4.UInt64(self.bool_to_uint(new_sign))
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.bool_to_uint@162
+
+run_a_training_loop_after_if_else@155:
+    // logistic_neural_network_contract.py:823
+    // return True
+    intc_1 // 1
+    // logistic_neural_network_contract.py:481
+    // delta_sign = self.uint_to_bool(delta_first_hidden_weight_signs[i].as_uint64())
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@156
+
+run_a_training_loop_after_if_else@151:
+    // logistic_neural_network_contract.py:823
+    // return True
+    intc_1 // 1
+    frame_bury 51
+    // logistic_neural_network_contract.py:480
+    // current_sign = self.uint_to_bool(first_hidden_weight_signs[i].as_uint64())
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@152
+
+run_a_training_loop_after_for@88:
+    // logistic_neural_network_contract.py:493
+    // if self.hidden_layers > 1:
+    intc_0 // 0
+    bytec_1 // "hidden_layers"
+    app_global_get_ex
+    assert // check self.hidden_layers exists
+    intc_1 // 1
+    >
+    bz run_a_training_loop_after_if_else@94
+    // logistic_neural_network_contract.py:494
+    // for i in urange(hidden_weight_count):
+    intc_0 // 0
+    frame_bury 64
+
+run_a_training_loop_for_header@90:
+    // logistic_neural_network_contract.py:494
+    // for i in urange(hidden_weight_count):
+    frame_dig 64
+    frame_dig 109
+    <
+    bz run_a_training_loop_after_if_else@94
+    // logistic_neural_network_contract.py:496
+    // self.learning_rate,
+    intc_0 // 0
+    bytec 11 // "learning_rate"
+    app_global_get_ex
+    assert // check self.learning_rate exists
+    // logistic_neural_network_contract.py:497
+    // delta_hidden_weight_magnitudes_arr[i].as_uint64(),
+    frame_dig 4
+    extract 2 0
+    frame_dig 64
+    intc_2 // 8
+    *
+    dup
+    frame_bury 30
+    swap
+    dig 1
+    extract_uint64
+    // logistic_neural_network_contract.py:495-498
+    // update_amount = self.scale_down_product(
+    //     self.learning_rate,
+    //     delta_hidden_weight_magnitudes_arr[i].as_uint64(),
+    // )
+    uncover 2
+    swap
+    callsub scale_down_product
+    frame_bury 98
+    // logistic_neural_network_contract.py:499
+    // current_mag = hidden_weight_magnitudes[i].as_uint64()
+    frame_dig 17
+    extract 2 0
+    dig 1
+    extract_uint64
+    frame_bury 50
+    // logistic_neural_network_contract.py:500
+    // current_sign = self.uint_to_bool(hidden_weight_signs[i].as_uint64())
+    frame_dig 18
+    extract 2 0
+    swap
+    extract_uint64
+    // logistic_neural_network_contract.py:821
+    // if value == 0:
+    bnz run_a_training_loop_after_if_else@137
+    // logistic_neural_network_contract.py:822
+    // return False
+    intc_0 // 0
+    frame_bury 51
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@138:
+    // logistic_neural_network_contract.py:501
+    // delta_sign = self.uint_to_bool(delta_hidden_weight_signs_arr[i].as_uint64())
+    frame_dig 5
+    extract 2 0
+    frame_dig 30
+    extract_uint64
+    // logistic_neural_network_contract.py:821
+    // if value == 0:
+    bnz run_a_training_loop_after_if_else@141
+    // logistic_neural_network_contract.py:822
+    // return False
+    intc_0 // 0
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@142:
+    // logistic_neural_network_contract.py:853
+    // not b_is_negative,
+    !
+    // logistic_neural_network_contract.py:849-854
+    // return self.signed_add(
+    //     a_magnitude,
+    //     a_is_negative,
+    //     b_magnitude,
+    //     not b_is_negative,
+    // )
+    frame_dig 50
+    frame_dig 51
+    frame_dig 98
+    uncover 3
+    callsub signed_add
+    // logistic_neural_network_contract.py:510
+    // hidden_weight_magnitudes[i] = arc4.UInt64(new_mag)
+    swap
+    itob
+    frame_dig 30
+    intc_3 // 2
+    +
+    dup
+    frame_bury 39
+    frame_dig 17
+    swap
+    uncover 2
+    replace3 // on error: index access is out of bounds
+    frame_bury 17
+    // logistic_neural_network_contract.py:815
+    // if value:
+    bz run_a_training_loop_after_if_else@147
+    // logistic_neural_network_contract.py:816
+    // return UInt64(1)
+    intc_1 // 1
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.bool_to_uint@148:
+    // logistic_neural_network_contract.py:511
+    // hidden_weight_signs[i] = arc4.UInt64(self.bool_to_uint(new_sign))
+    itob
+    frame_dig 18
+    frame_dig 39
+    uncover 2
+    replace3 // on error: index access is out of bounds
+    frame_bury 18
+    // logistic_neural_network_contract.py:494
+    // for i in urange(hidden_weight_count):
+    frame_dig 64
+    intc_1 // 1
+    +
+    frame_bury 64
+    b run_a_training_loop_for_header@90
+
+run_a_training_loop_after_if_else@147:
+    // logistic_neural_network_contract.py:817
+    // return UInt64(0)
+    intc_0 // 0
+    // logistic_neural_network_contract.py:511
+    // hidden_weight_signs[i] = arc4.UInt64(self.bool_to_uint(new_sign))
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.bool_to_uint@148
+
+run_a_training_loop_after_if_else@141:
+    // logistic_neural_network_contract.py:823
+    // return True
+    intc_1 // 1
+    // logistic_neural_network_contract.py:501
+    // delta_sign = self.uint_to_bool(delta_hidden_weight_signs_arr[i].as_uint64())
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@142
+
+run_a_training_loop_after_if_else@137:
+    // logistic_neural_network_contract.py:823
+    // return True
+    intc_1 // 1
+    frame_bury 51
+    // logistic_neural_network_contract.py:500
+    // current_sign = self.uint_to_bool(hidden_weight_signs[i].as_uint64())
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@138
+
+run_a_training_loop_after_if_else@94:
+    // logistic_neural_network_contract.py:513
+    // for i in urange(hidden_state_count):
+    intc_0 // 0
+    frame_bury 64
+
+run_a_training_loop_for_header@95:
+    // logistic_neural_network_contract.py:513
+    // for i in urange(hidden_state_count):
+    frame_dig 64
+    frame_dig 107
+    <
+    bz run_a_training_loop_after_for@98
+    // logistic_neural_network_contract.py:515
+    // self.learning_rate,
+    intc_0 // 0
+    bytec 11 // "learning_rate"
+    app_global_get_ex
+    assert // check self.learning_rate exists
+    // logistic_neural_network_contract.py:516
+    // delta_hidden_bias_magnitudes[i].as_uint64(),
+    frame_dig 2
+    extract 2 0
+    frame_dig 64
+    intc_2 // 8
+    *
+    dup
+    frame_bury 31
+    swap
+    dig 1
+    extract_uint64
+    // logistic_neural_network_contract.py:514-517
+    // update_amount = self.scale_down_product(
+    //     self.learning_rate,
+    //     delta_hidden_bias_magnitudes[i].as_uint64(),
+    // )
+    uncover 2
+    swap
+    callsub scale_down_product
+    frame_bury 98
+    // logistic_neural_network_contract.py:518
+    // current_mag = hidden_bias_magnitudes[i].as_uint64()
+    frame_dig 11
+    extract 2 0
+    dig 1
+    extract_uint64
+    frame_bury 50
+    // logistic_neural_network_contract.py:519
+    // current_sign = self.uint_to_bool(hidden_bias_signs[i].as_uint64())
+    frame_dig 12
+    extract 2 0
+    swap
+    extract_uint64
+    // logistic_neural_network_contract.py:821
+    // if value == 0:
+    bnz run_a_training_loop_after_if_else@123
+    // logistic_neural_network_contract.py:822
+    // return False
+    intc_0 // 0
+    frame_bury 51
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@124:
+    // logistic_neural_network_contract.py:520
+    // delta_sign = self.uint_to_bool(delta_hidden_bias_signs[i].as_uint64())
+    frame_dig 3
+    extract 2 0
+    frame_dig 31
+    extract_uint64
+    // logistic_neural_network_contract.py:821
+    // if value == 0:
+    bnz run_a_training_loop_after_if_else@127
+    // logistic_neural_network_contract.py:822
+    // return False
+    intc_0 // 0
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@128:
+    // logistic_neural_network_contract.py:853
+    // not b_is_negative,
+    !
+    // logistic_neural_network_contract.py:849-854
+    // return self.signed_add(
+    //     a_magnitude,
+    //     a_is_negative,
+    //     b_magnitude,
+    //     not b_is_negative,
+    // )
+    frame_dig 50
+    frame_dig 51
+    frame_dig 98
+    uncover 3
+    callsub signed_add
+    // logistic_neural_network_contract.py:529
+    // hidden_bias_magnitudes[i] = arc4.UInt64(new_mag)
+    swap
+    itob
+    frame_dig 31
+    intc_3 // 2
+    +
+    dup
+    frame_bury 40
+    frame_dig 11
+    swap
+    uncover 2
+    replace3 // on error: index access is out of bounds
+    frame_bury 11
+    // logistic_neural_network_contract.py:815
+    // if value:
+    bz run_a_training_loop_after_if_else@133
+    // logistic_neural_network_contract.py:816
+    // return UInt64(1)
+    intc_1 // 1
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.bool_to_uint@134:
+    // logistic_neural_network_contract.py:530
+    // hidden_bias_signs[i] = arc4.UInt64(self.bool_to_uint(new_sign))
+    itob
+    frame_dig 12
+    frame_dig 40
+    uncover 2
+    replace3 // on error: index access is out of bounds
+    frame_bury 12
+    // logistic_neural_network_contract.py:513
+    // for i in urange(hidden_state_count):
+    frame_dig 64
+    intc_1 // 1
+    +
+    frame_bury 64
+    b run_a_training_loop_for_header@95
+
+run_a_training_loop_after_if_else@133:
+    // logistic_neural_network_contract.py:817
+    // return UInt64(0)
+    intc_0 // 0
+    // logistic_neural_network_contract.py:530
+    // hidden_bias_signs[i] = arc4.UInt64(self.bool_to_uint(new_sign))
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.bool_to_uint@134
+
+run_a_training_loop_after_if_else@127:
+    // logistic_neural_network_contract.py:823
+    // return True
+    intc_1 // 1
+    // logistic_neural_network_contract.py:520
+    // delta_sign = self.uint_to_bool(delta_hidden_bias_signs[i].as_uint64())
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@128
+
+run_a_training_loop_after_if_else@123:
+    // logistic_neural_network_contract.py:823
+    // return True
+    intc_1 // 1
+    frame_bury 51
+    // logistic_neural_network_contract.py:519
+    // current_sign = self.uint_to_bool(hidden_bias_signs[i].as_uint64())
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@124
+
+run_a_training_loop_after_for@98:
+    // logistic_neural_network_contract.py:532
+    // for i in urange(self.hidden_neurons):
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    swap
+    frame_bury 81
+    assert // check self.hidden_neurons exists
+    intc_0 // 0
+    frame_bury 64
+
+run_a_training_loop_for_header@99:
+    // logistic_neural_network_contract.py:532
+    // for i in urange(self.hidden_neurons):
+    frame_dig 64
+    frame_dig 81
+    <
+    bz run_a_training_loop_after_for@102
+    // logistic_neural_network_contract.py:534
+    // self.learning_rate,
+    intc_0 // 0
+    bytec 11 // "learning_rate"
+    app_global_get_ex
+    assert // check self.learning_rate exists
+    // logistic_neural_network_contract.py:535
+    // delta_output_weight_magnitudes[i].as_uint64(),
+    frame_dig 6
+    extract 2 0
+    frame_dig 64
+    intc_2 // 8
+    *
+    dup
+    frame_bury 33
+    swap
+    dig 1
+    extract_uint64
+    // logistic_neural_network_contract.py:533-536
+    // update_amount = self.scale_down_product(
+    //     self.learning_rate,
+    //     delta_output_weight_magnitudes[i].as_uint64(),
+    // )
+    uncover 2
+    swap
+    callsub scale_down_product
+    frame_bury 98
+    // logistic_neural_network_contract.py:537
+    // current_mag = output_weight_magnitudes[i].as_uint64()
+    frame_dig 19
+    extract 2 0
+    dig 1
+    extract_uint64
+    frame_bury 50
+    // logistic_neural_network_contract.py:538
+    // current_sign = self.uint_to_bool(output_weight_signs[i].as_uint64())
+    frame_dig 20
+    extract 2 0
+    swap
+    extract_uint64
+    // logistic_neural_network_contract.py:821
+    // if value == 0:
+    bnz run_a_training_loop_after_if_else@109
+    // logistic_neural_network_contract.py:822
+    // return False
+    intc_0 // 0
+    frame_bury 51
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@110:
+    // logistic_neural_network_contract.py:539
+    // delta_sign = self.uint_to_bool(delta_output_weight_signs[i].as_uint64())
+    frame_dig 7
+    extract 2 0
+    frame_dig 33
+    extract_uint64
+    // logistic_neural_network_contract.py:821
+    // if value == 0:
+    bnz run_a_training_loop_after_if_else@113
+    // logistic_neural_network_contract.py:822
+    // return False
+    intc_0 // 0
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@114:
+    // logistic_neural_network_contract.py:853
+    // not b_is_negative,
+    !
+    // logistic_neural_network_contract.py:849-854
+    // return self.signed_add(
+    //     a_magnitude,
+    //     a_is_negative,
+    //     b_magnitude,
+    //     not b_is_negative,
+    // )
+    frame_dig 50
+    frame_dig 51
+    frame_dig 98
+    uncover 3
+    callsub signed_add
+    // logistic_neural_network_contract.py:548
+    // output_weight_magnitudes[i] = arc4.UInt64(new_mag)
+    swap
+    itob
+    frame_dig 33
+    intc_3 // 2
+    +
+    dup
+    frame_bury 41
+    frame_dig 19
+    swap
+    uncover 2
+    replace3 // on error: index access is out of bounds
+    frame_bury 19
+    // logistic_neural_network_contract.py:815
+    // if value:
+    bz run_a_training_loop_after_if_else@119
+    // logistic_neural_network_contract.py:816
+    // return UInt64(1)
+    intc_1 // 1
+
+run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.bool_to_uint@120:
+    // logistic_neural_network_contract.py:549
+    // output_weight_signs[i] = arc4.UInt64(self.bool_to_uint(new_sign))
+    itob
+    frame_dig 20
+    frame_dig 41
+    uncover 2
+    replace3 // on error: index access is out of bounds
+    frame_bury 20
+    // logistic_neural_network_contract.py:532
+    // for i in urange(self.hidden_neurons):
+    frame_dig 64
+    intc_1 // 1
+    +
+    frame_bury 64
+    b run_a_training_loop_for_header@99
+
+run_a_training_loop_after_if_else@119:
+    // logistic_neural_network_contract.py:817
+    // return UInt64(0)
+    intc_0 // 0
+    // logistic_neural_network_contract.py:549
+    // output_weight_signs[i] = arc4.UInt64(self.bool_to_uint(new_sign))
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.bool_to_uint@120
+
+run_a_training_loop_after_if_else@113:
+    // logistic_neural_network_contract.py:823
+    // return True
+    intc_1 // 1
+    // logistic_neural_network_contract.py:539
+    // delta_sign = self.uint_to_bool(delta_output_weight_signs[i].as_uint64())
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@114
+
+run_a_training_loop_after_if_else@109:
+    // logistic_neural_network_contract.py:823
+    // return True
+    intc_1 // 1
+    frame_bury 51
+    // logistic_neural_network_contract.py:538
+    // current_sign = self.uint_to_bool(output_weight_signs[i].as_uint64())
+    b run_a_training_loop_after_inlined_logistic_neural_network_contract.LogisticNeuralNetwork.uint_to_bool@110
+
+run_a_training_loop_after_for@102:
+    // logistic_neural_network_contract.py:552
+    // self.learning_rate,
+    intc_0 // 0
+    bytec 11 // "learning_rate"
+    app_global_get_ex
+    assert // check self.learning_rate exists
+    // logistic_neural_network_contract.py:551-554
+    // output_bias_update_amount = self.scale_down_product(
+    //     self.learning_rate,
+    //     delta_output_bias_magnitude,
+    // )
+    frame_dig 54
+    callsub scale_down_product
+    // logistic_neural_network_contract.py:556
+    // self.output_bias_magnitude,
+    intc_0 // 0
+    bytec 19 // "output_bias_magnitude"
+    app_global_get_ex
+    assert // check self.output_bias_magnitude exists
+    // logistic_neural_network_contract.py:557
+    // self.output_bias_is_negative,
+    intc_0 // 0
+    bytec 20 // "output_bias_is_negative"
+    app_global_get_ex
+    assert // check self.output_bias_is_negative exists
+    // logistic_neural_network_contract.py:853
+    // not b_is_negative,
+    frame_dig 53
+    !
+    uncover 3
+    swap
+    // logistic_neural_network_contract.py:849-854
+    // return self.signed_add(
+    //     a_magnitude,
+    //     a_is_negative,
+    //     b_magnitude,
+    //     not b_is_negative,
+    // )
+    callsub signed_add
+    // logistic_neural_network_contract.py:555
+    // self.output_bias_magnitude, self.output_bias_is_negative = self.signed_sub(
+    bytec 19 // "output_bias_magnitude"
+    // logistic_neural_network_contract.py:555-560
+    // self.output_bias_magnitude, self.output_bias_is_negative = self.signed_sub(
+    //     self.output_bias_magnitude,
+    //     self.output_bias_is_negative,
+    //     output_bias_update_amount,
+    //     delta_output_bias_is_negative,
+    // )
+    uncover 2
+    app_global_put
+    // logistic_neural_network_contract.py:555
+    // self.output_bias_magnitude, self.output_bias_is_negative = self.signed_sub(
+    bytec 20 // "output_bias_is_negative"
+    // logistic_neural_network_contract.py:555-560
+    // self.output_bias_magnitude, self.output_bias_is_negative = self.signed_sub(
+    //     self.output_bias_magnitude,
+    //     self.output_bias_is_negative,
+    //     output_bias_update_amount,
+    //     delta_output_bias_is_negative,
+    // )
+    swap
+    app_global_put
+    // logistic_neural_network_contract.py:562
+    // self.first_hidden_weight_magnitudes_box.value = first_hidden_weight_magnitudes.copy()
+    bytec 4 // "f_h_w_mag"
+    box_del
+    pop
+    bytec 4 // "f_h_w_mag"
+    frame_dig 8
+    box_put
+    // logistic_neural_network_contract.py:563
+    // self.first_hidden_weight_signs_box.value = first_hidden_weight_signs.copy()
+    bytec 5 // "f_h_w_sign"
+    box_del
+    pop
+    bytec 5 // "f_h_w_sign"
+    frame_dig 9
+    box_put
+    // logistic_neural_network_contract.py:565
+    // self.hidden_weight_magnitudes_box.value = hidden_weight_magnitudes.copy()
+    bytec 7 // "h_w_mag"
+    box_del
+    pop
+    bytec 7 // "h_w_mag"
+    frame_dig 17
+    box_put
+    // logistic_neural_network_contract.py:566
+    // self.hidden_weight_signs_box.value = hidden_weight_signs.copy()
+    bytec 8 // "h_w_sign"
+    box_del
+    pop
+    bytec 8 // "h_w_sign"
+    frame_dig 18
+    box_put
+    // logistic_neural_network_contract.py:568
+    // self.hidden_bias_magnitudes_box.value = hidden_bias_magnitudes.copy()
+    bytec 15 // "h_b_mag"
+    box_del
+    pop
+    bytec 15 // "h_b_mag"
+    frame_dig 11
+    box_put
+    // logistic_neural_network_contract.py:569
+    // self.hidden_bias_signs_box.value = hidden_bias_signs.copy()
+    bytec 16 // "h_b_sign"
+    box_del
+    pop
+    bytec 16 // "h_b_sign"
+    frame_dig 12
+    box_put
+    // logistic_neural_network_contract.py:571
+    // self.output_weight_magnitudes_box.value = output_weight_magnitudes.copy()
+    bytec 9 // "o_w_mag"
+    box_del
+    pop
+    bytec 9 // "o_w_mag"
+    frame_dig 19
+    box_put
+    // logistic_neural_network_contract.py:572
+    // self.output_weight_signs_box.value = output_weight_signs.copy()
+    bytec 10 // "o_w_sign"
+    box_del
+    pop
+    bytec 10 // "o_w_sign"
+    frame_dig 20
+    box_put
+    // logistic_neural_network_contract.py:574
+    // self.epochs_completed += UInt64(1)
+    intc_0 // 0
+    bytec 17 // "epochs_completed"
+    app_global_get_ex
+    assert // check self.epochs_completed exists
+    intc_1 // 1
+    +
+    bytec 17 // "epochs_completed"
+    dig 1
+    app_global_put
+    // logistic_neural_network_contract.py:576
+    // if self.epochs_completed == self.epochs:
+    intc_0 // 0
+    bytec 22 // "epochs"
+    app_global_get_ex
+    assert // check self.epochs exists
+    ==
+    bz run_a_training_loop_after_if_else@104
+    // logistic_neural_network_contract.py:577
+    // self.training_complete = True
+    bytec 24 // "training_complete"
+    intc_1 // 1
+    app_global_put
+    // logistic_neural_network_contract.py:578
+    // self.ready_for_training = False
+    bytec 23 // "ready_for_training"
+    intc_0 // 0
+    app_global_put
+
+run_a_training_loop_after_if_else@104:
+    // logistic_neural_network_contract.py:580
+    // self.fees_used += Txn.fee
+    intc_0 // 0
+    bytec 18 // "fees_used"
+    app_global_get_ex
+    assert // check self.fees_used exists
+    txn Fee
+    +
+    bytec 18 // "fees_used"
+    swap
+    app_global_put
+    retsub
+
+
+// logistic_neural_network_contract.LogisticNeuralNetwork.write_zero_box(box_ref: bytes, count: uint64) -> void:
+write_zero_box:
+    // logistic_neural_network_contract.py:719-720
+    // @subroutine
+    // def write_zero_box(self, box_ref: Box[Data], count: UInt64) -> None:
+    proto 2 0
+    // logistic_neural_network_contract.py:721
+    // arr = self.make_zero_array(count)
+    frame_dig -1
+    callsub make_zero_array
+    // logistic_neural_network_contract.py:723
+    // if box_ref.get(default=Data()).length == 0:
+    frame_dig -2
+    box_get
+    bytec_2 // 0x0000
+    cover 2
+    select
+    intc_0 // 0
+    extract_uint16 // on error: invalid array length header
+    bnz write_zero_box_else_body@2
+    // logistic_neural_network_contract.py:724
+    // box_ref.create(size=arr.bytes.length)
+    frame_dig 0
+    len
+    frame_dig -2
+    swap
+    box_create
+    pop
+
+write_zero_box_after_if_else@3:
+    // logistic_neural_network_contract.py:728
+    // box_ref.value = arr.copy()
+    frame_dig -2
+    box_del
+    pop
+    frame_dig -2
+    frame_dig 0
+    box_put
+    retsub
+
+write_zero_box_else_body@2:
+    // logistic_neural_network_contract.py:726
+    // box_ref.resize(new_size=arr.bytes.length)
+    frame_dig 0
+    len
+    frame_dig -2
+    swap
+    box_resize
+    b write_zero_box_after_if_else@3
+
+
+// logistic_neural_network_contract.LogisticNeuralNetwork.hidden_weight_index(layer: uint64, neuron: uint64, prev_neuron: uint64) -> uint64:
+hidden_weight_index:
+    // logistic_neural_network_contract.py:734-735
+    // @subroutine
+    // def hidden_weight_index(self, layer: UInt64, neuron: UInt64, prev_neuron: UInt64) -> UInt64:
+    proto 3 1
+    // logistic_neural_network_contract.py:736
+    // return ((layer - UInt64(1)) * self.hidden_neurons * self.hidden_neurons) + (neuron * self.hidden_neurons) + prev_neuron
+    frame_dig -3
+    intc_1 // 1
+    -
+    intc_0 // 0
+    bytec_0 // "hidden_neurons"
+    app_global_get_ex
+    assert // check self.hidden_neurons exists
+    swap
+    dig 1
+    *
+    dig 1
+    *
+    frame_dig -2
+    uncover 2
+    *
+    +
+    frame_dig -1
+    +
+    retsub
+
+
+// logistic_neural_network_contract.LogisticNeuralNetwork.make_zero_array(count: uint64) -> bytes:
+make_zero_array:
+    // logistic_neural_network_contract.py:742-743
+    // @subroutine
+    // def make_zero_array(self, count: UInt64) -> Data:
+    proto 1 1
+    // logistic_neural_network_contract.py:744
+    // arr = Data()
+    bytec_2 // 0x0000
+    // logistic_neural_network_contract.py:745
+    // for epoch in urange(count):
+    intc_0 // 0
+
+make_zero_array_for_header@1:
+    // logistic_neural_network_contract.py:745
+    // for epoch in urange(count):
+    frame_dig 1
+    frame_dig -1
+    <
+    bz make_zero_array_after_for@4
+    // logistic_neural_network_contract.py:746
+    // arr.append(arc4.UInt64(0))
+    frame_dig 0
+    dup
+    bytec 28 // 0x0000000000000000
+    concat // on error: max array length exceeded
+    swap
+    intc_0 // 0
+    extract_uint16
+    intc_1 // 1
+    +
+    itob
+    extract 6 2
+    replace2 0
+    frame_bury 0
+    // logistic_neural_network_contract.py:745
+    // for epoch in urange(count):
+    frame_dig 1
+    intc_1 // 1
+    +
+    frame_bury 1
+    b make_zero_array_for_header@1
+
+make_zero_array_after_for@4:
+    // logistic_neural_network_contract.py:747
+    // return arr.copy()
+    retsub
+
+
+// logistic_neural_network_contract.LogisticNeuralNetwork.zero_existing_array(arr: bytes, count: uint64) -> bytes:
+zero_existing_array:
+    // logistic_neural_network_contract.py:749-750
+    // @subroutine
+    // def zero_existing_array(self, arr: Data, count: UInt64) -> None:
+    proto 2 1
+    frame_dig -2
+    // logistic_neural_network_contract.py:751
+    // for i in urange(count):
+    intc_0 // 0
+
+zero_existing_array_for_header@1:
+    // logistic_neural_network_contract.py:751
+    // for i in urange(count):
+    frame_dig 1
+    frame_dig -1
+    <
+    bz zero_existing_array_after_for@6
+    // logistic_neural_network_contract.py:752
+    // arr[i] = arc4.UInt64(0)
+    frame_dig 1
+    dup
+    intc_2 // 8
+    *
+    intc_3 // 2
+    +
+    frame_dig -2
+    swap
+    bytec 28 // 0x0000000000000000
+    replace3 // on error: index access is out of bounds
+    frame_bury -2
+    // logistic_neural_network_contract.py:751
+    // for i in urange(count):
+    intc_1 // 1
+    +
+    frame_dig -2
+    frame_bury 0
+    frame_bury 1
+    b zero_existing_array_for_header@1
+
+zero_existing_array_after_for@6:
+    retsub
+
+
+// logistic_neural_network_contract.LogisticNeuralNetwork.scale_down_product(a: uint64, b: uint64) -> uint64:
+scale_down_product:
+    // logistic_neural_network_contract.py:754-755
+    // @subroutine
+    // def scale_down_product(self, a: UInt64, b: UInt64) -> UInt64:
+    proto 2 1
+    // logistic_neural_network_contract.py:756
+    // return op.btoi(((BigUInt(a) * b) // self.scale_factor).bytes)
+    frame_dig -2
+    itob
+    frame_dig -1
+    itob
+    b*
+    intc_0 // 0
+    bytec 12 // "scale_factor"
+    app_global_get_ex
+    assert // check self.scale_factor exists
+    itob
+    b/
+    btoi
+    retsub
+
+
+// logistic_neural_network_contract.LogisticNeuralNetwork.hard_sigmoid(magnitude: uint64, is_negative: uint64) -> uint64:
+hard_sigmoid:
+    // logistic_neural_network_contract.py:789-790
+    // @subroutine
+    // def hard_sigmoid(self, magnitude: UInt64, is_negative: bool) -> UInt64:
+    proto 2 1
+    pushbytes ""
+    // logistic_neural_network_contract.py:791
+    // four_scale = self.scale_factor * UInt64(4)
+    intc_0 // 0
+    bytec 12 // "scale_factor"
+    app_global_get_ex
+    assert // check self.scale_factor exists
+    dup
+    pushint 4
+    *
+    swap
+    // logistic_neural_network_contract.py:792
+    // half_scale = self.scale_factor // UInt64(2)
+    intc_3 // 2
+    /
+    swap
+    // logistic_neural_network_contract.py:794
+    // if is_negative:
+    frame_dig -1
+    bz hard_sigmoid_after_if_else@4
+    // logistic_neural_network_contract.py:795
+    // if magnitude >= four_scale:
+    frame_dig -2
+    <=
+    bz hard_sigmoid_after_if_else@3
+    // logistic_neural_network_contract.py:796
+    // return UInt64(0)
+    intc_0 // 0
+    frame_bury 0
+    retsub
+
+hard_sigmoid_after_if_else@3:
+    // logistic_neural_network_contract.py:797
+    // return half_scale - (magnitude // UInt64(8))
+    frame_dig -2
+    intc_2 // 8
+    /
+    frame_dig 1
+    swap
+    -
+    frame_bury 0
+    retsub
+
+hard_sigmoid_after_if_else@4:
+    // logistic_neural_network_contract.py:799
+    // if magnitude >= four_scale:
+    frame_dig -2
+    <=
+    bz hard_sigmoid_after_if_else@6
+    // logistic_neural_network_contract.py:800
+    // return self.scale_factor
+    intc_0 // 0
+    bytec 12 // "scale_factor"
+    app_global_get_ex
+    assert // check self.scale_factor exists
+    frame_bury 0
+    retsub
+
+hard_sigmoid_after_if_else@6:
+    // logistic_neural_network_contract.py:802
+    // value = half_scale + (magnitude // UInt64(8))
+    frame_dig -2
+    intc_2 // 8
+    /
+    frame_dig 1
+    +
+    dup
+    frame_bury 0
+    // logistic_neural_network_contract.py:803
+    // if value > self.scale_factor:
+    intc_0 // 0
+    bytec 12 // "scale_factor"
+    app_global_get_ex
+    assert // check self.scale_factor exists
+    >
+    bz hard_sigmoid_after_if_else@8
+    // logistic_neural_network_contract.py:804
+    // return self.scale_factor
+    intc_0 // 0
+    bytec 12 // "scale_factor"
+    app_global_get_ex
+    assert // check self.scale_factor exists
+    frame_bury 0
+    retsub
+
+hard_sigmoid_after_if_else@8:
+    // logistic_neural_network_contract.py:805
+    // return value
+    retsub
+
+
+// logistic_neural_network_contract.LogisticNeuralNetwork.signed_add(a_magnitude: uint64, a_is_negative: uint64, b_magnitude: uint64, b_is_negative: uint64) -> uint64, uint64:
+signed_add:
+    // logistic_neural_network_contract.py:825-832
+    // @subroutine
+    // def signed_add(
+    //     self,
+    //     a_magnitude: UInt64,
+    //     a_is_negative: bool,
+    //     b_magnitude: UInt64,
+    //     b_is_negative: bool,
+    // ) -> tuple[UInt64, bool]:
+    proto 4 2
+    // logistic_neural_network_contract.py:833
+    // if a_is_negative == b_is_negative:
+    frame_dig -3
+    frame_dig -1
+    ==
+    bz signed_add_after_if_else@2
+    // logistic_neural_network_contract.py:834
+    // return a_magnitude + b_magnitude, a_is_negative
+    frame_dig -4
+    frame_dig -2
+    +
+    frame_dig -3
+    retsub
+
+signed_add_after_if_else@2:
+    // logistic_neural_network_contract.py:836
+    // if a_magnitude >= b_magnitude:
+    frame_dig -4
+    frame_dig -2
+    >=
+    bz signed_add_after_if_else@4
+    // logistic_neural_network_contract.py:837
+    // return a_magnitude - b_magnitude, a_is_negative
+    frame_dig -4
+    frame_dig -2
+    -
+    frame_dig -3
+    retsub
+
+signed_add_after_if_else@4:
+    // logistic_neural_network_contract.py:839
+    // return b_magnitude - a_magnitude, b_is_negative
+    frame_dig -2
+    frame_dig -4
+    -
+    frame_dig -1
+    retsub

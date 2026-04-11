@@ -42,9 +42,9 @@ def send_run_training_loops_tx(note_index: int, epoch: int):
                 stop_event.set()
 
 globals = ALGORAND.app.get_global_state(LINEAR_REGRESSION_APP_ID)
-total_epochs = globals.get('epochs').value
-epochs_completed = globals.get('epochs_completed').value
-epochs = total_epochs - epochs_completed
+total_epochs = globals.get('epochs').value # type: ignore
+epochs_completed = globals.get('epochs_completed').value # type: ignore
+epochs = total_epochs - epochs_completed # type: ignore
 
 print(f'Epochs to complete: {epochs}')
 

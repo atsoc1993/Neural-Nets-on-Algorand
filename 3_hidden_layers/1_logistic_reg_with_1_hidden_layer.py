@@ -2,17 +2,7 @@ from random import uniform
 from math import exp
 from time import sleep
 
-#TODO remove repetitive comments from other code, only comment on newer code
-#TODO add new comments where we didnt go over something yet
-'''
-The intention of the next few lines is to create some "play" dataset (120 total entries), where we have
-a range of ages between 20 to 80 years old, and genders that are either Male or Female.
-We want a group of Males and Females for each year between 20 to 80
-The "Target" in this dataset, or "Y" value will "Can Be Pregnant?" — where
-the intention is to (generically) state that 
-===> only females between ages 20 to 50 can be pregnant <====,
-without respect to any anomalies or gender arguments.
-'''
+
 ages = [i for i in range(20, 50)] * 2 + [i for i in range(50, 80)] * 2 
 # ages = [20, 21 ... 49, 20, 21 ... 49, 50, 51 ... 79, 50, 51 ... 79]
 
@@ -76,10 +66,14 @@ hidden_layer_bias = uniform(-.5, .5)
 # The Age and Gender gets passed from the Input layer* to the Hidden Layer Neuron 
 # Then the Hidden Layer Neuron spits out some singular float, which goes into the output layer neuron
 # This means we go from 2 features (age and gender) to 1 feature (float), so the output layer will only
-# need one weight and bias
+# need one weight and bias.
+# Because we still are only using binary classification ("Can" or "Cannot" be pregnant), we still only need 1 perceptron
+# Only when we exceed binary classification (2 options) do we need more than 1 output layer neuron. If there
+# were three target options, we would need 3 target neurons. Binary classification is a unique scenario where we can
+# get away with 1 neuron
 # Note that the final (or only) layer in any neural network is the output layer.
 output_layer_weight = uniform(-.5, .5)
-output_layer_bias = uniform(-.5 ,.5)
+output_layer_bias = uniform(-.5, .5)
 
 # See logistic regression example for explanation of sigmoid function
 def sigmoid(n) -> float:
@@ -90,11 +84,20 @@ def sigmoid(n) -> float:
     else:
         return 1 / (1 + exp(-n))
 
+# Relu & Relu Derivative functions are straight-forward — 
+# Relu is used in the forward-pass (calculating the prediction in this training loop) —
+# Relu Derivative is used in back propogation to calculate gradients, which update deltas, and later update our neurons
+
+# Relu is an activation function 
 def relu(n) -> float:
+    '''Relu: If the number is greater than 0, we return the number, else 0'''
     return n if n > 0 else 0
 
+# Relu Derivative is part of backwards propagation, you can think of it as a "backwards-activation" function
 def relu_derivative(n) -> float:
+    '''Relu-Deriv: If the number is greater than 0, we return 1, else 0'''
     return 1.0 if n > 0 else 0.0
+
 for epoch in range(epochs):
 
     # Initialize delta weights & biases to 0
@@ -141,7 +144,7 @@ for epoch in range(epochs):
         delta_hidden_layer_weights[1] += hidden_layer_error * gender
         delta_hidden_layer_bias += hidden_layer_error
 
-    # We've gone through all of our training loops, lets average the deltas by the length of inputs
+    # We've gone through all of our training loops, lets average the deltas by the length of our data
     delta_hidden_layer_weights[0] /= len_data
     delta_hidden_layer_weights[1] /= len_data
     delta_hidden_layer_bias /= len_data

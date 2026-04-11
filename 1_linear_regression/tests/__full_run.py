@@ -52,7 +52,7 @@ x_input_chunks = [x_inputs_scaled[i:i + 10] for i in range(0, len(x_inputs_scale
 y_target_chunks = [y_targets_scaled[i:i + 10] for i in range(0, len(y_targets_scaled), chunk_size)]
 
 
-transaction_ids = []
+transaction_ids = [] # type: ignore
 
 max_group_size = 16
 note_index = 1
@@ -155,9 +155,9 @@ def send_run_training_loops_tx(note_index: int, epoch: int):
                 stop_event.set()
 
 globals = ALGORAND.app.get_global_state(linear_regression_client.app_id)
-total_epochs = globals.get('epochs').value
-epochs_completed = globals.get('epochs_completed').value
-epochs = total_epochs - epochs_completed
+total_epochs = globals.get('epochs').value # type: ignore
+epochs_completed = globals.get('epochs_completed').value # type: ignore
+epochs = total_epochs - epochs_completed # type: ignore
 
 print(f'Epochs to complete: {epochs}')
 
@@ -175,8 +175,8 @@ for thread in threads:
 logging.info(f"Completed all {epochs}")
 
 globals = ALGORAND.app.get_global_state(linear_regression_client.app_id)
-weight = globals.get('weight_magnitude').value / SCALE_FACTOR
-bias = globals.get('bias_magnitude').value / SCALE_FACTOR
+weight = globals.get('weight_magnitude').value / SCALE_FACTOR # type: ignore
+bias = globals.get('bias_magnitude').value / SCALE_FACTOR # type: ignore
 
 '''
 # y = 19.3x + 72.5
@@ -190,7 +190,7 @@ txn_response = linear_regression_client.send.predict(
     )
 )
 
-txn_result = txn_response.abi_return
-prediction = (txn_result[0] * -1 if txn_result[1] else txn_result[0]) / SCALE_FACTOR
+txn_result = txn_response.abi_return # type: ignore
+prediction = (txn_result[0] * -1 if txn_result[1] else txn_result[0]) / SCALE_FACTOR # type: ignore
 
 print(f'Prediction: {prediction}')

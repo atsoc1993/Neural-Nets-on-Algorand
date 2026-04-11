@@ -21,7 +21,7 @@ x_input_chunks = [x_inputs_scaled[i:i + 10] for i in range(0, len(x_inputs_scale
 y_target_chunks = [y_targets_scaled[i:i + 10] for i in range(0, len(y_targets_scaled), chunk_size)]
 
 
-transaction_ids = []
+transaction_ids = [] # type: ignore
 
 max_group_size = 16
 note_index = 1

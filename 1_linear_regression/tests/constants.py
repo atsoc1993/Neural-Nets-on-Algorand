@@ -30,7 +30,7 @@ if LINEAR_REGRESSION_APP_ID != 0:
         app_id=LINEAR_REGRESSION_APP_ID,
         default_sender=PK,
         default_signer=SIGNER,
-        approval_source_map=Program(program=APP_SPEC.source.get_decoded_approval(), client=ALGORAND.client.algod).source_map,
+        approval_source_map=Program(program=APP_SPEC.source.get_decoded_approval(), client=ALGORAND.client.algod).source_map, # type: ignore
         typed_client=LinearRegressionModelClient
     )
 else:
